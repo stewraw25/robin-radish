@@ -375,6 +375,87 @@ export function relatedCrops(slug: string): Crop[] {
     .filter((crop): crop is Crop => Boolean(crop));
 }
 
+function listed(window: SeasonWindow): string | null {
+  const south = formatMonthList(window.south);
+  const north = formatMonthList(window.north);
+  if (south === "Not in this list" && north === "Not in this list") return null;
+  if (south === north) return south;
+  return `${south} in the south, and ${north} in the north`;
+}
+
+/** Direct answer to "when to sow/plant this in the UK", using the month table. */
+export function whenToSowLead(crop: Crop): string {
+  const name = crop.name.toLowerCase();
+  const indoors = listed(crop.sowIndoors);
+  const outdoors = listed(crop.sowOutdoors);
+  const plant = listed(crop.plant);
+  const harvest = listed(crop.harvest);
+  const clauses: string[] = [];
+  if (indoors) clauses.push(`sow ${name} indoors in ${indoors}`);
+  if (outdoors) clauses.push(indoors ? `sow them outdoors in ${outdoors}` : `sow ${name} outdoors in ${outdoors}`);
+  if (plant) clauses.push(clauses.length > 0 ? `plant in ${plant}` : `plant ${name} in ${plant}`);
+  const opener =
+    clauses.length > 0
+      ? `${clauses.join(", and ").replace(/^./, (letter) => letter.toUpperCase())}.`
+      : `${crop.name} is not given a sowing or planting window in this list.`;
+  const harvestLine = harvest ? ` The harvest window is ${harvest}.` : "";
+  return `${opener}${harvestLine} ${crop.note} South means southern England, the Midlands and much of Wales. North means northern England and Scotland. Frost and a cold spring can move a garden later than these ranges.`;
+}
+
+export function cropSearchTitle(crop: Crop): string {
+  const sows =
+    crop.sowIndoors.south.length +
+    crop.sowIndoors.north.length +
+    crop.sowOutdoors.south.length +
+    crop.sowOutdoors.north.length;
+  return `When to ${sows > 0 ? "sow" : "plant"} ${crop.name.toLowerCase()}`;
+}
+
+const CONTAINER_CROPS = new Set([
+  "lettuce",
+  "radishes",
+  "tomatoes",
+  "courgettes",
+  "cucumbers",
+  "spring-onions",
+  "chard",
+  "spinach",
+  "french-beans",
+  "early-potatoes",
+  "beetroot",
+  "carrots",
+  "parsley",
+  "coriander",
+  "basil",
+  "chives",
+  "mint",
+  "rosemary",
+  "thyme",
+]);
+
+const SEED_CROPS = new Set([
+  "broad-beans",
+  "peas",
+  "french-beans",
+  "runner-beans",
+  "tomatoes",
+  "lettuce",
+]);
+
+export function guidesForCrop(crop: Crop): string[] {
+  const slugs: string[] = [];
+  if (crop.sowIndoors.south.length > 0 || crop.sowIndoors.north.length > 0) slugs.push("sowing-under-cover");
+  if (CONTAINER_CROPS.has(crop.slug)) slugs.push("growing-in-containers");
+  if (SEED_CROPS.has(crop.slug)) slugs.push("saving-seed");
+  const winter = [crop.sowOutdoors, crop.plant, crop.harvest].some((window) =>
+    [...window.south, ...window.north].some((month) => month >= 11 || month <= 2),
+  );
+  if (winter) slugs.push("what-to-sow-in-winter");
+  if (crop.kind === "vegetable") slugs.push("no-dig-beds");
+  slugs.push("starting-a-veg-patch");
+  return [...new Set(slugs)].slice(0, 4);
+}
+
 function jobSentence(label: string, window: SeasonWindow): string {
   const south = formatMonthList(window.south);
   const north = formatMonthList(window.north);
@@ -397,6 +478,7 @@ export function scheduleSentences(crop: Crop): string[] {
 export function cropFaqs(crop: Crop): { q: string; a: string }[] {
   const name = crop.name.toLowerCase();
   const notes = getCropCare(crop.slug);
+  const sows = crop.sowIndoors.south.length + crop.sowIndoors.north.length + crop.sowOutdoors.south.length + crop.sowOutdoors.north.length;
   const diffs = scheduleSentences(crop).filter((line) => line.includes("in the south, and"));
   const regionAnswer =
     diffs.length === 0
@@ -405,8 +487,8 @@ export function cropFaqs(crop: Crop): { q: string; a: string }[] {
 
   return [
     {
-      q: `When do I sow, plant and harvest ${name} in the UK?`,
-      a: `${scheduleSentences(crop).join(" ")} South means southern England, the Midlands and much of Wales. North means northern England and Scotland.`,
+      q: `When do I ${sows > 0 ? "sow" : "plant"} ${name} in the UK?`,
+      a: whenToSowLead(crop),
     },
     {
       q: `Do northern gardens grow ${name} on the same timetable?`,

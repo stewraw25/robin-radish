@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const bird = getBird(species);
   if (!bird) return {};
   return pageMeta({
-    title: bird.name,
-    description: `${bird.summary} Food, feeder and nesting notes for a UK garden.`,
+    title: `What to feed a ${bird.name.toLowerCase()}`,
+    description: `What to feed a ${bird.name.toLowerCase()} in a UK garden, plus how to recognise one and where it nests.`,
     path: `/birds/${bird.slug}`,
     type: "article",
   });
@@ -41,6 +41,8 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
   const path = `/birds/${bird.slug}`;
   const related = relatedBirds(bird);
   const months = monthsFeaturingBird(bird.slug);
+  const feedQuestion = `What should I feed a ${bird.name.toLowerCase()} in the UK?`;
+  const faqs = [{ q: feedQuestion, a: bird.food }, ...bird.faqs];
 
   return (
     <article className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
@@ -66,13 +68,21 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
         <p className="leading-relaxed">{bird.recognise}</p>
       </section>
       <section className="mt-8 space-y-3">
-        <h2 className="font-heading text-2xl">Food and feeder</h2>
+        <h2 className="font-heading text-2xl">What to feed a {bird.name.toLowerCase()}</h2>
         <p className="leading-relaxed">{bird.food}</p>
         <p className="text-sm">
           <Link href="/quiz" className="font-medium underline decoration-soil/60 underline-offset-2">
             Try the bird food quiz
           </Link>
-          <span className="text-muted-foreground"> if you want a short list of foods for the birds you actually see.</span>
+          <span className="text-muted-foreground"> if you want a short list of foods for the birds you actually see. </span>
+          <Link href="/guides/bird-food-for-winter" className="font-medium underline decoration-soil/60 underline-offset-2">
+            Winter food
+          </Link>
+          <span className="text-muted-foreground"> and </span>
+          <Link href="/guides/water-for-garden-birds" className="font-medium underline decoration-soil/60 underline-offset-2">
+            water
+          </Link>
+          <span className="text-muted-foreground"> sit alongside the species notes.</span>
         </p>
       </section>
       <section className="mt-8 space-y-3">
@@ -129,8 +139,8 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
           Cleaning feeders
         </Link>
         <span className="text-muted-foreground"> · </span>
-        <Link href="/guides/bird-food-for-winter" className="underline decoration-soil/60 underline-offset-2">
-          Bird food for winter
+        <Link href="/guides/nest-boxes" className="underline decoration-soil/60 underline-offset-2">
+          Nest boxes
         </Link>
         {bird.slug === "robin" ? (
           <>
@@ -140,12 +150,20 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
             </Link>
           </>
         ) : null}
+        {bird.slug === "wood-pigeon" ? (
+          <>
+            <span className="text-muted-foreground"> · </span>
+            <Link href="/grow/kale" className="underline decoration-soil/60 underline-offset-2">
+              Kale
+            </Link>
+          </>
+        ) : null}
       </p>
 
-      <FaqList faqs={bird.faqs} />
+      <FaqList faqs={faqs} />
       <JsonLd
         data={articleJsonLd({
-          title: bird.name,
+          title: `What to feed a ${bird.name.toLowerCase()}`,
           description: bird.summary,
           path,
           datePublished: EVERGREEN_DATE,

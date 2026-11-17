@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { ShopList } from "@/components/shop-list";
-import { cropFaqs, getCropCare, relatedCrops, scheduleSentences } from "@/lib/crop-care";
+import { cropFaqs, cropSearchTitle, getCropCare, guidesForCrop, relatedCrops, whenToSowLead } from "@/lib/crop-care";
 import {
   activeMonths,
   crops,
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const crop = getCrop(slug);
   if (!crop) return {};
   return pageMeta({
-    title: `${crop.name}: sowing and care`,
+    title: cropSearchTitle(crop),
     description: `When to sow, plant and harvest ${crop.name.toLowerCase()} in the UK, plus spacing, position and common problems. General guidance for home gardens.`,
     path: `/grow/${crop.slug}`,
     type: "article",
@@ -59,10 +59,8 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
   const path = `/grow/${crop.slug}`;
   const related = relatedCrops(crop.slug);
   const months = activeMonths(crop);
-  const guideSlugs = ["starting-a-veg-patch"];
-  if (months.some((month) => month === 12 || month <= 2 || month === 11)) guideSlugs.push("what-to-sow-in-winter");
-  if (crop.kind === "vegetable") guideSlugs.push("raised-beds");
-  const guides = guideSlugs
+  const title = cropSearchTitle(crop);
+  const guides = guidesForCrop(crop)
     .map((item) => getGuide(item))
     .filter((guide): guide is NonNullable<ReturnType<typeof getGuide>> => Boolean(guide));
 
@@ -82,8 +80,15 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
       </header>
 
       <section className="mt-8">
-        <h2 className="font-heading text-2xl">When to sow, plant and harvest</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{REGION_NOTE}</p>
+        <h2 className="font-heading text-2xl">{title}</h2>
+        <p className="mt-3 leading-relaxed">{whenToSowLead(crop)}</p>
+        <p className="mt-3 text-sm leading-relaxed">
+          <Link href="/planner" className="font-medium underline decoration-soil/60 underline-offset-2">
+            Open the sowing planner
+          </Link>
+          <span className="text-muted-foreground"> and pick the month and the south or the north. The month pages below list the other crops in those same weeks.</span>
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{REGION_NOTE}</p>
         <div className="mt-4 overflow-x-auto rounded-xl border border-border">
           <table className="w-full min-w-[28rem] border-collapse text-left text-sm">
             <caption className="sr-only">Months for {crop.name} in the south and the north of the UK</caption>
@@ -105,11 +110,6 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
             </tbody>
           </table>
         </div>
-        <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          {scheduleSentences(crop).map((sentence) => (
-            <li key={sentence}>{sentence}</li>
-          ))}
-        </ul>
       </section>
 
       <section className="mt-10 space-y-3">
@@ -195,7 +195,7 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
       <FaqList faqs={faqs} />
       <JsonLd
         data={articleJsonLd({
-          title: `${crop.name}: sowing and care`,
+          title,
           description: crop.note,
           path,
           datePublished: EVERGREEN_DATE,
