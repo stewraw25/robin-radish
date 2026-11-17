@@ -78,6 +78,10 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
           <Link href="/guides/bird-food-for-winter" className="font-medium underline decoration-soil/60 underline-offset-2">
             Winter food
           </Link>
+          <span className="text-muted-foreground">, </span>
+          <Link href="/guides/feeding-birds-spring-summer" className="font-medium underline decoration-soil/60 underline-offset-2">
+            spring and summer
+          </Link>
           <span className="text-muted-foreground"> and </span>
           <Link href="/guides/water-for-garden-birds" className="font-medium underline decoration-soil/60 underline-offset-2">
             water

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
+  { href: "/start-here", label: "Start here" },
   { href: "/this-week", label: "This week" },
   { href: "/what-to-sow", label: "What to sow" },
   { href: "/grow", label: "Crops" },
@@ -54,7 +55,7 @@ export function SiteHeader() {
               href={link.href}
               aria-current={active(pathname, link.href) ? "page" : undefined}
               className={cn(
-                "rounded-md px-2 py-2 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-foreground",
+                "rounded-md px-1.5 py-2 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-foreground",
                 active(pathname, link.href) && "bg-secondary text-foreground",
               )}
             >

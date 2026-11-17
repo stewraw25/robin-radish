@@ -10,6 +10,8 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     { path: "", priority: 1, changeFrequency: "weekly" },
+    { path: "/start-here", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/sowing-calendar-2027", priority: 0.8, changeFrequency: "yearly" },
     { path: "/this-week", priority: 0.9, changeFrequency: "weekly" },
     { path: "/what-to-sow", priority: 0.8, changeFrequency: "monthly" },
     { path: "/grow", priority: 0.7, changeFrequency: "monthly" },

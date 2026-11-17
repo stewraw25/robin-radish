@@ -451,6 +451,11 @@ export function guidesForCrop(crop: Crop): string[] {
     [...window.south, ...window.north].some((month) => month >= 11 || month <= 2),
   );
   if (winter) slugs.push("what-to-sow-in-winter");
+  if (crop.kind === "herb") slugs.unshift("herbs-small-space");
+  if (["lettuce", "spinach", "courgettes", "french-beans", "runner-beans", "basil", "summer-cabbage"].includes(crop.slug)) {
+    slugs.unshift("slugs-without-pellets");
+  }
+  if (["kale", "leeks", "chard", "spinach", "lettuce"].includes(crop.slug)) slugs.unshift("hungry-gap");
   if (crop.kind === "vegetable") slugs.push("no-dig-beds");
   slugs.push("starting-a-veg-patch");
   return [...new Set(slugs)].slice(0, 4);

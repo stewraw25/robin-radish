@@ -3,6 +3,7 @@ import { LogoLockup } from "@/components/logo-lockup";
 
 export const metadata: Metadata = {
   title: { absolute: "Robin & Radish logo" },
+  description: "Unlisted Robin & Radish logo, for checking the mark.",
   robots: { index: false, follow: false },
 };
 

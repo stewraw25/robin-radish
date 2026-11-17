@@ -127,6 +127,61 @@ async function main() {
   }
 
   console.log("Structured data check passed. No Product, Offer, Review or AggregateRating markup.");
+  await checkMeta();
+}
+
+function decode(value) {
+  return value
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;|&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+async function checkMeta() {
+  const outDir = path.join(process.cwd(), "out");
+  let files = [];
+  try {
+    files = (await collect(outDir)).filter((file) => file.endsWith(".html"));
+  } catch {
+    files = [];
+  }
+  if (files.length === 0) {
+    console.error("No HTML under out/. Run the static export before the meta check.");
+    process.exit(1);
+  }
+
+  const titles = new Map();
+  const descriptions = new Map();
+  const problems = [];
+  for (const file of files) {
+    const html = await readFile(file, "utf8");
+    const title = decode((html.match(/<title>([^<]*)<\/title>/) || [])[1] || "").trim();
+    const description = decode((html.match(/<meta name="description" content="([^"]*)"/) || [])[1] || "").trim();
+    const rel = path.relative(process.cwd(), file);
+    if (rel === "out/404.html" || rel.startsWith(`out${path.sep}_not-found${path.sep}`)) continue;
+    const unlisted = rel.includes(`${path.sep}brand${path.sep}`) || rel.endsWith(`${path.sep}brand.html`);
+    if (!title) problems.push(`${rel}: missing title`);
+    else if (title.length > 60) problems.push(`${rel}: title is ${title.length} characters (${title})`);
+    else if (titles.has(title)) problems.push(`${rel}: duplicate title "${title}" also on ${titles.get(title)}`);
+    else titles.set(title, rel);
+
+    if (!description) {
+      if (!unlisted) problems.push(`${rel}: missing meta description`);
+    } else if (description.length > 160) {
+      problems.push(`${rel}: description is ${description.length} characters`);
+    } else if (descriptions.has(description)) {
+      problems.push(`${rel}: duplicate description also on ${descriptions.get(description)}`);
+    } else descriptions.set(description, rel);
+  }
+
+  if (problems.length > 0) {
+    console.error(`\n${problems.length} title or description problem(s):`);
+    for (const problem of problems) console.error(`- ${problem}`);
+    process.exit(1);
+  }
+  console.log(`Title and description check passed for ${files.length} HTML files.`);
 }
 
 main().catch((error) => {

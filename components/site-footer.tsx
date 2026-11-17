@@ -5,6 +5,8 @@ const columns = [
   {
     title: "Garden",
     links: [
+      { href: "/start-here", label: "Start here" },
+      { href: "/sowing-calendar-2027", label: "Sowing calendar 2027" },
       { href: "/this-week", label: "This week in the garden" },
       { href: "/what-to-sow", label: "What to sow by month" },
       { href: "/grow", label: "Vegetables and herbs" },
@@ -16,7 +18,7 @@ const columns = [
     links: [
       { href: "/birds", label: "Garden birds" },
       { href: "/quiz", label: "Bird food quiz" },
-      { href: "/guides/bird-food-for-winter", label: "Bird food for winter" },
+      { href: "/guides/feeding-birds-spring-summer", label: "Feeding birds in spring and summer" },
       { href: "/guides/attracting-robins", label: "Attracting robins" },
     ],
   },

@@ -12,6 +12,16 @@ type PageMetaInput = {
 
 const TITLE_SUFFIX = " | Robin & Radish";
 const TITLE_LIMIT = 60;
+const DESCRIPTION_LIMIT = 155;
+
+/** Keep the meta description within a length search results can show in full. */
+export function fitDescription(description: string): string {
+  const clean = description.replace(/\s+/g, " ").trim();
+  if (clean.length <= DESCRIPTION_LIMIT) return clean;
+  const cut = clean.slice(0, DESCRIPTION_LIMIT - 1);
+  const space = cut.lastIndexOf(" ");
+  return `${(space > 80 ? cut.slice(0, space) : cut).replace(/[,:;.\s]+$/, "")}.`;
+}
 
 /** Keep the rendered title, including the layout suffix, within a sensible length. */
 export function fitTitle(title: string): string {
@@ -31,11 +41,12 @@ export function pageMeta({
 }: PageMetaInput): Metadata {
   const url = absoluteUrl(path);
   const visibleTitle = absoluteTitle ? title : fitTitle(title);
+  const visibleDescription = fitDescription(description);
   const image = `${getSiteUrl()}/opengraph-image`;
 
   return {
     title: absoluteTitle ? { absolute: visibleTitle } : visibleTitle,
-    description,
+    description: visibleDescription,
     alternates: {
       canonical: url,
       languages: {
@@ -45,7 +56,7 @@ export function pageMeta({
     },
     openGraph: {
       title: visibleTitle,
-      description,
+      description: visibleDescription,
       url,
       siteName: SITE_NAME,
       type,
@@ -55,7 +66,7 @@ export function pageMeta({
     twitter: {
       card: "summary_large_image",
       title: visibleTitle,
-      description,
+      description: visibleDescription,
       images: [image],
     },
   };

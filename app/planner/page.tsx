@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ShopList } from "@/components/shop-list";
@@ -22,7 +23,11 @@ export default function PlannerPage() {
         <p className="text-sm font-semibold text-robin">Growing food</p>
         <h1 className="mt-2 font-heading text-4xl">Sowing planner</h1>
         <p className="mt-3 text-lg text-muted-foreground">
-          Pick a month. Say whether the garden is roughly in the north or the south of the UK if you want the dates nudged. The list covers common vegetables and herbs, with general month ranges, not a forecast for your postcode.
+          Pick a month. Say whether the garden is roughly in the north or the south of the UK if you want the dates nudged. The list covers common vegetables and herbs, with general month ranges, not a forecast for your postcode. The same months are on the{" "}
+          <Link href="/sowing-calendar-2027" className="font-medium text-foreground underline decoration-soil/60 underline-offset-2">
+            2027 sowing calendar
+          </Link>
+          .
         </p>
       </header>
       <SowingPlanner initialMonth={month} />

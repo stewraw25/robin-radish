@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Starter guides",
-  description: "Evergreen UK notes on sowing, vegetable beds, raised beds, winter bird food, feeder hygiene and robins.",
+  description: "UK guides on sowing, beds, herbs, slugs, compost, the hungry gap, and feeding garden birds.",
   path: "/guides",
 });
 
