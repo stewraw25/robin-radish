@@ -1,0 +1,88 @@
+{
+  "weekOf": "2026-11-16",
+  "title": "Mid-November jobs",
+  "intro": "Mid-November in a UK garden is a short list: a few hardy crops if the soil will take them, winter vegetables you can still pick, and feeders kept fresh as the days close in. Leave beds that are frozen or sodden.",
+  "sow": [
+    {
+      "name": "Broad beans",
+      "detail": "Hardy broad beans can still go into free-draining soil in a mild garden, or into pots in a cold frame or greenhouse. Skip the job if the ground is waterlogged. In colder northern gardens, pots under cover are the safer November sowing."
+    },
+    {
+      "name": "Garlic",
+      "detail": "Plant individual cloves sold for planting, point upwards, if you have not already done it and the soil is workable. November is still inside the usual autumn window. Do not plant into frozen ground."
+    },
+    {
+      "name": "Hardy peas under cover",
+      "detail": "In milder southern and western gardens, a hardy pea can be sown now under a cloche or in a cold frame. Elsewhere, wait for late winter rather than pushing seed into cold, wet soil."
+    },
+    {
+      "name": "Salad and pea shoots indoors",
+      "detail": "A pot of cut-and-come-again leaves, or pea seeds sown thickly for shoots, will grow on a bright windowsill. This is a small winter picking, not a crop for the open bed."
+    }
+  ],
+  "harvest": [
+    {
+      "name": "Leeks",
+      "detail": "Lift them as you need them. They stand in the garden through winter, so there is no need to clear the row."
+    },
+    {
+      "name": "Parsnips",
+      "detail": "Leave roots in the ground and lift them after frost, when they are sweeter. Mark the row before the tops disappear."
+    },
+    {
+      "name": "Brussels sprouts and kale",
+      "detail": "Pick sprouts from the bottom of the stem upwards. Take kale a few leaves at a time so the plant keeps growing. Net the bed if pigeons are stripping it."
+    },
+    {
+      "name": "Winter cabbage, swede and celeriac",
+      "detail": "Cut cabbage as the hearts firm. Swede and celeriac can be lifted now or left and covered with a mulch if a hard frost is forecast and the soil is not already frozen solid."
+    },
+    {
+      "name": "Jerusalem artichokes and late chard",
+      "detail": "Cut artichoke stems back and lift tubers as you want them, leaving some for later. Chard that is still standing can be picked leaf by leaf until a hard frost finishes it."
+    }
+  ],
+  "birds": [
+    {
+      "name": "Robins and blackbirds",
+      "detail": "Both take mealworms and sunflower hearts from a ground tray or bird table. A robin often feeds alone and likes a clear view of the food, with a shrub nearby to dash into."
+    },
+    {
+      "name": "Tits",
+      "detail": "Blue tits and great tits use hanging feeders. Sunflower hearts and suet are straightforward foods for them while the days are short."
+    },
+    {
+      "name": "Finches",
+      "detail": "Goldfinches take nyjer from a fine-mesh feeder, and sunflower hearts from a normal one. Siskins may join them in winter."
+    },
+    {
+      "name": "Winter thrushes",
+      "detail": "Redwings and fieldfares are winter visitors. Windfall apples and berries still on shrubs are useful. They also feed on the ground."
+    }
+  ],
+  "food": [
+    {
+      "name": "Sunflower hearts",
+      "detail": "A husk-free seed that many garden birds eat. There is less debris under the feeder than with seed still in its shell. Put out what will be eaten before it turns damp."
+    },
+    {
+      "name": "Suet",
+      "detail": "Blocks, pellets or fat balls in a cage give a high-energy food in cold weather. Take suet down if a mild spell makes it soft enough to smear."
+    },
+    {
+      "name": "Nyjer seed",
+      "detail": "Very small seed for goldfinches and siskins. It needs a feeder with tiny holes, or it pours straight through."
+    },
+    {
+      "name": "Mealworms",
+      "detail": "Offer them on a tray. Soak dried mealworms in water first so they are easier to eat and hold a little moisture. Live mealworms are taken readily too, if you use them."
+    }
+  ],
+  "also": [
+    "Break ice on a shallow dish of water in the morning. Birds need a drink as well as food.",
+    "If seed has clumped or gone mouldy, empty the feeder, clean it, and refill with a smaller amount.",
+    "Stay off wet soil if you can. A plank to stand on is enough when you have to reach a bed.",
+    "A light mulch around autumn-planted garlic and broad beans helps in a cold snap. Do not bury the growing tips.",
+    "Check fruit and potatoes in store and remove anything soft or rotten before it spreads."
+  ]
+}
