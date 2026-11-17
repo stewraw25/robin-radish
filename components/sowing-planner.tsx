@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Label } from "@/components/ui/label";
@@ -98,7 +99,11 @@ export function SowingPlanner({ initialMonth }: { initialMonth: number }) {
               {grouped[job].map((crop) => (
                 <li key={crop.slug} className="p-4">
                   <div className="flex flex-wrap items-center gap-2">
-                    <h3 className="font-heading text-lg">{crop.name}</h3>
+                    <h3 className="font-heading text-lg">
+                      <Link href={`/grow/${crop.slug}`} className="underline decoration-soil/40 underline-offset-2 hover:decoration-robin">
+                        {crop.name}
+                      </Link>
+                    </h3>
                     <Badge variant="secondary">{crop.kind === "herb" ? "Herb" : "Vegetable"}</Badge>
                   </div>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{crop.note}</p>

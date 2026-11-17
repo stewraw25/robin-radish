@@ -9,6 +9,9 @@ export const SITE_NAME = "Robin & Radish";
 
 export const BYLINE = "Robin & Radish";
 
+/** First publication date for the evergreen sowing, crop and bird pages. */
+export const EVERGREEN_DATE = "2026-11-17";
+
 export function getSiteUrl(): string {
   const configured = process.env.SITE_URL?.trim();
   if (configured) return configured.replace(/\/$/, "");

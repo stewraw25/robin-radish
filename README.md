@@ -55,6 +55,16 @@ category: grow
 
 Link to the four shops with their normal addresses (for example `https://www.thompson-morgan.com/`). The site adds tracking when an affiliate ID is set. Internal links look like `[sowing planner](/planner)`.
 
+## Month, crop and bird pages
+
+These are generated. You do not add a new file for each page.
+
+- Month pages (`/what-to-sow/january` and the other eleven) read `lib/crops.ts` for the lists and `lib/month-notes.ts` for the intro, the bird paragraph and the questions.
+- Crop pages (`/grow/tomatoes` and the rest) read `lib/crops.ts` for the months and `lib/crop-care.ts` for position, spacing, care and problems. A new crop needs both files.
+- Bird pages (`/birds/robin` and fourteen others) are `lib/birds.ts`, with a matching silhouette in `components/bird-silhouette.tsx`.
+
+The weekly note is still the only file that changes every Monday. These pages stay put.
+
 ## Affiliate IDs
 
 Edit nothing in the pages. IDs live in the environment, and the shop list lives in `lib/affiliates.ts`.

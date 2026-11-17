@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Source_Sans_3 } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { SiteChrome } from "@/components/site-chrome";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/schema";
 import { getSiteUrl, SITE_NAME } from "@/lib/site";
 import "./globals.css";
@@ -51,11 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${sourceSans.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <SiteHeader />
-        <main id="content" className="flex-1">
-          {children}
-        </main>
-        <SiteFooter />
+        <SiteChrome>{children}</SiteChrome>
         <JsonLd data={organizationJsonLd()} />
         <JsonLd data={websiteJsonLd()} />
       </body>

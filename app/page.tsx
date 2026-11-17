@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { connection } from "next/server";
 import { AffiliateNotice } from "@/components/affiliate-notice";
+import { BirdSilhouette } from "@/components/bird-silhouette";
 import { JsonLd } from "@/components/json-ld";
 import { FeederMark, RadishMark, RobinMark, TrayMark } from "@/components/marks";
 import { ShopList } from "@/components/shop-list";
 import { WeekPanel } from "@/components/week-panel";
 import { buttonVariants } from "@/components/ui/button";
+import { birds } from "@/lib/birds";
+import { MONTHS } from "@/lib/crops";
+import { londonToday } from "@/lib/dates";
 import { CATEGORY_LABELS, getGuides } from "@/lib/guides";
+import { monthNotes } from "@/lib/month-notes";
 import { faqJsonLd } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo";
 import { cn } from "@/lib/utils";
@@ -39,11 +44,15 @@ export default async function HomePage() {
   await connection();
   const week = pickCurrentWeek(getWeeks());
   const guides = getGuides();
+  const monthNumber = Number(londonToday().slice(5, 7));
+  const featuredBirds = ["robin", "blue-tit", "goldfinch", "blackbird"]
+    .map((slug) => birds.find((bird) => bird.slug === slug))
+    .filter((bird) => bird !== undefined);
 
   return (
     <>
       <section className="mx-auto grid w-full max-w-5xl items-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[1.3fr_0.7fr]">
-        <div>
+        <div className="min-w-0">
           <p className="text-sm font-semibold text-robin">UK gardens</p>
           <h1 className="mt-2 font-heading text-4xl leading-tight sm:text-5xl">Grow food. Feed the birds.</h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">
@@ -58,11 +67,11 @@ export default async function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="flex items-end justify-center gap-2 rounded-3xl border border-border bg-card px-6 py-8" aria-hidden="true">
-          <TrayMark className="h-24 w-28" />
-          <RobinMark className="h-24 w-28" />
-          <RadishMark className="h-28 w-20" />
-          <FeederMark className="h-28 w-20" />
+        <div className="flex flex-wrap items-end justify-center gap-2 rounded-3xl border border-border bg-card px-4 py-6 sm:px-6 sm:py-8" aria-hidden="true">
+          <TrayMark className="h-16 w-20 sm:h-24 sm:w-28" />
+          <RobinMark className="h-16 w-20 sm:h-24 sm:w-28" />
+          <RadishMark className="h-20 w-14 sm:h-28 sm:w-20" />
+          <FeederMark className="h-20 w-14 sm:h-28 sm:w-20" />
         </div>
       </section>
 
@@ -97,6 +106,55 @@ export default async function HomePage() {
             </Link>
           </article>
         </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-5xl px-4 pb-4 sm:px-6">
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="font-heading text-3xl">What to sow by month</h2>
+          <Link href="/what-to-sow" className="text-sm font-medium underline decoration-soil/60 underline-offset-2">
+            All months
+          </Link>
+        </div>
+        <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          {MONTHS.map((month) => {
+            const current = month.value === monthNumber;
+            return (
+              <li key={month.slug}>
+                <Link
+                  href={`/what-to-sow/${month.slug}`}
+                  className={cn(
+                    "block h-full rounded-xl border bg-card p-3 hover:border-primary",
+                    current ? "border-primary" : "border-border",
+                  )}
+                  aria-current={current ? "date" : undefined}
+                >
+                  <span className="font-heading text-lg">{month.label}</span>
+                  {current ? <span className="mt-1 block text-xs font-semibold text-robin">This month</span> : null}
+                  <span className="mt-1 block text-sm text-muted-foreground">{monthNotes[month.value]?.hook}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="font-heading text-3xl">Garden birds</h2>
+          <Link href="/birds" className="text-sm font-medium underline decoration-soil/60 underline-offset-2">
+            All 15 birds
+          </Link>
+        </div>
+        <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {featuredBirds.map((bird) => (
+            <li key={bird.slug}>
+              <Link href={`/birds/${bird.slug}`} className="block h-full rounded-xl border border-border bg-card p-3 hover:border-primary">
+                <BirdSilhouette slug={bird.slug} className="h-14 w-24 text-leaf" />
+                <span className="mt-1 block font-heading text-lg">{bird.name}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-4 pb-4 sm:px-6">

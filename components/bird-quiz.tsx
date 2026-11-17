@@ -1,10 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 import { ShopLink } from "@/components/shop-link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
+  BIRD_GROUP_LINKS,
   BIRD_OPTIONS,
   BUDGET_OPTIONS,
   FEEDER_OPTIONS,
@@ -193,6 +195,21 @@ export function BirdQuiz({ shops }: { shops: ShopLinkItem[] }) {
           </div>
           {result.feederNote ? <p className="text-sm leading-relaxed">{result.feederNote}</p> : null}
           {result.squirrelNote ? <p className="text-sm leading-relaxed">{result.squirrelNote}</p> : null}
+          <p className="text-sm leading-relaxed">
+            Read the species notes:{" "}
+            {birds
+              .flatMap((group) => BIRD_GROUP_LINKS[group])
+              .filter((link, index, list) => list.findIndex((item) => item.href === link.href) === index)
+              .map((link, index) => (
+                <span key={link.href}>
+                  {index > 0 ? ", " : null}
+                  <Link href={link.href} className="font-medium underline decoration-soil/60 underline-offset-2">
+                    {link.label}
+                  </Link>
+                </span>
+              ))}
+            .
+          </p>
           <div className="space-y-3">
             <h3 className="font-heading text-lg">Shops that sell these foods</h3>
             <p className="text-sm text-muted-foreground">The quiz is not a ranking of shops or of any particular bag.</p>

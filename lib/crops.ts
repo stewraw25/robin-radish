@@ -33,19 +33,25 @@ export const JOB_LABELS: Record<Job, string> = {
 };
 
 export const MONTHS = [
-  { value: 1, label: "January" },
-  { value: 2, label: "February" },
-  { value: 3, label: "March" },
-  { value: 4, label: "April" },
-  { value: 5, label: "May" },
-  { value: 6, label: "June" },
-  { value: 7, label: "July" },
-  { value: 8, label: "August" },
-  { value: 9, label: "September" },
-  { value: 10, label: "October" },
-  { value: 11, label: "November" },
-  { value: 12, label: "December" },
+  { value: 1, slug: "january", label: "January" },
+  { value: 2, slug: "february", label: "February" },
+  { value: 3, slug: "march", label: "March" },
+  { value: 4, slug: "april", label: "April" },
+  { value: 5, slug: "may", label: "May" },
+  { value: 6, slug: "june", label: "June" },
+  { value: 7, slug: "july", label: "July" },
+  { value: 8, slug: "august", label: "August" },
+  { value: 9, slug: "september", label: "September" },
+  { value: 10, slug: "october", label: "October" },
+  { value: 11, slug: "november", label: "November" },
+  { value: 12, slug: "december", label: "December" },
 ] as const;
+
+export type MonthSlug = (typeof MONTHS)[number]["slug"];
+
+/** South: southern England, the Midlands and much of Wales. North: northern England and Scotland. */
+export const REGION_NOTE =
+  "South means southern England, the Midlands and much of Wales. North means northern England and Scotland. Frost, soil and a cold spring move the dates. These are ranges, not a forecast for one garden.";
 
 const none: SeasonWindow = { south: [], north: [] };
 
@@ -415,4 +421,53 @@ export function jobsInMonth(crop: Crop, month: number, region: Region): Job[] {
 
 export function monthLabel(month: number): string {
   return MONTHS.find((item) => item.value === month)?.label ?? String(month);
+}
+
+export function monthSlug(month: number): string {
+  return MONTHS.find((item) => item.value === month)?.slug ?? String(month);
+}
+
+export function monthBySlug(slug: string) {
+  return MONTHS.find((item) => item.slug === slug);
+}
+
+export function getCrop(slug: string): Crop | undefined {
+  return crops.find((crop) => crop.slug === slug);
+}
+
+export function cropsInJob(month: number, region: Region, job: Job): Crop[] {
+  return crops.filter((crop) => jobsInMonth(crop, month, region).includes(job));
+}
+
+/** Months when a crop has any job, in either region. */
+export function activeMonths(crop: Crop): number[] {
+  const months = new Set<number>();
+  for (const window of [crop.sowIndoors, crop.sowOutdoors, crop.plant, crop.harvest]) {
+    for (const month of [...window.south, ...window.north]) months.add(month);
+  }
+  return [...months].sort((a, b) => a - b);
+}
+
+/** "March to May", including ranges that wrap the year, such as October to February. */
+export function formatMonthList(months: number[]): string {
+  if (months.length === 0) return "Not in this list";
+  const set = [...new Set(months)].sort((a, b) => a - b);
+  const groups: number[][] = [];
+  for (const month of set) {
+    const last = groups[groups.length - 1];
+    if (last && month === last[last.length - 1]! + 1) last.push(month);
+    else groups.push([month]);
+  }
+  if (groups.length > 1 && groups[0]![0] === 1 && groups[groups.length - 1]!.at(-1) === 12) {
+    const head = groups.shift()!;
+    const tail = groups.pop()!;
+    groups.unshift([...tail, ...head]);
+  }
+  return groups
+    .map((group) => {
+      const first = monthLabel(group[0]!);
+      const last = monthLabel(group[group.length - 1]!);
+      return group.length === 1 ? first : `${first} to ${last}`;
+    })
+    .join(", ");
 }

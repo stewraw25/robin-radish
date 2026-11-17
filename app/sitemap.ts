@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { birds } from "@/lib/birds";
+import { crops, MONTHS } from "@/lib/crops";
 import { getGuides } from "@/lib/guides";
 import { getSiteUrl } from "@/lib/site";
 import { getWeeks } from "@/lib/weeks";
@@ -8,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: "/this-week", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/what-to-sow", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/grow", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/birds", priority: 0.7, changeFrequency: "monthly" },
     { path: "/planner", priority: 0.8, changeFrequency: "monthly" },
     { path: "/quiz", priority: 0.8, changeFrequency: "monthly" },
     { path: "/guides", priority: 0.7, changeFrequency: "monthly" },
@@ -37,5 +42,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...weeks, ...guides];
+  const months: MetadataRoute.Sitemap = MONTHS.map((month) => ({
+    url: `${base}/what-to-sow/${month.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  const cropPages: MetadataRoute.Sitemap = crops.map((crop) => ({
+    url: `${base}/grow/${crop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  const birdPages: MetadataRoute.Sitemap = birds.map((bird) => ({
+    url: `${base}/birds/${bird.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...months, ...cropPages, ...birdPages, ...weeks, ...guides];
 }

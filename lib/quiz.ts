@@ -11,6 +11,30 @@ export type QuizAnswers = {
   squirrels: Squirrels | null;
 };
 
+export const BIRD_GROUP_LINKS: Record<BirdGroup, { href: string; label: string }[]> = {
+  robins: [
+    { href: "/birds/robin", label: "Robin" },
+    { href: "/birds/blackbird", label: "Blackbird" },
+  ],
+  tits: [
+    { href: "/birds/blue-tit", label: "Blue tit" },
+    { href: "/birds/great-tit", label: "Great tit" },
+    { href: "/birds/coal-tit", label: "Coal tit" },
+    { href: "/birds/long-tailed-tit", label: "Long-tailed tit" },
+  ],
+  finches: [
+    { href: "/birds/goldfinch", label: "Goldfinch" },
+    { href: "/birds/greenfinch", label: "Greenfinch" },
+    { href: "/birds/chaffinch", label: "Chaffinch" },
+  ],
+  sparrows: [
+    { href: "/birds/house-sparrow", label: "House sparrow" },
+    { href: "/birds/dunnock", label: "Dunnock" },
+  ],
+  starlings: [{ href: "/birds/starling", label: "Starling" }],
+  mix: [{ href: "/birds", label: "All garden birds" }],
+};
+
 export const BIRD_OPTIONS: { id: BirdGroup; label: string }[] = [
   { id: "robins", label: "Robins, blackbirds or other thrushes" },
   { id: "tits", label: "Tits, such as blue tits and great tits" },

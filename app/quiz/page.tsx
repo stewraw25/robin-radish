@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { BirdQuiz } from "@/components/bird-quiz";
 import { Breadcrumbs } from "@/components/breadcrumbs";
@@ -23,7 +24,11 @@ export default function QuizPage() {
         <p className="text-sm font-semibold text-robin">Garden birds</p>
         <h1 className="mt-2 font-heading text-4xl">Bird food quiz</h1>
         <p className="mt-3 text-lg text-muted-foreground">
-          Tell us which birds you see, what feeder you have, how many foods you want to keep, and whether squirrels take a share. You get a short list of foods with plain reasons. It is not a ranking.
+          Tell us which birds you see, what feeder you have, how many foods you want to keep, and whether squirrels take a share. You get a short list of foods with plain reasons. It is not a ranking. The species notes are on the{" "}
+          <Link href="/birds" className="underline decoration-soil/60 underline-offset-2">
+            garden birds
+          </Link>{" "}
+          pages.
         </p>
       </header>
       <div className="mb-6">

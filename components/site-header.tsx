@@ -4,14 +4,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { LogoLockup } from "@/components/logo-lockup";
 import { Button } from "@/components/ui/button";
-import { RadishMark, RobinMark } from "@/components/marks";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
   { href: "/this-week", label: "This week" },
-  { href: "/planner", label: "Sowing planner" },
-  { href: "/quiz", label: "Bird food quiz" },
+  { href: "/what-to-sow", label: "What to sow" },
+  { href: "/grow", label: "Crops" },
+  { href: "/birds", label: "Birds" },
+  { href: "/planner", label: "Planner" },
+  { href: "/quiz", label: "Quiz" },
   { href: "/guides", label: "Guides" },
 ];
 
@@ -41,21 +44,17 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 rounded-md text-foreground">
-          <span className="flex items-end">
-            <RobinMark className="h-9 w-11" />
-            <RadishMark className="-ml-1 h-9 w-7" />
-          </span>
-          <span className="font-heading text-lg leading-none sm:text-xl">Robin & Radish</span>
+        <Link href="/" className="rounded-md text-foreground">
+          <LogoLockup />
         </Link>
-        <nav aria-label="Main" className="hidden items-center gap-1 md:flex">
+        <nav aria-label="Main" className="hidden items-center gap-0.5 lg:flex">
           {LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               aria-current={active(pathname, link.href) ? "page" : undefined}
               className={cn(
-                "rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-foreground",
+                "rounded-md px-2 py-2 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-foreground",
                 active(pathname, link.href) && "bg-secondary text-foreground",
               )}
             >
@@ -67,7 +66,7 @@ export function SiteHeader() {
           type="button"
           variant="outline"
           size="icon"
-          className="size-11 md:hidden"
+          className="size-11 lg:hidden"
           aria-expanded={open}
           aria-controls="site-menu"
           onClick={() => setOpenPath(open ? null : pathname)}
@@ -76,7 +75,7 @@ export function SiteHeader() {
           <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
         </Button>
       </div>
-      <nav id="site-menu" aria-label="Mobile" className={open ? "border-t border-border md:hidden" : "hidden"} hidden={!open}>
+      <nav id="site-menu" aria-label="Mobile" className={open ? "border-t border-border lg:hidden" : "hidden"} hidden={!open}>
         <ul className="mx-auto flex w-full max-w-5xl flex-col px-4 py-2 sm:px-6">
           {LINKS.map((link) => (
             <li key={link.href}>
