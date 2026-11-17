@@ -15,6 +15,7 @@ export const BIRD_GROUP_LINKS: Record<BirdGroup, { href: string; label: string }
   robins: [
     { href: "/birds/robin", label: "Robin" },
     { href: "/birds/blackbird", label: "Blackbird" },
+    { href: "/birds/song-thrush", label: "Song thrush" },
   ],
   tits: [
     { href: "/birds/blue-tit", label: "Blue tit" },
@@ -26,6 +27,8 @@ export const BIRD_GROUP_LINKS: Record<BirdGroup, { href: string; label: string }
     { href: "/birds/goldfinch", label: "Goldfinch" },
     { href: "/birds/greenfinch", label: "Greenfinch" },
     { href: "/birds/chaffinch", label: "Chaffinch" },
+    { href: "/birds/bullfinch", label: "Bullfinch" },
+    { href: "/birds/siskin", label: "Siskin" },
   ],
   sparrows: [
     { href: "/birds/house-sparrow", label: "House sparrow" },

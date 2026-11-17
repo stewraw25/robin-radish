@@ -88,7 +88,7 @@ export default function SowingCalendarPage() {
         <figure className="overflow-hidden rounded-xl border border-border bg-card">
           <Image
             src="/sowing-calendar-2027-overview.png"
-            alt="Year at a glance for 32 crops, with whole-month bars for sowing, planting and harvest."
+            alt="Year at a glance, with whole-month bars for sowing, planting and harvest."
             width={1287}
             height={1820}
             unoptimized

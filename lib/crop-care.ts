@@ -324,6 +324,70 @@ const care: Record<string, CropCare> = {
       "A pot against a hot wall drying out in summer.",
     ],
   },
+  calabrese: {
+    position: "Sun, and soil that holds moisture. Firm ground, as for other brassicas.",
+    spacing: "About 45 cm between plants.",
+    care: "Sow under cover from late winter in the south, a little later in the north, or sow outdoors from April. Plant out once the plants are sturdy and the risk of a hard frost has passed. Water in dry spells as the head is forming, and cut the main head before the buds open. Side shoots often follow.",
+    problems: [
+      "Pigeons stripping the leaves. Net the row.",
+      "Cabbage white caterpillars. Check the undersides of the leaves.",
+      "The head opening and flowering in hot, dry weather.",
+      "Clubroot, which stays in the soil. Do not follow it with another brassica in the same patch.",
+    ],
+  },
+  "purple-sprouting-broccoli": {
+    position: "Sun, and firm soil that will not rock the tall plants in winter.",
+    spacing: "About 60 cm between plants. They are large by autumn.",
+    care: "Sow in late spring and plant out in early summer so the plants are well grown before winter. Stake them if the site is exposed. Leave them standing. The spears come the following spring. Pick often, before the flowers open.",
+    problems: [
+      "Pigeons, especially in winter when other greens are scarce.",
+      "Cabbage white caterpillars in summer.",
+      "A plant that falls over in a wet, windy winter because the soil was loose.",
+      "Clubroot. Treat it as a brassica when you rotate.",
+    ],
+  },
+  turnips: {
+    position: "Sun or light shade, in soil that does not dry out.",
+    spacing: "About 10 cm for small roots, a little wider if you are leaving them to size up. Rows about 25 cm apart.",
+    care: "Sow where they will grow. They transplant badly. Water in a dry spell. Pull early sowings while they are still small. Later sowings can stay in the ground.",
+    problems: [
+      "Flea beetle: small holes in the young leaves. A cover of fine mesh from sowing helps.",
+      "Woody, hot roots after a dry spell.",
+      "Clubroot, because a turnip is a brassica even though you eat the root.",
+    ],
+  },
+  swede: {
+    position: "An open spot, in soil that stays moist. They dislike fresh manure, which makes the roots fork.",
+    spacing: "About 20 cm between plants, in rows about 40 cm apart.",
+    care: "Sow in May or June where the crop will stand. Thin the seedlings rather than moving them. Water if the soil is drying out. Lift from autumn onwards, and leave the rest in the ground.",
+    problems: [
+      "Woody roots in a dry summer.",
+      "Forked roots where the soil was stony or recently manured.",
+      "Flea beetle on the seedlings.",
+      "Clubroot. Rotate them with the other brassicas.",
+    ],
+  },
+  rocket: {
+    position: "Sun in spring and autumn. A little shade in high summer stops it running to seed so quickly.",
+    spacing: "Sow thinly in a row, or scatter in a pot. You do not need a measured gap if you are cutting young leaves.",
+    care: "Sow a short row every few weeks. Water in hot weather. Cut leaves and leave the stump to regrow, or pull plants that have started to flower. A late sowing under cover carries on when the outdoor row has finished.",
+    problems: [
+      "Flea beetle peppering the leaves.",
+      "Bolting in heat and drought.",
+      "Slugs on young leaves in a damp spring.",
+    ],
+  },
+  chillies: {
+    position: "A bright windowsill to start, then a greenhouse, porch or a very sheltered sunny spot.",
+    spacing: "One plant to a pot of about 20 cm, or about 45 cm apart if they go in the ground.",
+    care: "Sow early under cover. They are slow. Pot on before the roots fill the first pot. Do not put them outside until the nights are warm, and harden them off first. Water steadily. A plant that dries out and then floods drops its flowers.",
+    problems: [
+      "A late sowing that flowers and never ripens.",
+      "Aphids on the soft tips.",
+      "Blossom end rot on the fruit after uneven watering.",
+      "Cold nights, which stop the fruit setting.",
+    ],
+  },
   thyme: {
     position: "Sun and drainage. A pot of gritty compost suits it.",
     spacing: "About 20 to 30 cm apart.",
@@ -349,11 +413,11 @@ export function getCropCare(slug: string): CropCare {
 const GROUPS: string[][] = [
   ["broad-beans", "peas", "french-beans", "runner-beans"],
   ["carrots", "beetroot", "parsnips", "radishes"],
-  ["lettuce", "spinach", "chard", "kale"],
-  ["kale", "summer-cabbage", "brussels-sprouts"],
+  ["lettuce", "spinach", "chard", "rocket", "kale"],
+  ["kale", "summer-cabbage", "brussels-sprouts", "calabrese", "purple-sprouting-broccoli", "turnips", "swede"],
   ["leeks", "onions", "onion-sets", "garlic", "spring-onions"],
   ["early-potatoes", "maincrop-potatoes"],
-  ["tomatoes", "courgettes", "cucumbers", "sweetcorn"],
+  ["tomatoes", "courgettes", "cucumbers", "sweetcorn", "chillies"],
   ["parsley", "coriander", "basil", "chives", "mint", "rosemary", "thyme"],
 ];
 
@@ -420,6 +484,8 @@ const CONTAINER_CROPS = new Set([
   "spring-onions",
   "chard",
   "spinach",
+  "rocket",
+  "chillies",
   "french-beans",
   "early-potatoes",
   "beetroot",
@@ -444,7 +510,16 @@ const SEED_CROPS = new Set([
 
 export function guidesForCrop(crop: Crop): string[] {
   const slugs: string[] = [];
-  if (crop.sowIndoors.south.length > 0 || crop.sowIndoors.north.length > 0) slugs.push("sowing-under-cover");
+  if (crop.sowIndoors.south.length > 0 || crop.sowIndoors.north.length > 0) {
+    slugs.push("sowing-under-cover");
+    slugs.push("hardening-off");
+  }
+  if (["carrots", "parsnips"].includes(crop.slug)) slugs.unshift("carrot-fly");
+  if (["tomatoes", "early-potatoes", "maincrop-potatoes"].includes(crop.slug)) slugs.unshift("blight-potatoes-tomatoes");
+  if (["lettuce", "rocket", "radishes", "spinach", "coriander", "spring-onions", "turnips", "calabrese"].includes(crop.slug)) {
+    slugs.unshift("successional-sowing");
+  }
+  if (["broad-beans", "chillies", "runner-beans", "french-beans"].includes(crop.slug)) slugs.unshift("aphids-without-sprays");
   if (CONTAINER_CROPS.has(crop.slug)) slugs.push("growing-in-containers");
   if (SEED_CROPS.has(crop.slug)) slugs.push("saving-seed");
   const winter = [crop.sowOutdoors, crop.plant, crop.harvest].some((window) =>
@@ -456,6 +531,9 @@ export function guidesForCrop(crop: Crop): string[] {
     slugs.unshift("slugs-without-pellets");
   }
   if (["kale", "leeks", "chard", "spinach", "lettuce"].includes(crop.slug)) slugs.unshift("hungry-gap");
+  if (["kale", "summer-cabbage", "brussels-sprouts", "calabrese", "purple-sprouting-broccoli"].includes(crop.slug)) {
+    slugs.unshift("netting-soft-fruit");
+  }
   if (crop.kind === "vegetable") slugs.push("no-dig-beds");
   slugs.push("starting-a-veg-patch");
   return [...new Set(slugs)].slice(0, 4);

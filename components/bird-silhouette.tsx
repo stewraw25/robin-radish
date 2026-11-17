@@ -177,6 +177,49 @@ function shape(slug: BirdSlug) {
           <polygon points="108,58 122,62 108,66" />
         </>
       );
+    case "song-thrush":
+      return (
+        <>
+          <polygon points="62,56 34,44 40,66 60,64" />
+          <ellipse cx="82" cy="58" rx="22" ry="16" />
+          <circle cx="102" cy="46" r="11" />
+          <polygon points="110,44 128,46 110,52" />
+          <rect x="74" y="72" width="3" height="14" rx="1" />
+          <rect x="90" y="72" width="3" height="14" rx="1" />
+        </>
+      );
+    case "nuthatch":
+      return (
+        <>
+          <rect x="18" y="8" width="14" height="84" rx="3" />
+          <polygon points="40,58 48,78 58,76 48,56" />
+          <ellipse cx="62" cy="48" rx="18" ry="12" />
+          <circle cx="80" cy="40" r="10" />
+          <polygon points="88,38 108,34 90,46" />
+        </>
+      );
+    case "bullfinch":
+      return (
+        <>
+          <polygon points="70,58 48,50 54,66" />
+          <ellipse cx="88" cy="60" rx="22" ry="16" />
+          <circle cx="108" cy="50" r="12" />
+          <polygon points="118,48 132,52 118,56" />
+          <rect x="80" y="74" width="3" height="12" rx="1" />
+          <rect x="96" y="74" width="3" height="12" rx="1" />
+        </>
+      );
+    case "siskin":
+      return (
+        <>
+          <polygon points="78,54 58,46 62,60 74,58" />
+          <ellipse cx="90" cy="58" rx="16" ry="11" />
+          <circle cx="104" cy="50" r="8" />
+          <polygon points="110,48 124,50 110,54" />
+          <rect x="84" y="68" width="2" height="10" rx="1" />
+          <rect x="96" y="68" width="2" height="10" rx="1" />
+        </>
+      );
     default: {
       const exhaustive: never = slug;
       return exhaustive;

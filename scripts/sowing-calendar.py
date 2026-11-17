@@ -32,11 +32,11 @@ MM = 72 / 25.4
 
 GROUPS = [
     ("Roots", ["carrots", "beetroot", "parsnips", "radishes", "early-potatoes", "maincrop-potatoes"]),
-    ("Brassicas", ["kale", "summer-cabbage", "brussels-sprouts"]),
+    ("Brassicas", ["kale", "summer-cabbage", "brussels-sprouts", "calabrese", "purple-sprouting-broccoli", "turnips", "swede"]),
     ("Legumes", ["broad-beans", "peas", "french-beans", "runner-beans"]),
-    ("Salads and leaves", ["lettuce", "spinach", "chard"]),
+    ("Salads and leaves", ["lettuce", "spinach", "chard", "rocket"]),
     ("Alliums", ["leeks", "onions", "onion-sets", "garlic", "spring-onions"]),
-    ("Fruiting", ["tomatoes", "courgettes", "cucumbers", "sweetcorn"]),
+    ("Fruiting", ["tomatoes", "courgettes", "cucumbers", "sweetcorn", "chillies"]),
     ("Herbs", ["parsley", "coriander", "basil", "chives", "mint", "rosemary", "thyme"]),
 ]
 JOBS = [
@@ -60,6 +60,12 @@ LATIN = {
     "kale": "Brassica oleracea",
     "summer-cabbage": "Brassica oleracea",
     "brussels-sprouts": "Brassica oleracea",
+    "calabrese": "Brassica oleracea",
+    "purple-sprouting-broccoli": "Brassica oleracea",
+    "turnips": "Brassica rapa",
+    "swede": "Brassica napus",
+    "rocket": "Eruca vesicaria",
+    "chillies": "Capsicum annuum",
     "leeks": "Allium porrum",
     "onions": "Allium cepa",
     "onion-sets": "Allium cepa",
@@ -84,10 +90,11 @@ ICON = {
     "carrots": "root", "parsnips": "root", "beetroot": "globe", "radishes": "globe",
     "early-potatoes": "tuber", "maincrop-potatoes": "tuber",
     "kale": "leaf", "summer-cabbage": "leaf", "brussels-sprouts": "leaf",
+    "calabrese": "leaf", "purple-sprouting-broccoli": "leaf", "turnips": "globe", "swede": "globe",
     "broad-beans": "pod", "peas": "pod", "french-beans": "pod", "runner-beans": "pod",
-    "lettuce": "head", "spinach": "leaf", "chard": "leaf",
+    "lettuce": "head", "spinach": "leaf", "chard": "leaf", "rocket": "leaf",
     "leeks": "leek", "onions": "bulb", "onion-sets": "bulb", "garlic": "bulb", "spring-onions": "leek",
-    "tomatoes": "fruit", "courgettes": "fruit", "cucumbers": "fruit", "sweetcorn": "cob",
+    "tomatoes": "fruit", "courgettes": "fruit", "cucumbers": "fruit", "sweetcorn": "cob", "chillies": "fruit",
     "parsley": "herb", "coriander": "herb", "basil": "herb", "chives": "herb", "mint": "herb", "rosemary": "herb", "thyme": "herb",
 }
 # England and Wales, GOV.UK list for 2027. Scotland's dates differ.
@@ -582,7 +589,7 @@ def draw_cover(c: canvas.Canvas, ox: float, oy: float, w: float, h: float) -> No
     c.drawString(ox + 14 * MM, oy + h - 39 * MM, "2027")
     c.setFillColor(SEPIA)
     c.setFont("Sans", 10)
-    text = "Twelve months for a home garden. Thirty-two crops, with the south and north ranges from this site. The plates are drawings made for the calendar. They are not photographs, and they are not a picture of one garden."
+    text = "Twelve months for a home garden. The crops on this site, with the south and north ranges from the same list. The plates are drawings made for the calendar. They are not photographs, and they are not a picture of one garden."
     y = oy + h - 48 * MM
     for line in wrap(text, "Sans", 10, w - 28 * MM):
         c.drawString(ox + 14 * MM, y, line)
@@ -744,7 +751,8 @@ def draw_overview(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, cr
     grid_left = left + label_w
     col_w = (right - grid_left) / 12
     group_h = 5.2 * MM
-    crop_h = (table_top - table_bottom - len(GROUPS) * group_h) / 32
+    crop_count = sum(1 for kind, _label, _crop in rows if kind == "crop")
+    crop_h = (table_top - table_bottom - len(GROUPS) * group_h) / crop_count
     yy = table_top
     c.setFillColor(SOIL)
     c.setFont("SansBold", 7)
@@ -761,7 +769,10 @@ def draw_overview(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, cr
             c.drawString(left + 3, yy + 3, label.upper())
             continue
         c.setFillColor(INK)
-        c.setFont("Sans", 7)
+        name_size = 7
+        while name_size > 5 and stringWidth(label, "Sans", name_size) > label_w - 6:
+            name_size -= 0.25
+        c.setFont("Sans", name_size)
         c.drawString(left + 2, yy + height * 0.32, label)
         lane = height / 4
         for index, (key, _name, _hex) in enumerate(JOBS):
@@ -821,7 +832,8 @@ def draw_wallchart(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, c
         for slug in slugs:
             rows.append(("crop", crops[slug], slug))
     group_h = 4.2 * MM
-    crop_h = (table_top - table_bottom - len(GROUPS) * group_h) / 32
+    crop_count = sum(1 for kind, _payload, _slug in rows if kind == "crop")
+    crop_h = (table_top - table_bottom - len(GROUPS) * group_h) / crop_count
     c.setFillColor(SOIL)
     c.setFont("SansBold", 7)
     for index, name in enumerate(["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]):
@@ -848,8 +860,12 @@ def draw_wallchart(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, c
         mark = min(crop_h * 0.55, 3.2 * MM)
         icon(c, ICON[slug], left, yy + (crop_h - mark) * 0.45, mark, GREEN)
         c.setFillColor(INK)
-        c.setFont("Sans", 7.5)
-        c.drawString(left + mark + 2, yy + crop_h * 0.32, crop["name"])
+        name = crop["name"]
+        name_size = 7.5
+        while name_size > 5 and stringWidth(name, "Sans", name_size) > label_w - mark - 6:
+            name_size -= 0.25
+        c.setFont("Sans", name_size)
+        c.drawString(left + mark + 2, yy + crop_h * 0.32, name)
         c.setStrokeColor(RULE)
         c.setLineWidth(0.25)
         for month_index in range(12):

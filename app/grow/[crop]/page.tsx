@@ -86,7 +86,11 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
           <Link href="/planner" className="font-medium underline decoration-soil/60 underline-offset-2">
             Open the sowing planner
           </Link>
-          <span className="text-muted-foreground"> and pick the month and the south or the north. The month pages below list the other crops in those same weeks.</span>
+          <span className="text-muted-foreground"> and pick the month and the south or the north. The same months are on the </span>
+          <Link href="/sowing-calendar-2027" className="font-medium underline decoration-soil/60 underline-offset-2">
+            2027 sowing calendar
+          </Link>
+          <span className="text-muted-foreground">. The month pages below list the other crops in those weeks.</span>
         </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{REGION_NOTE}</p>
         <div className="mt-4 overflow-x-auto rounded-xl border border-border">
@@ -186,6 +190,11 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
             <li>
               <Link href="/planner" className="underline decoration-soil/60 underline-offset-2">
                 Sowing planner
+              </Link>
+            </li>
+            <li>
+              <Link href="/sowing-calendar-2027" className="underline decoration-soil/60 underline-offset-2">
+                UK sowing calendar 2027
               </Link>
             </li>
           </ul>

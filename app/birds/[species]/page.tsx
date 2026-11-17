@@ -146,6 +146,18 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
         <Link href="/guides/nest-boxes" className="underline decoration-soil/60 underline-offset-2">
           Nest boxes
         </Link>
+        <span className="text-muted-foreground"> · </span>
+        <Link href="/sowing-calendar-2027" className="underline decoration-soil/60 underline-offset-2">
+          Sowing calendar
+        </Link>
+        {bird.slug === "bullfinch" ? (
+          <>
+            <span className="text-muted-foreground"> · </span>
+            <Link href="/guides/netting-soft-fruit" className="underline decoration-soil/60 underline-offset-2">
+              Netting fruit
+            </Link>
+          </>
+        ) : null}
         {bird.slug === "robin" ? (
           <>
             <span className="text-muted-foreground"> · </span>

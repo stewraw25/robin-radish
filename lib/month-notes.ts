@@ -16,7 +16,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "January is a harvesting and planning month in most UK gardens. The soil is cold, and often frozen or sodden, so outdoor sowing is not the job. Under cover, leeks and onions from seed can be started on a bright windowsill. Garlic can still be planted if the ground is workable. What you pick now was sown last year.",
     birds:
       "Days are short and insects are scarce. Robins and blackbirds take mealworms and windfall fruit from a tray or the ground. Blue tits and great tits use sunflower hearts and suet. Goldfinches take nyjer as well as hearts. Starlings clear suet quickly. Break ice on a shallow dish of water in the morning.",
-    birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "starling"],
+    birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "starling", "nuthatch", "siskin"],
     faqs: [
       {
         q: "Can I sow tomatoes in January?",
@@ -38,7 +38,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "February is still winter, with longer days. In the south, broad beans and peas can be started in pots under cover, and onion seed wants a bright windowsill. Outdoor sowing waits until the soil is workable. In the north, keep most of this under cover, or wait for March. Chit early potatoes somewhere light and frost-free.",
     birds:
       "Feeders are still busy. Coal tits snatch a seed and hide it. Long-tailed tits arrive as a party on the suet. Chaffinches work the ground underneath. Dunnocks shuffle there too. Wrens stay in the hedge and rarely use the feeder. This is a sound month to put nest boxes up, before most birds are choosing sites.",
-    birdSlugs: ["coal-tit", "long-tailed-tit", "chaffinch", "dunnock", "wren", "robin"],
+    birdSlugs: ["coal-tit", "long-tailed-tit", "chaffinch", "dunnock", "wren", "robin", "bullfinch"],
     faqs: [
       {
         q: "Can I sow carrots outdoors in February?",
@@ -60,7 +60,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "March is when a lot of UK sowing begins, especially in the south. Hardy vegetables can go outdoors if the soil has dried enough to rake. Tender crops such as tomatoes stay indoors. Frost is still ordinary, and more so in the north, so nothing soft is planted out. If the soil sticks to your boots, wait.",
     birds:
       "Tits, robins, blackbirds, house sparrows and dunnocks are still using food you put out, and they are also singing and looking at nest sites. Natural food is increasing. Keep portions small and fresh. A cold snap sends them back to the feeder in numbers.",
-    birdSlugs: ["robin", "great-tit", "blue-tit", "house-sparrow", "blackbird", "dunnock"],
+    birdSlugs: ["robin", "great-tit", "blue-tit", "house-sparrow", "blackbird", "dunnock", "song-thrush"],
     faqs: [
       {
         q: "Can tender vegetables be planted out in March?",
@@ -82,7 +82,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "April is a full sowing month. Hardy crops go outdoors in both halves of the country when the soil is fit. Tender plants are still raised under cover. A late frost is still normal, particularly in the north and on high ground. Early potatoes go in. Maincrop potatoes go in this month too.",
     birds:
       "Nesting is underway for some tits, robins and blackbirds, and others are still building. Wrens are singing from the hedge. Keep feeding if you want to, in small fresh amounts, and do not cut hedges. Mealworms are useful for robins and blackbirds. Water still matters.",
-    birdSlugs: ["robin", "blue-tit", "great-tit", "wren", "house-sparrow", "blackbird"],
+    birdSlugs: ["robin", "blue-tit", "great-tit", "wren", "house-sparrow", "blackbird", "song-thrush", "bullfinch"],
     faqs: [
       {
         q: "Can tomatoes go outside in April?",
@@ -148,7 +148,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "July is a harvesting month as well as a sowing month. Pick beans, courgettes, early potatoes and salads while they are tender. Sow short rows if you want roots and leaves into autumn. Water at the root in a dry spell. A plant that sets flowers and then dries out will drop them.",
     birds:
       "Goldfinches and greenfinches use seed heads and nyjer. House sparrows are still in noisy groups, often with young. Wood pigeons find brassicas and spilled seed. Blackbirds take fruit. Feeding is optional while insects and seeds are available. Water in a bird bath matters in a dry spell. Clean feeders more often in warm weather if you keep them up.",
-    birdSlugs: ["goldfinch", "greenfinch", "house-sparrow", "blackbird", "wood-pigeon", "robin"],
+    birdSlugs: ["goldfinch", "greenfinch", "house-sparrow", "blackbird", "wood-pigeon", "robin", "song-thrush"],
     faqs: [
       {
         q: "What is worth sowing in July for an autumn picking?",
@@ -170,7 +170,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "August is for picking, and for a few sowings that prefer cooling weather. Spinach and coriander sown now are less inclined to bolt than a sowing made in a June heatwave. Maincrop potatoes are lifted from this month onwards, on a dry day once the tops have died back. Keep watering tomatoes, beans and courgettes.",
     birds:
       "Goldfinches, greenfinches and chaffinches are on seed heads and on sunflower hearts. Blue tits return to feeders as the easy insects thin. Wood pigeons are still in the brassicas if the net has slipped. Blackbirds take berries and fallen fruit. Leave a few seed heads standing if you can spare them.",
-    birdSlugs: ["goldfinch", "greenfinch", "chaffinch", "blue-tit", "wood-pigeon", "blackbird"],
+    birdSlugs: ["goldfinch", "greenfinch", "chaffinch", "blue-tit", "wood-pigeon", "blackbird", "bullfinch"],
     faqs: [
       {
         q: "What can still be sown in August?",
@@ -214,7 +214,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "October is garlic month, in the north and the south, as long as the soil is workable. In the south, broad beans, hardy peas and overwintering onion sets can go in too. Lift maincrop potatoes if they are still in the ground. Parsnips can stay put. Mark rows of roots before the tops disappear.",
     birds:
       "Long-tailed tits return to suet in small flocks. Coal tits cache seed. Goldfinches use nyjer. Starlings take suet. Robins and blackbirds take mealworms and apples. Winter thrushes may start to appear on fruit. Do not put out salted or cooked food.",
-    birdSlugs: ["robin", "blackbird", "long-tailed-tit", "coal-tit", "goldfinch", "starling"],
+    birdSlugs: ["robin", "blackbird", "long-tailed-tit", "coal-tit", "goldfinch", "starling", "siskin", "nuthatch"],
     faqs: [
       {
         q: "What is planted in October?",
@@ -258,7 +258,7 @@ export const monthNotes: Record<number, MonthNote> = {
       "December is the quietest sowing month. Garlic is the planting if you missed autumn and the soil is not frozen. There is nothing useful to sow outdoors in this list. Harvest leeks, parsnips, sprouts and kale as you need them, and check stored potatoes and onions for rot. Leave the digging if the ground is wet. A windowsill pot of pea shoots is a kitchen job, not a garden row.",
     birds:
       "Short days. Blue tits, coal tits and great spotted woodpeckers use suet and sunflower hearts. Starlings finish suet quickly. Chaffinches feed on the ground. Robins and blackbirds need a tray, mealworms and fruit, and water that is not a block of ice. Fill feeders in the morning so food is there for the long night.",
-    birdSlugs: ["robin", "blackbird", "blue-tit", "coal-tit", "starling", "great-spotted-woodpecker"],
+    birdSlugs: ["robin", "blackbird", "blue-tit", "coal-tit", "starling", "great-spotted-woodpecker", "nuthatch", "siskin"],
     faqs: [
       {
         q: "Is there anything to sow outdoors in December?",

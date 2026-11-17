@@ -14,6 +14,10 @@ export const birdSlugs = [
   "dunnock",
   "wood-pigeon",
   "great-spotted-woodpecker",
+  "song-thrush",
+  "nuthatch",
+  "bullfinch",
+  "siskin",
 ] as const;
 
 export type BirdSlug = (typeof birdSlugs)[number];
@@ -359,6 +363,94 @@ export const birds: Bird[] = [
       {
         q: "Will a woodpecker use a nest box?",
         a: "Not the boxes sold for tits. They dig their own hole in wood. Leaving a standing dead trunk, where it cannot fall on anything, is the practical help.",
+      },
+    ],
+  },
+  {
+    slug: "song-thrush",
+    name: "Song thrush",
+    summary: "A spotted thrush, smaller than a blackbird, that hunts on the lawn and smashes snail shells.",
+    recognise:
+      "Warm brown above, and a cream breast densely marked with arrow-shaped spots. It stands more upright than a blackbird and is smaller. The song is loud and repeats short phrases. A mistle thrush is larger, greyer, and has rounder spots. Young blackbirds are mottled, but they have a dark bill and a less neatly spotted breast.",
+    food: "Worms, insects and snails from the lawn and the beds. They also take fallen fruit and berries. On a table or the ground they will take mealworms and soft fruit. They are not seed-feeder birds, and a tube of sunflower will not bring them in. A song thrush using a stone as an anvil, with broken snail shells around it, is feeding, not vandalising the path.",
+    nesting:
+      "A cup nest in a hedge, shrub or climber, lined with a smooth mud cup. They often raise more than one brood. Leave dense cover, and do not tidy the ivy off a wall in the nesting season. A standard hole-fronted nest box is not what they use.",
+    feeder: true,
+    related: ["blackbird", "robin", "dunnock"],
+    faqs: [
+      {
+        q: "What should I feed a song thrush?",
+        a: "Live or dried mealworms, and soft fruit such as apple, on the ground or a low table. They hunt snails and worms themselves if the lawn is not treated and the soil is not paved over. Seed mixes are for the finches and tits, not for thrushes.",
+      },
+      {
+        q: "Something is smashing snail shells on the path. What is it?",
+        a: "A song thrush. It carries snails to a favourite stone and breaks the shell. Broken shells in one spot are the sign. It is useful in a garden, and it is not a reason to put down slug pellets.",
+      },
+    ],
+  },
+  {
+    slug: "nuthatch",
+    name: "Nuthatch",
+    summary: "A blue-grey bird with a black eye-stripe that runs head-first down a tree trunk.",
+    recognise:
+      "Blue-grey above, warm buff underneath, with a black stripe through the eye and a stout pointed bill. It is about sparrow-sized, with a very short tail. It climbs up and down trunks. No other common garden bird walks down a tree head first. The call is a loud, ringing “twit”.",
+    food: "Insects from bark, and in gardens sunflower hearts and peanuts in a mesh feeder. They wedge nuts in bark and hammer them. A suet cake on a trunk suits them. They are assertive and will chase tits off a feeder for a minute. In warm weather, do not put out suet that is soft.",
+    nesting:
+      "A hole in a tree. They plaster mud around the entrance until it fits them, which keeps larger birds out. They do not use an open-fronted box. A hole-fronted box is sometimes taken if the hole is the right size, and they may mud it. Leaving old trees with holes is the more reliable help.",
+    feeder: true,
+    related: ["great-tit", "great-spotted-woodpecker", "blue-tit"],
+    faqs: [
+      {
+        q: "What should I feed a nuthatch?",
+        a: "Sunflower hearts, and peanuts in a mesh feeder they can cling to. They also take suet when it is firm. They do not need a ground tray. A feeder hung where they can fly straight to a nearby trunk is the usual setup.",
+      },
+      {
+        q: "Will a nuthatch use a nest box?",
+        a: "Sometimes, if it is a hole-fronted box and the bird can plaster the hole with mud. A tree with a natural hole is what they look for first. Do not widen the hole for them.",
+      },
+    ],
+  },
+  {
+    slug: "bullfinch",
+    name: "Bullfinch",
+    summary: "A plump finch with a black cap and a short, heavy bill. The male has a rose-pink breast.",
+    recognise:
+      "Both sexes have a black cap, black wings with a pale bar, a white rump and a short thick bill. The male’s breast is pink. The female is grey-brown underneath. They are quiet for finches, with a soft piping call, and they often stay in a pair. A chaffinch has a longer bill and no black cap.",
+    food: "Buds, seeds and fruit stones. In gardens they take sunflower hearts. They are not nyjer specialists in the way a goldfinch or a siskin is. In spring they eat flower buds on fruit trees. That is normal feeding, not a reason to trap them. Netting a small tree is the practical answer if you need the fruit. Peg the net so birds cannot get under it, and check it.",
+    nesting:
+      "A twig cup in a dense hedge or thick shrub. They like cover more than an open lawn. A hole-fronted nest box is not their nest. Keep a thick hedge, and do not cut it in the nesting season.",
+    feeder: true,
+    related: ["chaffinch", "goldfinch", "greenfinch"],
+    faqs: [
+      {
+        q: "What should I feed a bullfinch?",
+        a: "Sunflower hearts on a feeder or a tray. They also take seed from the ground under the feeder. Nyjer is optional. They will still come for the buds on a fruit tree in spring whether or not you feed them.",
+      },
+      {
+        q: "Bullfinches are eating the buds on my fruit tree. What helps?",
+        a: "Net the tree while the buds are swelling, and take the net off once the fruit has set if you can, so it is not there for the whole summer. Check the net for trapped birds. Do not use a loose net that sags onto the branches.",
+      },
+    ],
+  },
+  {
+    slug: "siskin",
+    name: "Siskin",
+    summary: "A small, streaky yellow-green finch that hangs on nyjer and alder cones, often in winter.",
+    recognise:
+      "Smaller than a greenfinch, with a fine pointed bill and a forked tail. The male has a black crown and a yellow-green body with dark streaks. The female is greyer and more streaked, with less black on the head. They often arrive in a small flock and feed upside down. A greenfinch is bulkier and has a heavier bill.",
+    food: "Seeds, especially from alder and birch, and in gardens nyjer and sunflower hearts. A nyjer feeder is the usual way people see them. They also take the finer seed that goldfinches spill. They are often winter visitors to a garden and may be absent in summer. Do not assume an empty feeder in July means the food is wrong.",
+    nesting:
+      "High in a conifer, not in a garden nest box. Most gardens will not host a nest. Feeding them in winter does not mean they should be nesting in the hedge. Leave the nest boxes for the tits and sparrows.",
+    feeder: true,
+    related: ["goldfinch", "greenfinch", "chaffinch"],
+    faqs: [
+      {
+        q: "What should I feed a siskin?",
+        a: "Nyjer in a fine-mesh feeder, or sunflower hearts. They are small and they cling. A feeder with perches that only fit a larger bird will not suit them as well. Keep the feeder clean. Finches share diseases when the ports are clogged.",
+      },
+      {
+        q: "Siskins came all winter and then vanished. Did I do something wrong?",
+        a: "Often, no. Many gardens only see them from autumn to spring, when they move looking for seed. They may be feeding on alder and birch instead. Keep the nyjer fresh and dry. Damp nyjer goes stale and they ignore it.",
       },
     ],
   },
