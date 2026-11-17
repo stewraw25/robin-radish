@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!note) return {};
   return pageMeta({
     title: `What to sow in ${month.label}`,
-    description: `What to sow, plant and harvest in a UK garden in ${month.label}, with a north and south split. ${note.hook}`,
+    description: `What to sow, plant and harvest in ${month.label} in the UK. North and south ranges. ${note.hook}`,
     path: `/what-to-sow/${month.slug}`,
     type: "article",
   });

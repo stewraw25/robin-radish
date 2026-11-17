@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Starter guides",
-  description: "UK guides on sowing, beds, herbs, slugs, compost, the hungry gap, and feeding garden birds.",
+  description: "UK guides on sowing, hardening off, blight, slugs, compost, and feeding garden birds.",
   path: "/guides",
 });
 

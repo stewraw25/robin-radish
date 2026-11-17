@@ -68,7 +68,11 @@ export default function HomePage() {
             <Link href="/start-here" className="font-medium underline decoration-soil/60 underline-offset-2">
               Start here
             </Link>
-            <span className="text-muted-foreground"> if you want the short path through the planner, the quiz and the first guides.</span>
+            <span className="text-muted-foreground"> if you want the short path through the planner, the quiz and the first guides. The </span>
+            <Link href="/sowing-calendar-2027" className="font-medium underline decoration-soil/60 underline-offset-2">
+              2027 sowing calendar
+            </Link>
+            <span className="text-muted-foreground"> is the same months, laid out to print.</span>
           </p>
         </div>
         <div className="flex flex-wrap items-end justify-center gap-2 rounded-3xl border border-border bg-card px-4 py-6 sm:px-6 sm:py-8" aria-hidden="true">

@@ -42,8 +42,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { crop: slug } = await params;
   const crop = getCrop(slug);
   if (!crop) return {};
+  const question = cropSearchTitle(crop);
+  const shorter = `Sow ${crop.name.toLowerCase()} in the UK`;
+  const title = `${question} | Robin & Radish`.length <= 60 ? question : shorter;
   return pageMeta({
-    title: cropSearchTitle(crop),
+    title,
     description: `When to sow, plant and harvest ${crop.name.toLowerCase()} in the UK, plus spacing, position and common problems. General guidance for home gardens.`,
     path: `/grow/${crop.slug}`,
     type: "article",

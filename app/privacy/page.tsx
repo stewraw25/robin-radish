@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         </p>
         <h2 className="pt-2 font-heading text-2xl">What this site stores</h2>
         <p>
-          There is no account, no newsletter and no analytics script in this version. The sowing planner and the bird food quiz run in your browser. Your answers are not sent to a server.
+          There is no account, no newsletter and no analytics script in this version. The sowing planner and the bird food quiz run in your browser. Your answers are not sent to a server. The email box on the sowing calendar page is a placeholder. It is switched off, and it does not store or send an address.
         </p>
         <p>
           The host may keep ordinary server logs, such as the address of a page request. That is the host&apos;s processing, not a mailing list.

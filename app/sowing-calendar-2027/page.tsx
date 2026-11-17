@@ -43,11 +43,25 @@ export default function SowingCalendarPage() {
       <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
         Jobs are written for the whole month. The list does not pin a sowing to one day, or to early, mid or late. The plates are drawings made for this calendar. They are not photographs.
       </p>
+      <p className="mt-4 text-sm leading-relaxed">
+        <Link href="/what-to-sow" className="underline decoration-soil/60 underline-offset-2">
+          What to sow by month
+        </Link>
+        <span className="text-muted-foreground">, </span>
+        <Link href="/guides/hardening-off" className="underline decoration-soil/60 underline-offset-2">
+          hardening off
+        </Link>
+        <span className="text-muted-foreground"> and </span>
+        <Link href="/guides/successional-sowing" className="underline decoration-soil/60 underline-offset-2">
+          sowing little and often
+        </Link>
+        <span className="text-muted-foreground"> use the same months.</span>
+      </p>
       <div className="mt-8 space-y-8">
         <figure className="overflow-hidden rounded-xl border border-border bg-card">
           <Image
             src="/sowing-calendar-2027-cover.png"
-            alt="Cover of the Robin and Radish UK sowing calendar for 2027, with a tomato and robin plate."
+            alt="Cover of the Robin and Radish UK sowing calendar for 2027, with a radish and robin plate."
             width={1287}
             height={1820}
             unoptimized
@@ -117,6 +131,42 @@ export default function SowingCalendarPage() {
             The poster marks early, mid and late only as a ruler. Each pill still fills the whole month.
           </figcaption>
         </figure>
+      </section>
+      <section className="mt-10 rounded-xl border border-border bg-card p-5" aria-labelledby="calendar-signup-heading">
+        <h2 id="calendar-signup-heading" className="font-heading text-2xl">
+          Email sign-up coming soon
+        </h2>
+        <p id="calendar-signup-note" className="mt-3 leading-relaxed text-muted-foreground">
+          Coming soon. This box is a placeholder. It is switched off, so it does not collect an address and it sends nothing. There is no mailing list on this site yet. The note on{" "}
+          <Link href="/privacy" className="underline decoration-soil/60 underline-offset-2">
+            privacy
+          </Link>{" "}
+          says the same.
+        </p>
+        <fieldset disabled className="mt-4 min-w-0 border-0 p-0">
+          <legend className="sr-only">Email sign-up, coming soon and switched off</legend>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
+            <div className="grid min-w-0 flex-1 gap-1.5">
+              <label htmlFor="calendar-signup-email" className="text-sm font-medium text-foreground">
+                Email address
+              </label>
+              <input
+                id="calendar-signup-email"
+                type="email"
+                inputMode="email"
+                autoComplete="off"
+                aria-describedby="calendar-signup-note"
+                className="h-11 w-full rounded-lg border border-border bg-muted px-3 text-base text-foreground"
+              />
+            </div>
+            <button
+              type="button"
+              className="h-11 shrink-0 rounded-lg border border-border bg-muted px-4 text-base font-medium text-foreground"
+            >
+              Sign up coming soon
+            </button>
+          </div>
+        </fieldset>
       </section>
     </article>
   );
