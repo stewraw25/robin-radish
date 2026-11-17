@@ -74,6 +74,19 @@ export default function SowingCalendarPage() {
         </figure>
         <figure className="overflow-hidden rounded-xl border border-border bg-card">
           <Image
+            src="/sowing-calendar-2027-winter.png"
+            alt="January 2027 page, with a leek and robin plate above the date grid. New Year's Day is marked."
+            width={1287}
+            height={1820}
+            unoptimized
+            className="h-auto w-full"
+          />
+          <figcaption className="px-4 py-3 text-sm text-muted-foreground">
+            January, a winter month. The same sheet size as the rest of the year.
+          </figcaption>
+        </figure>
+        <figure className="overflow-hidden rounded-xl border border-border bg-card">
+          <Image
             src="/sowing-calendar-2027-overview.png"
             alt="Year at a glance for 32 crops, with whole-month bars for sowing, planting and harvest."
             width={1287}

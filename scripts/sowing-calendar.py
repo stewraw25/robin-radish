@@ -21,6 +21,8 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.colors import CMYKColor
 from reportlab.pdfbase.pdfmetrics import stringWidth
 
+from engravings import draw_plate
+
 ROOT = Path(__file__).resolve().parents[1]
 FONT_DIR = Path(__file__).resolve().parent / "fonts"
 PUBLIC = ROOT / "public"
@@ -195,6 +197,8 @@ def register_fonts() -> None:
     pdfmetrics.registerFont(TTFont("Sans", str(FONT_DIR / "source-sans-400.ttf")))
     pdfmetrics.registerFont(TTFont("SansBold", str(FONT_DIR / "source-sans-600.ttf")))
     pdfmetrics.registerFont(TTFont("Display", str(FONT_DIR / "fraunces-600.ttf")))
+    pdfmetrics.registerFont(TTFont("Roman", str(FONT_DIR / "cormorant-regular.ttf")))
+    pdfmetrics.registerFont(TTFont("Italic", str(FONT_DIR / "cormorant-italic.ttf")))
 
 
 def wrap(text: str, font: str, size: float, width: float) -> list[str]:
@@ -585,13 +589,13 @@ def draw_cover(c: canvas.Canvas, ox: float, oy: float, w: float, h: float) -> No
         y -= 13
     plate_top = y - 4 * MM
     plate_bottom = oy + 16 * MM
-    plate(c, ox + 6 * MM, plate_bottom, w - 12 * MM, plate_top - plate_bottom, 6, "Plate    Tomato and robin")
+    draw_plate(c, ox + 6 * MM, plate_bottom, w - 12 * MM, plate_top - plate_bottom, 0)
     footer(c, ox + 14 * MM, oy + 4 * MM, w - 28 * MM)
 
 
 def draw_month(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, month: int, crops: dict) -> None:
     top_h = h * 0.46
-    plate(c, ox, oy + h - top_h, w, top_h, month, f"Plate {month}    {MONTHS[month - 1]}")
+    draw_plate(c, ox, oy + h - top_h, w, top_h, month)
     c.setStrokeColor(SEPIA)
     c.setLineWidth(0.7)
     c.circle(ox + w / 2 - 20 * MM, oy + h - 5.5 * MM, 1.8 * MM, fill=0, stroke=1)
@@ -629,29 +633,37 @@ def draw_month(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, month
     grid_bottom = oy + 18 * MM
     weeks = calendar.Calendar(firstweekday=0).monthdayscalendar(2027, month)
     col_w = (grid_right - left) / 7
-    c.setFont("SansBold", 8)
     c.setFillColor(SOIL)
+    c.setFont("Italic", 8)
     for index, name in enumerate(["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]):
         c.drawString(left + index * col_w + 3, head_y, name)
-    row_h = (head_y - 11 - grid_bottom) / max(5, len(weeks))
+    row_count = max(5, len(weeks))
+    row_h = (head_y - 10 - grid_bottom) / row_count
+    grid_top = head_y - 6
+    c.setStrokeColor(SEPIA)
+    c.setLineWidth(0.3)
+    for row in range(row_count + 1):
+        line_y = grid_top - row * row_h
+        c.line(left, line_y, grid_right, line_y)
+    for col in range(8):
+        c.line(left + col * col_w, grid_top - row_count * row_h, left + col * col_w, grid_top)
     for row, week in enumerate(weeks):
-        cell_y = head_y - 12 - (row + 1) * row_h
+        cell_top = grid_top - row * row_h
+        cell_bottom = cell_top - row_h
         for col, day in enumerate(week):
             if not day:
                 continue
             holiday = HOLIDAYS.get(date(2027, month, day))
             cell_x = left + col * col_w
-            c.setStrokeColor(RULE)
-            c.setFillColor(WASH if holiday else CREAM)
-            c.rect(cell_x + 1, cell_y + 1, col_w - 2, row_h - 2, fill=1, stroke=1)
             c.setFillColor(RADISH if holiday else INK)
-            c.setFont("SansBold", 9)
-            c.drawString(cell_x + 4, cell_y + row_h - 12, str(day))
+            c.setFont("Roman", 9)
+            c.drawString(cell_x + 3.5, cell_top - 11, str(day))
             if holiday:
-                c.setFont("Sans", 6)
-                holiday_y = cell_y + 4
-                for line in wrap(holiday, "Sans", 6, col_w - 8)[:2]:
-                    c.drawString(cell_x + 4, holiday_y, line)
+                c.setFillColor(RADISH)
+                c.setFont("Italic", 6)
+                holiday_y = cell_bottom + 4
+                for line in wrap(holiday, "Italic", 6, col_w - 6)[:2]:
+                    c.drawString(cell_x + 3.5, holiday_y, line)
                     holiday_y += 7
 
     note_x = grid_right + 4 * MM
@@ -968,6 +980,7 @@ def main() -> None:
 
     write_png(print_pdf, ARTIFACTS / "robin-radish-sowing-calendar-2027-cover.png", 0, 110)
     write_png(print_pdf, ARTIFACTS / "robin-radish-sowing-calendar-2027-spread.png", 3, 110)
+    write_png(print_pdf, ARTIFACTS / "robin-radish-sowing-calendar-2027-winter.png", 1, 110)
     write_png(print_pdf, ARTIFACTS / "robin-radish-sowing-calendar-2027-overview.png", 13, 110)
     write_png(chart_print, ARTIFACTS / "robin-radish-sowing-timeline-2027-a3.png", 0, 100)
     write_png(chart_screen, ARTIFACTS / "robin-radish-sowing-timeline-2027-a4.png", 0, 140)
@@ -976,6 +989,7 @@ def main() -> None:
     for name in (
         "sowing-calendar-2027-cover.png",
         "sowing-calendar-2027-spread.png",
+        "sowing-calendar-2027-winter.png",
         "sowing-calendar-2027-overview.png",
     ):
         src = ARTIFACTS / f"robin-radish-{name}"
