@@ -32,7 +32,11 @@ export default function SowingCalendarPage() {
           <Link href="/planner" className="underline decoration-soil/60 underline-offset-2">
             sowing planner
           </Link>
-          . South is southern England, the Midlands and much of Wales. North is northern England and Scotland, where that list differs. Bank holidays on the sheet are England and Wales.
+          . South is southern England, the Midlands and much of Wales. North is northern England and Scotland, where that list differs. Bank holidays on the sheet are England and Wales. In Ireland, read{" "}
+          <Link href="/ie/sowing" className="underline decoration-soil/60 underline-offset-2">
+            sowing times in Ireland
+          </Link>{" "}
+          before treating these months as local.
         </p>
       </header>
       <p className="mt-6">

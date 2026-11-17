@@ -23,12 +23,14 @@ export function articleJsonLd({
   path,
   datePublished,
   dateModified,
+  inLanguage = "en-GB",
 }: {
   title: string;
   description: string;
   path: string;
   datePublished: string;
   dateModified?: string;
+  inLanguage?: "en-GB" | "en-IE";
 }) {
   const site = getSiteUrl();
   return {
@@ -38,7 +40,7 @@ export function articleJsonLd({
     description,
     datePublished,
     dateModified: dateModified || datePublished,
-    inLanguage: "en-GB",
+    inLanguage,
     author: {
       "@type": "Organization",
       name: SITE_NAME,

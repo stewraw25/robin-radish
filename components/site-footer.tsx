@@ -11,6 +11,7 @@ const columns = [
       { href: "/what-to-sow", label: "What to sow by month" },
       { href: "/grow", label: "Vegetables and herbs" },
       { href: "/planner", label: "Sowing planner" },
+      { href: "/ie", label: "Gardening in Ireland" },
     ],
   },
   {

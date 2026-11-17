@@ -74,6 +74,15 @@ export default function HomePage() {
             </Link>
             <span className="text-muted-foreground"> is the same months, laid out to print.</span>
           </p>
+          <aside className="mt-6 max-w-xl rounded-xl border border-border bg-card px-4 py-3 text-sm">
+            <p className="font-medium text-foreground">Gardening outside the UK?</p>
+            <p className="mt-1 leading-relaxed text-muted-foreground">
+              <Link href="/ie" className="font-medium text-foreground underline decoration-soil/60 underline-offset-2">
+                Ireland
+              </Link>{" "}
+              is the first note: how the UK south and north ranges read from there. More countries are coming.
+            </p>
+          </aside>
         </div>
         <div className="flex flex-wrap items-end justify-center gap-2 rounded-3xl border border-border bg-card px-4 py-6 sm:px-6 sm:py-8" aria-hidden="true">
           <TrayMark className="h-16 w-20 sm:h-24 sm:w-28" />

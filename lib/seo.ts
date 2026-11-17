@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteLanguages, isIrelandPath } from "@/lib/hreflang";
 import { absoluteUrl, getSiteUrl, SITE_NAME } from "@/lib/site";
 
 type PageMetaInput = {
@@ -49,10 +50,7 @@ export function pageMeta({
     description: visibleDescription,
     alternates: {
       canonical: url,
-      languages: {
-        "en-GB": url,
-        "x-default": url,
-      },
+      languages: absoluteLanguages(path),
     },
     openGraph: {
       title: visibleTitle,
@@ -60,7 +58,7 @@ export function pageMeta({
       url,
       siteName: SITE_NAME,
       type,
-      locale: "en_GB",
+      locale: isIrelandPath(path) ? "en_IE" : "en_GB",
       images: [{ url: image, width: 1200, height: 630, alt: visibleTitle }],
     },
     twitter: {

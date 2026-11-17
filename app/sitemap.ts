@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { birds } from "@/lib/birds";
 import { crops, MONTHS } from "@/lib/crops";
 import { getGuides } from "@/lib/guides";
+import { absoluteLanguages } from "@/lib/hreflang";
 import { absoluteUrl } from "@/lib/site";
 import { getWeeks } from "@/lib/weeks";
 
@@ -23,44 +24,52 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/disclosure", priority: 0.3, changeFrequency: "yearly" },
     { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
     { path: "/contact", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/ie", priority: 0.6, changeFrequency: "monthly" },
+    { path: "/ie/sowing", priority: 0.7, changeFrequency: "monthly" },
   ] as const;
 
   const staticPages: MetadataRoute.Sitemap = pages.map(({ path, priority, changeFrequency }) => ({
     url: absoluteUrl(path || "/"),
     changeFrequency,
     priority,
+    alternates: { languages: absoluteLanguages(path || "/") },
   }));
 
   const weeks: MetadataRoute.Sitemap = getWeeks().map((week) => ({
     url: absoluteUrl(`/this-week/${week.weekOf}`),
     lastModified: week.weekOf,
-    changeFrequency: "weekly",
+    changeFrequency: "weekly" as const,
     priority: 0.6,
+    alternates: { languages: absoluteLanguages(`/this-week/${week.weekOf}`) },
   }));
 
   const guides: MetadataRoute.Sitemap = getGuides().map((guide) => ({
     url: absoluteUrl(`/guides/${guide.slug}`),
     lastModified: guide.date,
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.7,
+    alternates: { languages: absoluteLanguages(`/guides/${guide.slug}`) },
   }));
 
   const months: MetadataRoute.Sitemap = MONTHS.map((month) => ({
     url: absoluteUrl(`/what-to-sow/${month.slug}`),
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.7,
+    alternates: { languages: absoluteLanguages(`/what-to-sow/${month.slug}`) },
   }));
 
   const cropPages: MetadataRoute.Sitemap = crops.map((crop) => ({
     url: absoluteUrl(`/grow/${crop.slug}`),
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.6,
+    alternates: { languages: absoluteLanguages(`/grow/${crop.slug}`) },
   }));
 
   const birdPages: MetadataRoute.Sitemap = birds.map((bird) => ({
     url: absoluteUrl(`/birds/${bird.slug}`),
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.6,
+    alternates: { languages: absoluteLanguages(`/birds/${bird.slug}`) },
   }));
 
   return [...staticPages, ...months, ...cropPages, ...birdPages, ...weeks, ...guides];
