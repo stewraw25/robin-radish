@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import { notFound } from "next/navigation";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
@@ -31,7 +30,6 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 }
 
 export default async function WeekPage({ params }: { params: Promise<Params> }) {
-  await connection();
   const { week: weekOf } = await params;
   const week = getWeek(weekOf);
   if (!week) notFound();

@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           There is no account, no newsletter and no analytics script in this version. The sowing planner and the bird food quiz run in your browser. Your answers are not sent to a server.
         </p>
         <p>
-          If the site is hosted on Vercel, the host may keep ordinary server logs, such as the address of a page request. That is the host&apos;s processing, not a mailing list.
+          The host may keep ordinary server logs, such as the address of a page request. That is the host&apos;s processing, not a mailing list.
         </p>
         <h2 className="pt-2 font-heading text-2xl">Shop links</h2>
         <p>
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
               The contact address is <a className="underline underline-offset-2" href={`mailto:${email}`}>{email}</a>. A message you send there is read so it can be answered. It is not added to a marketing list.
             </>
           ) : (
-            "A contact email has not been published yet. Until one is added, this site has no inbox of its own."
+            "Contact email coming soon."
           )}
         </p>
         <p>No postal address is published on this site.</p>

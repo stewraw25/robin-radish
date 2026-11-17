@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
-import { getSiteUrl } from "@/lib/site";
+import { BASE_PATH, getSiteUrl } from "@/lib/site";
+
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: "/brand",
+      allow: `${BASE_PATH}/`,
+      disallow: `${BASE_PATH}/brand`,
     },
     sitemap: `${getSiteUrl()}/sitemap.xml`,
   };

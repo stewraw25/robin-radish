@@ -2,7 +2,7 @@
 
 A UK garden guide in one site: grow food at home, and feed the birds. The first version has a weekly jobs note, a sowing planner, a bird food quiz, and a handful of starter guides.
 
-It is a static-friendly Next.js app (App Router, TypeScript) meant to be deployed on Vercel. Content lives in files. There is no database and no account system.
+It is a static Next.js export (App Router, TypeScript) for GitHub Pages. Content lives in files. There is no database and no account system.
 
 ## Run it locally
 
@@ -11,9 +11,9 @@ npm install
 npm run dev
 ```
 
-The dev server uses port **43123**: [http://localhost:43123](http://localhost:43123).
+The dev server uses port **43123**: [http://127.0.0.1:43123/robin-radish/](http://127.0.0.1:43123/robin-radish/).
 
-Copy `.env.example` to `.env.local` if you want to set the site URL, a contact email, or affiliate IDs. The site runs without them. Shop links then go straight to the retailer, and the contact page says the inbox is not set yet.
+Copy `.env.example` to `.env.local` if you want to set the site URL, a contact email, or affiliate IDs. The site runs without them. Shop links then go straight to the retailer, and the contact page says the email is coming soon.
 
 ```bash
 npm run lint
@@ -80,29 +80,33 @@ One Awin publisher ID covers Thompson & Morgan, Crocus and CJ Wildlife. You appl
 
 Placeholders in `.env.example` (`YOUR_AWIN_PUBLISHER_ID`, `YOUR_WEBGAINS_CAMPAIGN_ID`) are not written into links. Until you replace them, links go to the shop itself and are still marked `rel="sponsored nofollow noopener"`.
 
-Set the variables in `.env.local` for local builds, and in the Vercel project for production. **Redeploy after changing them.** They are read when the site builds.
+Set the variables in `.env.local` for a local build. **They are read when the site builds.** Leave them blank until you have real IDs. The GitHub Pages workflow does not set them, so the live shop links stay direct links to the shops.
 
 Optional per-shop Awin overrides, if you ever use more than one publisher account: `AWIN_PUBLISHER_ID_THOMPSON_MORGAN`, `AWIN_PUBLISHER_ID_CROCUS`, `AWIN_PUBLISHER_ID_CJ_WILDLIFE`.
 
 ## Site URL and contact email
 
-`SITE_URL` is the canonical host, with no trailing slash. The default is `https://robinandradish.co.uk`. Set it in Vercel before you point a domain at the project. This repository does not register a domain or change DNS.
+`SITE_URL` is the canonical site, with no trailing slash. The default, and the live site, is `https://stewraw25.github.io/robin-radish`. This project does not register a domain or change DNS.
 
 `CONTACT_EMAIL` is the address on the contact and privacy pages. Leave it empty until you have an inbox you will actually read. There is no guessed address.
 
-## Deploy to Vercel
+## Deploy
 
-1. Push this project to a Git host Vercel can see.
-2. Import it as a Next.js project. The framework preset is enough. Install is `npm install`. Build is `npm run build`.
-3. Add environment variables: `SITE_URL`, and, when you have them, `CONTACT_EMAIL`, `AWIN_PUBLISHER_ID`, `WEBGAINS_CAMPAIGN_ID`.
-4. Deploy.
-5. When you attach a domain, set `SITE_URL` to that `https://` host and redeploy so canonicals, the sitemap and Open Graph URLs match.
+The site is a static export (`output: 'export'`) for GitHub Pages at `/robin-radish`.
 
-Adding a weekly JSON file is a normal commit. Vercel rebuilds from that push.
+```bash
+npm run build
+```
+
+That writes `out/`. A push to `main` on GitHub runs `.github/workflows/pages.yml`, which builds with `SITE_URL=https://stewraw25.github.io/robin-radish` and deploys the `out` folder. Do not add a CNAME.
+
+Locally the dev server is [http://127.0.0.1:43123/robin-radish/](http://127.0.0.1:43123/robin-radish/).
+
+Adding a weekly JSON file is a normal commit. The current week is chosen when the site builds.
 
 ## What you still need to supply
 
 - An Awin publisher ID, and approval on the Thompson & Morgan, Crocus and CJ Wildlife programmes.
 - A Webgains campaign ID for Haith's, after you confirm the programme is open.
 - A contact email, if you want the contact page to receive mail.
-- The production domain, if it will not be `https://robinandradish.co.uk`. Set `SITE_URL` to match.
+- Nothing else for the free GitHub Pages address. Do not buy a domain.

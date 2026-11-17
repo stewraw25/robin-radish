@@ -10,6 +10,7 @@ import {
   jobsInMonth,
   MONTHS,
   monthLabel,
+  monthSlug,
   type Job,
   type Region,
 } from "@/lib/crops";
@@ -113,6 +114,12 @@ export function SowingPlanner({ initialMonth }: { initialMonth: number }) {
           )}
         </section>
       ))}
+      <p className="text-sm">
+        <Link href={`/what-to-sow/${monthSlug(month)}`} className="font-medium underline decoration-soil/60 underline-offset-2">
+          Read the {monthLabel(month)} sowing page
+        </Link>
+        <span className="text-muted-foreground">, including garden birds and common questions.</span>
+      </p>
     </form>
   );
 }

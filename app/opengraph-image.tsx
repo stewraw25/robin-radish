@@ -1,5 +1,6 @@
 import { shareContentType, shareImage, shareSize } from "@/lib/share-image";
 
+export const dynamic = "force-static";
 export const alt = "Robin & Radish: grow food and feed garden birds in the UK";
 export const size = shareSize;
 export const contentType = shareContentType;

@@ -15,7 +15,7 @@
  * because a tracking URL with a fake ID would send people to a broken address.
  * Until an ID is set, the link goes straight to the shop and is still marked sponsored.
  *
- * Set these in .env.local and in the Vercel project, then redeploy:
+ * Set these in .env.local, then rebuild. The GitHub Pages workflow leaves them unset:
  * - AWIN_PUBLISHER_ID=YOUR_AWIN_PUBLISHER_ID
  * - WEBGAINS_CAMPAIGN_ID=YOUR_WEBGAINS_CAMPAIGN_ID
  *

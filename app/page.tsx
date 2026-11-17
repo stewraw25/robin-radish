@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { connection } from "next/server";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { BirdSilhouette } from "@/components/bird-silhouette";
 import { JsonLd } from "@/components/json-ld";
@@ -40,8 +39,7 @@ const homeFaqs = [
   },
 ];
 
-export default async function HomePage() {
-  await connection();
+export default function HomePage() {
   const week = pickCurrentWeek(getWeeks());
   const guides = getGuides();
   const monthNumber = Number(londonToday().slice(5, 7));

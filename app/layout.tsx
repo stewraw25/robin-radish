@@ -3,7 +3,7 @@ import { Fraunces, Source_Sans_3 } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
 import { SiteChrome } from "@/components/site-chrome";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/schema";
-import { getSiteUrl, SITE_NAME } from "@/lib/site";
+import { getMetadataBase, getSiteUrl, SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -21,7 +21,7 @@ const fraunces = Fraunces({
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: getMetadataBase(),
   title: {
     default: "Robin & Radish | Grow food and feed garden birds",
     template: "%s | Robin & Radish",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { absoluteUrl, SITE_NAME } from "@/lib/site";
+import { absoluteUrl, getSiteUrl, SITE_NAME } from "@/lib/site";
 
 type PageMetaInput = {
   title: string;
@@ -31,6 +31,7 @@ export function pageMeta({
 }: PageMetaInput): Metadata {
   const url = absoluteUrl(path);
   const visibleTitle = absoluteTitle ? title : fitTitle(title);
+  const image = `${getSiteUrl()}/opengraph-image`;
 
   return {
     title: absoluteTitle ? { absolute: visibleTitle } : visibleTitle,
@@ -49,13 +50,13 @@ export function pageMeta({
       siteName: SITE_NAME,
       type,
       locale: "en_GB",
-      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: visibleTitle }],
+      images: [{ url: image, width: 1200, height: 630, alt: visibleTitle }],
     },
     twitter: {
       card: "summary_large_image",
       title: visibleTitle,
       description,
-      images: ["/opengraph-image"],
+      images: [image],
     },
   };
 }

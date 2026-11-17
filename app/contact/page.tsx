@@ -24,9 +24,7 @@ export default function ContactPage() {
             . There is no contact form on this site.
           </p>
         ) : (
-          <p>
-            A contact email has not been published yet. Until one is added, this page cannot take messages.
-          </p>
+          <p>Contact email coming soon.</p>
         )}
         <p>Robin & Radish is a garden guide. It is not a shop, and it does not take orders.</p>
       </div>

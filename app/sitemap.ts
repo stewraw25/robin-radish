@@ -2,11 +2,12 @@ import type { MetadataRoute } from "next";
 import { birds } from "@/lib/birds";
 import { crops, MONTHS } from "@/lib/crops";
 import { getGuides } from "@/lib/guides";
-import { getSiteUrl } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
 import { getWeeks } from "@/lib/weeks";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = getSiteUrl();
   const pages = [
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: "/this-week", priority: 0.9, changeFrequency: "weekly" },
@@ -23,39 +24,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ] as const;
 
   const staticPages: MetadataRoute.Sitemap = pages.map(({ path, priority, changeFrequency }) => ({
-    url: `${base}${path}`,
+    url: absoluteUrl(path || "/"),
     changeFrequency,
     priority,
   }));
 
   const weeks: MetadataRoute.Sitemap = getWeeks().map((week) => ({
-    url: `${base}/this-week/${week.weekOf}`,
+    url: absoluteUrl(`/this-week/${week.weekOf}`),
     lastModified: week.weekOf,
     changeFrequency: "weekly",
     priority: 0.6,
   }));
 
   const guides: MetadataRoute.Sitemap = getGuides().map((guide) => ({
-    url: `${base}/guides/${guide.slug}`,
+    url: absoluteUrl(`/guides/${guide.slug}`),
     lastModified: guide.date,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
 
   const months: MetadataRoute.Sitemap = MONTHS.map((month) => ({
-    url: `${base}/what-to-sow/${month.slug}`,
+    url: absoluteUrl(`/what-to-sow/${month.slug}`),
     changeFrequency: "monthly",
     priority: 0.7,
   }));
 
   const cropPages: MetadataRoute.Sitemap = crops.map((crop) => ({
-    url: `${base}/grow/${crop.slug}`,
+    url: absoluteUrl(`/grow/${crop.slug}`),
     changeFrequency: "monthly",
     priority: 0.6,
   }));
 
   const birdPages: MetadataRoute.Sitemap = birds.map((bird) => ({
-    url: `${base}/birds/${bird.slug}`,
+    url: absoluteUrl(`/birds/${bird.slug}`),
     changeFrequency: "monthly",
     priority: 0.6,
   }));

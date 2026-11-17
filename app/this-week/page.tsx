@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { connection } from "next/server";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ShopList } from "@/components/shop-list";
@@ -14,8 +13,7 @@ export const metadata = pageMeta({
   path: "/this-week",
 });
 
-export default async function ThisWeekPage() {
-  await connection();
+export default function ThisWeekPage() {
   const weeks = getWeeks();
   const current = pickCurrentWeek(weeks);
 

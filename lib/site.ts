@@ -3,7 +3,9 @@
  * Set SITE_URL in the environment. The default is the intended production host.
  * Do not use VERCEL_URL: preview hostnames change on every deployment.
  */
-export const DEFAULT_SITE_URL = "https://robinandradish.co.uk";
+/** GitHub Pages project site. No custom domain. */
+export const BASE_PATH = "/robin-radish";
+export const DEFAULT_SITE_URL = "https://stewraw25.github.io/robin-radish";
 
 export const SITE_NAME = "Robin & Radish";
 
@@ -20,8 +22,16 @@ export function getSiteUrl(): string {
 
 export function absoluteUrl(path: string): string {
   const site = getSiteUrl();
-  if (path === "/" || path === "") return site;
-  return `${site}${path.startsWith("/") ? path : `/${path}`}`;
+  if (path === "/" || path === "") return `${site}/`;
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  if (/\.[a-z0-9]+$/i.test(normalized)) return `${site}${normalized}`;
+  return `${site}${normalized.endsWith("/") ? normalized : `${normalized}/`}`;
+}
+
+/** Origin only, so Next can prefix basePath onto relative metadata URLs. */
+export function getMetadataBase(): URL {
+  const url = new URL(getSiteUrl());
+  return new URL(`${url.protocol}//${url.host}`);
 }
 
 /**
