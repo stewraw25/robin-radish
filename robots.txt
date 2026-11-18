@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /robin-radish/
+Disallow: /robin-radish/brand
+
+Sitemap: https://stewraw25.github.io/robin-radish/sitemap.xml
