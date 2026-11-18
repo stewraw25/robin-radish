@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteLanguages, isIrelandPath } from "@/lib/hreflang";
-import { absoluteUrl, getSiteUrl, SITE_NAME } from "@/lib/site";
+import { absolutePublicUrl, absoluteUrl, SITE_NAME } from "@/lib/site";
 
 type PageMetaInput = {
   title: string;
@@ -43,7 +43,7 @@ export function pageMeta({
   const url = absoluteUrl(path);
   const visibleTitle = absoluteTitle ? title : fitTitle(title);
   const visibleDescription = fitDescription(description);
-  const image = `${getSiteUrl()}/opengraph-image`;
+  const image = absolutePublicUrl("opengraph-image");
 
   return {
     title: absoluteTitle ? { absolute: visibleTitle } : visibleTitle,

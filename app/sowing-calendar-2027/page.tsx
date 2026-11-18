@@ -1,17 +1,41 @@
+import { statSync } from "node:fs";
+import path from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { buttonVariants } from "@/components/ui/button";
-import { BASE_PATH } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { publicAsset } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
-const download = `${BASE_PATH}/sowing-calendar-2027-sample.pdf`;
+const downloads = [
+  {
+    file: "robin-radish-sowing-calendar-2027-A3.pdf",
+    title: "Full A3 calendar",
+    detail: "14 pages",
+  },
+  {
+    file: "robin-radish-plotting-chart-2027-A3.pdf",
+    title: "A3 plotting wallchart",
+    detail: "1 page",
+  },
+  {
+    file: "robin-radish-sowing-calendar-2027-march-A4-sample.pdf",
+    title: "A4 March sample",
+    detail: "1 page",
+  },
+] as const;
+
+/** Decimal megabytes of a file in public/, read at build time. */
+function fileSize(file: string): string {
+  const bytes = statSync(path.join(process.cwd(), "public", file)).size;
+  return `${(bytes / 1_000_000).toFixed(1)} MB`;
+}
 
 export const metadata = pageMeta({
   title: "UK sowing calendar 2027",
   description:
-    "Free A4 sample of the 2027 wall calendar: March, with England and Wales bank holidays. Crop months match the sowing planner.",
+    "Free A3 sowing calendar (14 pages), A3 plotting chart and A4 March sample for 2027. Crop months match the planner.",
   path: "/sowing-calendar-2027",
 });
 
@@ -25,10 +49,10 @@ export default function SowingCalendarPage() {
         ]}
       />
       <header>
-        <p className="text-sm font-semibold text-robin">Free download</p>
+        <p className="text-sm font-semibold text-robin">Free downloads</p>
         <h1 className="mt-2 font-heading text-4xl sm:text-5xl">UK sowing calendar 2027</h1>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          A month to a sheet: a plate drawing on the top half, and the 2027 dates underneath. The free file is March, for a home printer. Crop months are the same list as the{" "}
+          Three free PDFs. The full calendar is A3 and 14 pages. The plotting wallchart is one A3 sheet. March is also an A4 page for a home printer. Crop months are the same list as the{" "}
           <Link href="/planner" className="underline decoration-soil/60 underline-offset-2">
             sowing planner
           </Link>
@@ -39,11 +63,27 @@ export default function SowingCalendarPage() {
           before treating these months as local.
         </p>
       </header>
-      <p className="mt-6">
-        <a href={download} className={cn(buttonVariants({ size: "lg" }), "h-11 px-5 text-base")} download>
-          Download free A4 sample
-        </a>
-      </p>
+      <ul className="mt-6 grid gap-3">
+        {downloads.map((item) => {
+          const size = fileSize(item.file);
+          return (
+            <li key={item.file}>
+              <a
+                href={publicAsset(item.file)}
+                className={cn(buttonVariants({ size: "lg", variant: "outline" }), "h-auto min-h-11 w-full justify-start px-5 py-3 text-left text-base whitespace-normal")}
+                download
+              >
+                <span>
+                  {item.title}
+                  <span className="mt-0.5 block text-sm font-normal text-muted-foreground">
+                    {item.detail}. Free. {size}.
+                  </span>
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
       <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
         Jobs are written for the whole month. The list does not pin a sowing to one day, or to early, mid or late. The plates are drawings made for this calendar. They are not photographs.
       </p>
@@ -64,75 +104,49 @@ export default function SowingCalendarPage() {
       <div className="mt-8 space-y-8">
         <figure className="overflow-hidden rounded-xl border border-border bg-card">
           <Image
-            src="/sowing-calendar-2027-cover.png"
+            src={publicAsset("calendar/cover.webp")}
             alt="Cover of the Robin and Radish UK sowing calendar for 2027, with a radish and robin plate."
-            width={1287}
-            height={1820}
+            width={1131}
+            height={1600}
             unoptimized
             className="h-auto w-full"
           />
-          <figcaption className="px-4 py-3 text-sm text-muted-foreground">Cover.</figcaption>
+          <figcaption className="px-4 py-3 text-sm text-muted-foreground">Cover of the full A3 calendar.</figcaption>
         </figure>
         <figure className="overflow-hidden rounded-xl border border-border bg-card">
           <Image
-            src="/sowing-calendar-2027-spread.png"
-            alt="March 2027 page, with a carrot and robin plate above a Monday-start calendar. Good Friday and Easter Monday are marked."
-            width={1287}
-            height={1820}
+            src={publicAsset("calendar/march.webp")}
+            alt="March 2027 page, with a carrot and robin plate above the date grid."
+            width={1131}
+            height={1600}
             unoptimized
             className="h-auto w-full"
           />
           <figcaption className="px-4 py-3 text-sm text-muted-foreground">
-            March, the free sample. Open a crop from{" "}
+            March, also the free A4 sample. Open a crop from{" "}
             <Link href="/grow" className="underline decoration-soil/60 underline-offset-2">
               the crop list
             </Link>{" "}
             for spacing and problems.
           </figcaption>
         </figure>
-        <figure className="overflow-hidden rounded-xl border border-border bg-card">
-          <Image
-            src="/sowing-calendar-2027-winter.png"
-            alt="January 2027 page, with a leek and robin plate above the date grid. New Year's Day is marked."
-            width={1287}
-            height={1820}
-            unoptimized
-            className="h-auto w-full"
-          />
-          <figcaption className="px-4 py-3 text-sm text-muted-foreground">
-            January, a winter month. The same sheet size as the rest of the year.
-          </figcaption>
-        </figure>
-        <figure className="overflow-hidden rounded-xl border border-border bg-card">
-          <Image
-            src="/sowing-calendar-2027-overview.png"
-            alt="Year at a glance, with whole-month bars for sowing, planting and harvest."
-            width={1287}
-            height={1820}
-            unoptimized
-            className="h-auto w-full"
-          />
-          <figcaption className="px-4 py-3 text-sm text-muted-foreground">
-            Year at a glance. A bar fills the month. It is not split into thirds.
-          </figcaption>
-        </figure>
       </div>
       <section className="mt-10 rounded-xl border border-border bg-secondary/60 p-5">
-        <h2 className="font-heading text-2xl">Glossy A3 poster coming soon</h2>
+        <h2 className="font-heading text-2xl">Glossy printed A3 poster coming soon</h2>
         <p className="mt-3 leading-relaxed text-muted-foreground">
-          A larger timeline poster is in preparation. There is no price and nothing to buy here. The March PDF above is the free download.
+          A glossy printed poster of the plotting chart is in preparation. There is no price and nothing to buy. The PDF of the chart is one of the free downloads above.
         </p>
         <figure className="mt-5 overflow-hidden rounded-lg border border-border bg-card">
           <Image
-            src="/sowing-calendar-2027-timeline.png"
-            alt="Timeline poster preview: crop rows across the twelve months, with separate colours for sowing under cover, sowing outside, planting and harvest."
-            width={1638}
-            height={1158}
+            src={publicAsset("calendar/plotting-chart.webp")}
+            alt="2027 sowing plotting chart. Filled bars are the south list. An outline is a month on the north list only."
+            width={1600}
+            height={1131}
             unoptimized
             className="h-auto w-full"
           />
           <figcaption className="px-4 py-3 text-sm text-muted-foreground">
-            The poster marks early, mid and late only as a ruler. Each pill still fills the whole month.
+            Each bar fills the whole month. It is not split into thirds.
           </figcaption>
         </figure>
       </section>

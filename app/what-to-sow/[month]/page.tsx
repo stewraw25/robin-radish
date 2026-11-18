@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BirdSilhouette } from "@/components/bird-silhouette";
@@ -20,7 +21,7 @@ import {
 import { monthNotes } from "@/lib/month-notes";
 import { articleJsonLd } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo";
-import { EVERGREEN_DATE } from "@/lib/site";
+import { EVERGREEN_DATE, publicAsset } from "@/lib/site";
 
 const JOBS: Job[] = ["sow-indoors", "sow-outdoors", "plant", "harvest"];
 
@@ -76,6 +77,24 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
         <h1 className="mt-2 font-heading text-4xl sm:text-5xl">What to sow in {month.label}</h1>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{note.intro}</p>
       </header>
+
+      <figure className="mt-6 max-w-3xl overflow-hidden rounded-xl border border-border bg-card">
+        <Image
+          src={publicAsset(`plates/${month.slug}.webp`)}
+          alt={`Drawing for ${month.label} from the 2027 sowing calendar. It is a plate, not a photograph.`}
+          width={1152}
+          height={864}
+          unoptimized
+          className="h-auto w-full"
+        />
+        <figcaption className="px-4 py-3 text-sm text-muted-foreground">
+          Plate from the{" "}
+          <Link href="/sowing-calendar-2027" className="underline decoration-soil/60 underline-offset-2">
+            2027 sowing calendar
+          </Link>
+          . A drawing, not a photograph.
+        </figcaption>
+      </figure>
 
       <p className="mt-6 max-w-3xl rounded-xl border border-border bg-card px-4 py-3 text-sm leading-relaxed">{REGION_NOTE}</p>
       <p className="mt-4 max-w-3xl text-sm text-muted-foreground">

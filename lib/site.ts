@@ -35,6 +35,25 @@ export function getMetadataBase(): URL {
 }
 
 /**
+ * Site path for a file in `public/`. Next does not add basePath to a raw
+ * `src` or `href`, so every public image, PDF and similar URL goes through here.
+ */
+export function publicAsset(file: string): string {
+  const name = file.replace(/^\/+/, "");
+  if (name.startsWith(`${BASE_PATH.replace(/^\//, "")}/`)) return `/${name}`;
+  return `${BASE_PATH}/${name}`;
+}
+
+/**
+ * Absolute URL for a public file or a generated image route such as opengraph-image.
+ * `getSiteUrl()` already includes the project path, so this does not add it again.
+ */
+export function absolutePublicUrl(file: string): string {
+  const name = file.replace(/^\/+/, "");
+  return `${getSiteUrl()}/${name}`;
+}
+
+/**
  * Contact address. Empty until the owner sets CONTACT_EMAIL.
  * There is no guessed inbox.
  */
