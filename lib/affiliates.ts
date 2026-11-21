@@ -255,6 +255,32 @@ export function amazonTrackingConfigured(): boolean {
 
 type CropSearchInput = { slug: string; name: string };
 
+/**
+ * Natural singular or seed-form labels, used where `${crop.name} seeds`
+ * would read awkwardly (for example "Carrots seeds" or "Tomatoes seeds").
+ */
+const CROP_SEED_NAMES: Record<string, string> = {
+  peas: "Pea seeds",
+  "french-beans": "French bean seeds",
+  "runner-beans": "Runner bean seeds",
+  carrots: "Carrot seeds",
+  parsnips: "Parsnip seeds",
+  radishes: "Radish seeds",
+  turnips: "Turnip seeds",
+  "brussels-sprouts": "Brussels sprout seeds",
+  leeks: "Leek seeds",
+  tomatoes: "Tomato seeds",
+  courgettes: "Courgette seeds",
+  cucumbers: "Cucumber seeds",
+  chillies: "Chilli seeds",
+  "spring-onions": "Spring onion seeds",
+};
+
+function cropSeedSearch(crop: CropSearchInput): AmazonSearch {
+  const label = CROP_SEED_NAMES[crop.slug] ?? `${crop.name} seeds`;
+  return { id: crop.slug, label, query: label.toLowerCase() };
+}
+
 /** Planting material for a crop page. Still a search, not a named product. */
 export function amazonSearchesForCrop(crop: CropSearchInput): AmazonSearch[] {
   if (crop.slug === "early-potatoes" || crop.slug === "maincrop-potatoes") {
@@ -267,7 +293,7 @@ export function amazonSearchesForCrop(crop: CropSearchInput): AmazonSearch[] {
   if (["mint", "rosemary", "thyme", "chives"].includes(crop.slug)) {
     return [{ id: crop.slug, label: `${crop.name} plants`, query: `${crop.name.toLowerCase()} plants` }];
   }
-  return [{ id: crop.slug, label: `${crop.name} seeds`, query: `${crop.name.toLowerCase()} seeds` }];
+  return [cropSeedSearch(crop)];
 }
 
 /** Foods and kit named in a bird page's feeding note. */
