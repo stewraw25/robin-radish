@@ -1,7 +1,7 @@
 /**
  * Shop links for Robin & Radish.
  *
- * Amazon Associates uses the UK tag stewraw25-21, already used on Sleep Better Hub.
+ * Amazon Associates uses the UK tag robinradish-21 on this site.
  * Thompson & Morgan, Crocus and CJ Wildlife run on Awin.
  * One Awin publisher ID covers those three programmes.
  * Haith's has used Webgains. Confirm the programme is open before you rely on it.
@@ -19,7 +19,7 @@
  * Set these in .env.local, then rebuild. The GitHub Pages workflow leaves them unset:
  * - AWIN_PUBLISHER_ID=YOUR_AWIN_PUBLISHER_ID
  * - WEBGAINS_CAMPAIGN_ID=YOUR_WEBGAINS_CAMPAIGN_ID
- * - NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=stewraw25-21
+ * - NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=robinradish-21
  *
  * Optional per-shop Awin overrides, if you ever use more than one publisher account:
  * - AWIN_PUBLISHER_ID_THOMPSON_MORGAN
@@ -174,8 +174,8 @@ export function trackingConfigured(merchant: Merchant): boolean {
 }
 
 
-/** UK Associates tag already used on Sleep Better Hub. Do not invent a second tag. */
-export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || "stewraw25-21";
+/** UK Associates tracking ID for Robin & Radish. Override with NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG if needed. */
+export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || "robinradish-21";
 
 export const AMAZON_DOMAIN = "www.amazon.co.uk";
 
