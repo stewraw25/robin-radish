@@ -2,4 +2,19 @@ User-Agent: *
 Allow: /
 Disallow: /brand
 
+User-Agent: Bingbot
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: GPTBot
+User-Agent: PerplexityBot
+User-Agent: Perplexity-User
+User-Agent: Google-Extended
+User-Agent: ClaudeBot
+User-Agent: Claude-SearchBot
+User-Agent: Applebot-Extended
+User-Agent: DuckAssistBot
+User-Agent: CCBot
+Allow: /
+Disallow: /brand
+
 Sitemap: https://robinandradish.co.uk/sitemap.xml
