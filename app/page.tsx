@@ -3,6 +3,7 @@ import { AffiliateNotice } from "@/components/affiliate-notice";
 import { BirdSilhouette } from "@/components/bird-silhouette";
 import { JsonLd } from "@/components/json-ld";
 import { FeederMark, RadishMark, RobinMark, TrayMark } from "@/components/marks";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
 import { WeekPanel } from "@/components/week-panel";
 import { buttonVariants } from "@/components/ui/button";
@@ -221,6 +222,7 @@ export default function HomePage() {
           Seed, plants and bird food, when you need to buy them. These are the shops this site links to. They are not a ranking.
         </p>
         <AffiliateNotice />
+        <AmazonSearchList ids={["vegetable-seeds", "sunflower-hearts", "hanging-feeder"]} />
         <ShopList />
       </section>
 

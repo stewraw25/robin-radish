@@ -71,10 +71,13 @@ Edit nothing in the pages. IDs live in the environment, and the shop list lives 
 
 | Shop | Network | What you set |
 | --- | --- | --- |
+| Amazon.co.uk | Amazon Associates (tag `robinradish-21`) | `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG` (defaults to that tag) |
 | Thompson & Morgan | Awin (merchant `2283`) | `AWIN_PUBLISHER_ID` |
 | Crocus | Awin (merchant `7833`) | the same Awin publisher ID |
 | CJ Wildlife (birdfood.co.uk) | Awin (merchant `111572`) | the same Awin publisher ID |
 | Haith's | Webgains (programme `2088`) | `WEBGAINS_CAMPAIGN_ID` |
+
+Amazon search links use the UK Associates tracking ID `robinradish-21`, on the same account as Sleep Better Hub. The site builds those links even when no environment file is set. `robinandradish.co.uk` and `robinandradish.com` need to stay on the website list in Associates Central.
 
 One Awin publisher ID covers Thompson & Morgan, Crocus and CJ Wildlife. You apply to each programme from your Awin account. Haith's is separate, on Webgains. Confirm that programme is open before you rely on it. If a merchant has moved network, change the ID in `lib/affiliates.ts`.
 
@@ -106,7 +109,7 @@ Adding a weekly JSON file is a normal commit. The current week is chosen when th
 
 ## What you still need to supply
 
+- Add `robinandradish.co.uk` and `robinandradish.com` to the Amazon Associates website list. Optionally create a separate tracking ID for Robin & Radish.
 - An Awin publisher ID, and approval on the Thompson & Morgan, Crocus and CJ Wildlife programmes.
 - A Webgains campaign ID for Haith's, after you confirm the programme is open.
 - A contact email, if you want the contact page to receive mail.
-- Nothing else for the free GitHub Pages address. Do not buy a domain.

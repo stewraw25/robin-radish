@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
 import { WeekPanel } from "@/components/week-panel";
 import { formatLongDate, weekRangeLabel } from "@/lib/dates";
@@ -53,6 +54,7 @@ export default function ThisWeekPage() {
         <section className="space-y-4">
           <h2 className="font-heading text-2xl">If you need to buy seed or food</h2>
           <AffiliateNotice />
+          <AmazonSearchList ids={["vegetable-seeds", "sunflower-hearts"]} />
           <ShopList />
           {current ? (
             <p className="text-sm text-muted-foreground">Week starting {formatLongDate(current.weekOf)}.</p>

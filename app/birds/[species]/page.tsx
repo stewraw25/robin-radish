@@ -6,7 +6,9 @@ import { BirdSilhouette } from "@/components/bird-silhouette";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
+import { amazonSearchesForFoodText } from "@/lib/affiliates";
 import { birds, getBird, relatedBirds } from "@/lib/birds";
 import { monthLabel, monthSlug } from "@/lib/crops";
 import { monthsFeaturingBird } from "@/lib/month-notes";
@@ -103,7 +105,8 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
           <div className="mt-3">
             <AffiliateNotice />
           </div>
-          <div className="mt-4">
+          <div className="mt-4 space-y-4">
+            <AmazonSearchList items={amazonSearchesForFoodText(bird.food)} />
             <ShopList ids={["haiths", "cj-wildlife"]} />
           </div>
         </section>
