@@ -39,6 +39,10 @@ export default function WhatToSowIndex() {
           Open the sowing planner
         </Link>
         <span className="text-muted-foreground"> · </span>
+        <Link href="/sowing-calendar-2027" className="font-medium underline decoration-soil/60 underline-offset-2">
+          2027 sowing calendar
+        </Link>
+        <span className="text-muted-foreground"> · </span>
         <Link href="/grow" className="font-medium underline decoration-soil/60 underline-offset-2">
           Browse crops
         </Link>

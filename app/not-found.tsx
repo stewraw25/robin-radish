@@ -4,11 +4,14 @@ import { buttonVariants } from "@/components/ui/button";
 import { pageMeta } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
-export const metadata: Metadata = pageMeta({
-  title: "Page not found",
-  description: "That address is not a guide, a week, a crop, or a bird on Robin & Radish.",
-  path: "/404",
-});
+export const metadata: Metadata = {
+  ...pageMeta({
+    title: "Page not found",
+    description: "That address is not a guide, a week, a crop, or a bird on Robin & Radish.",
+    path: "/404",
+  }),
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (
