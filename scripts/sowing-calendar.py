@@ -584,16 +584,16 @@ def footer(c: canvas.Canvas, x: float, y: float, w: float, holidays: bool = Fals
 def draw_cover(c: canvas.Canvas, ox: float, oy: float, w: float, h: float) -> None:
     c.setFillColor(INK)
     c.setFont("Sans", 9)
-    c.drawString(ox + 14 * MM, oy + h - 14 * MM, "ROBIN & RADISH   ·   A HOME GARDEN RECORD")
+    c.drawString(ox + 14 * MM, oy + h - 18 * MM, "ROBIN & RADISH   ·   A HOME GARDEN RECORD")
     c.setFont("Display", 32)
-    c.drawString(ox + 14 * MM, oy + h - 28 * MM, "UK Sowing Calendar")
+    c.drawString(ox + 14 * MM, oy + h - 32 * MM, "UK Sowing Calendar")
     c.setFillColor(RADISH)
     c.setFont("Display", 24)
-    c.drawString(ox + 14 * MM, oy + h - 39 * MM, "2027")
+    c.drawString(ox + 14 * MM, oy + h - 43 * MM, "2027")
     c.setFillColor(SEPIA)
     c.setFont("Sans", 10)
     text = "Twelve months for a home garden. The crops on this site, with the south and north ranges from the same list. The plates are drawings made for the calendar. They are not photographs, and they are not a picture of one garden."
-    y = oy + h - 48 * MM
+    y = oy + h - 52 * MM
     for line in wrap(text, "Sans", 10, w - 28 * MM):
         c.drawString(ox + 14 * MM, y, line)
         y -= 13
@@ -716,11 +716,11 @@ def draw_overview(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, cr
     right = ox + w - 12 * MM
     c.setFillColor(INK)
     c.setFont("Display", 22)
-    c.drawString(left, oy + h - 16 * MM, "Year at a glance")
+    c.drawString(left, oy + h - 23 * MM, "Year at a glance")
     c.setFillColor(SEPIA)
     c.setFont("Sans", 8.5)
     intro = "Whole months only. A bar fills every third of a month because this list does not say early, mid or late. Filled bars are the south list. A hollow bar is a month on the north list when the south list does not include it."
-    y = oy + h - 22 * MM
+    y = oy + h - 29 * MM
     for line in wrap(intro, "Sans", 8.5, right - left):
         c.drawString(left, y, line)
         y -= 11
