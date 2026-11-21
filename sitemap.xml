@@ -11,42 +11,42 @@
 <url>
 <loc>https://robinandradish.co.uk/start-here/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/start-here/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/start-here/" />
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/sowing-calendar-2027/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/sowing-calendar-2027/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/sowing-calendar-2027/" />
 <changefreq>yearly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/this-week/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/this-week/" />
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
@@ -54,49 +54,49 @@
 <loc>https://robinandradish.co.uk/planner/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/planner/" />
 <xhtml:link rel="alternate" hreflang="en-IE" href="https://robinandradish.co.uk/ie/sowing/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/planner/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/quiz/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/quiz/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/quiz/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/guides/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/about/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/about/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/about/" />
 <changefreq>yearly</changefreq>
 <priority>0.4</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/disclosure/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/disclosure/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/disclosure/" />
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/privacy/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/privacy/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/privacy/" />
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/contact/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/contact/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/contact/" />
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
@@ -112,532 +112,532 @@
 <loc>https://robinandradish.co.uk/ie/sowing/</loc>
 <xhtml:link rel="alternate" hreflang="en-IE" href="https://robinandradish.co.uk/ie/sowing/" />
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/planner/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/planner/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/january/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/january/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/january/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/february/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/february/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/february/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/march/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/march/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/march/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/april/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/april/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/april/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/may/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/may/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/may/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/june/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/june/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/june/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/july/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/july/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/july/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/august/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/august/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/august/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/september/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/september/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/september/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/october/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/october/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/october/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/november/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/november/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/november/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/what-to-sow/december/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/december/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/what-to-sow/december/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/broad-beans/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/broad-beans/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/broad-beans/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/peas/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/peas/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/peas/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/french-beans/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/french-beans/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/french-beans/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/runner-beans/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/runner-beans/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/runner-beans/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/carrots/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/carrots/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/carrots/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/beetroot/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/beetroot/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/beetroot/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/parsnips/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/parsnips/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/parsnips/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/radishes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/radishes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/radishes/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/lettuce/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/lettuce/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/lettuce/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/spinach/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/spinach/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/spinach/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/kale/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/kale/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/kale/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/summer-cabbage/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/summer-cabbage/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/summer-cabbage/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/calabrese/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/calabrese/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/calabrese/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/purple-sprouting-broccoli/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/purple-sprouting-broccoli/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/purple-sprouting-broccoli/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/turnips/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/turnips/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/turnips/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/swede/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/swede/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/swede/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/brussels-sprouts/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/brussels-sprouts/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/brussels-sprouts/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/leeks/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/leeks/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/leeks/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/onions/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/onions/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/onions/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/onion-sets/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/onion-sets/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/onion-sets/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/garlic/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/garlic/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/garlic/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/early-potatoes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/early-potatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/early-potatoes/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/maincrop-potatoes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/maincrop-potatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/maincrop-potatoes/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/tomatoes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/tomatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/tomatoes/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/courgettes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/courgettes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/courgettes/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/cucumbers/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/cucumbers/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/cucumbers/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/sweetcorn/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/sweetcorn/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/sweetcorn/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/chillies/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/chillies/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/chillies/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/chard/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/chard/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/chard/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/rocket/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/rocket/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/rocket/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/spring-onions/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/spring-onions/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/spring-onions/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/parsley/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/parsley/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/parsley/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/coriander/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/coriander/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/coriander/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/basil/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/basil/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/basil/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/chives/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/chives/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/chives/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/mint/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/mint/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/mint/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/rosemary/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/rosemary/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/rosemary/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/grow/thyme/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/thyme/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/thyme/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/robin/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/robin/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/robin/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/blue-tit/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/blue-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/blue-tit/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/great-tit/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/great-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/great-tit/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/coal-tit/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/coal-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/coal-tit/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/long-tailed-tit/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/long-tailed-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/long-tailed-tit/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/blackbird/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/blackbird/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/blackbird/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/house-sparrow/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/house-sparrow/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/house-sparrow/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/goldfinch/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/goldfinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/goldfinch/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/greenfinch/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/greenfinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/greenfinch/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/chaffinch/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/chaffinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/chaffinch/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/starling/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/starling/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/starling/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/wren/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/wren/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/wren/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/dunnock/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/dunnock/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/dunnock/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/wood-pigeon/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/wood-pigeon/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/wood-pigeon/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/great-spotted-woodpecker/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/great-spotted-woodpecker/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/great-spotted-woodpecker/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/song-thrush/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/song-thrush/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/song-thrush/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/nuthatch/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/nuthatch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/nuthatch/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/bullfinch/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/bullfinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/bullfinch/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/siskin/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/siskin/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/siskin/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/redwing/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/redwing/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/redwing/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/fieldfare/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/fieldfare/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/fieldfare/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/brambling/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/brambling/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/brambling/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/blackcap/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/blackcap/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/blackcap/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/birds/collared-dove/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/collared-dove/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/collared-dove/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://robinandradish.co.uk/this-week/2026-11-30/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-11-30/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/this-week/2026-11-30/" />
 <lastmod>2026-11-30</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
@@ -645,7 +645,7 @@
 <url>
 <loc>https://robinandradish.co.uk/this-week/2026-11-23/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-11-23/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/this-week/2026-11-23/" />
 <lastmod>2026-11-23</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
@@ -653,7 +653,7 @@
 <url>
 <loc>https://robinandradish.co.uk/this-week/2026-11-16/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-11-16/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/this-week/2026-11-16/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
@@ -661,7 +661,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/aphids-without-sprays/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/aphids-without-sprays/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/aphids-without-sprays/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -669,7 +669,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/attracting-robins/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/attracting-robins/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/attracting-robins/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -677,7 +677,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/bird-feeder-buying-guide/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/bird-feeder-buying-guide/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/bird-feeder-buying-guide/" />
 <lastmod>2026-11-21</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -685,7 +685,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/bird-food-for-winter/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/bird-food-for-winter/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/bird-food-for-winter/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -693,7 +693,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/blight-potatoes-tomatoes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/blight-potatoes-tomatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/blight-potatoes-tomatoes/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -701,7 +701,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/carrot-fly/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/carrot-fly/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/carrot-fly/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -709,7 +709,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/feeder-hygiene/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/feeder-hygiene/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/feeder-hygiene/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -717,7 +717,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/compost-small-plot/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/compost-small-plot/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/compost-small-plot/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -725,7 +725,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/crop-rotation/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/crop-rotation/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/crop-rotation/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -733,7 +733,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/feeding-birds-spring-summer/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/feeding-birds-spring-summer/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/feeding-birds-spring-summer/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -741,7 +741,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/garlic-and-broad-beans-over-winter/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/garlic-and-broad-beans-over-winter/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/garlic-and-broad-beans-over-winter/" />
 <lastmod>2026-11-21</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -749,7 +749,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/growing-in-containers/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/growing-in-containers/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/growing-in-containers/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -757,7 +757,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/hardening-off/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/hardening-off/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/hardening-off/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -765,7 +765,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/herbs-small-space/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/herbs-small-space/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/herbs-small-space/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -773,7 +773,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/nest-boxes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/nest-boxes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/nest-boxes/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -781,7 +781,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/netting-soft-fruit/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/netting-soft-fruit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/netting-soft-fruit/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -789,7 +789,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/no-dig-beds/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/no-dig-beds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/no-dig-beds/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -797,7 +797,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/planning-a-veg-plot-2027/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/planning-a-veg-plot-2027/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/planning-a-veg-plot-2027/" />
 <lastmod>2026-11-21</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -805,7 +805,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/raised-beds/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/raised-beds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/raised-beds/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -813,7 +813,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/saving-seed/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/saving-seed/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/saving-seed/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -821,7 +821,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/slugs-without-pellets/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/slugs-without-pellets/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/slugs-without-pellets/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -829,7 +829,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/successional-sowing/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/successional-sowing/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/successional-sowing/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -837,7 +837,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/sowing-under-cover/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/sowing-under-cover/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/sowing-under-cover/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -845,7 +845,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/starting-a-veg-patch/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/starting-a-veg-patch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/starting-a-veg-patch/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -853,7 +853,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/hungry-gap/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/hungry-gap/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/hungry-gap/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -861,7 +861,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/water-for-garden-birds/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/water-for-garden-birds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/water-for-garden-birds/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
@@ -869,7 +869,7 @@
 <url>
 <loc>https://robinandradish.co.uk/guides/what-to-sow-in-winter/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/what-to-sow-in-winter/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/guides/what-to-sow-in-winter/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
