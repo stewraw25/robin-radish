@@ -98,7 +98,7 @@ The site is a static export (`output: 'export'`) for the apex domain. `basePath`
 npm run build
 ```
 
-That writes `out/`, including `CNAME` with `robinandradish.co.uk`. Publish that folder as the GitHub Pages site. There is no Pages workflow in this branch.
+That writes `out/`, including `CNAME` with `robinandradish.co.uk` and an empty `.nojekyll`. Publish that folder as the GitHub Pages site. `.nojekyll` is required: without it, Pages skips `/_next` and the phone gets an unstyled page. There is no Pages workflow in this branch.
 
 Locally the dev server is [http://127.0.0.1:43123/](http://127.0.0.1:43123/).
 

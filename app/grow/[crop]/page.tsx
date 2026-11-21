@@ -96,7 +96,16 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
           <span className="text-muted-foreground">. The month pages below list the other crops in those weeks.</span>
         </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{REGION_NOTE}</p>
-        <div className="mt-4 overflow-x-auto rounded-xl border border-border">
+        <ul className="mt-4 grid gap-3 md:hidden" aria-label={`Months for ${crop.name} in the south and the north of the UK`}>
+          {JOBS.map(({ job, field }) => (
+            <li key={job} className="rounded-xl border border-border bg-card p-4">
+              <p className="font-semibold">{JOB_LABELS[job]}</p>
+              <p className="mt-2 leading-relaxed"><span className="font-medium">South. </span>{formatMonthList(crop[field].south)}</p>
+              <p className="mt-1 leading-relaxed"><span className="font-medium">North. </span>{formatMonthList(crop[field].north)}</p>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-4 hidden overflow-x-auto rounded-xl border border-border md:block">
           <table className="w-full min-w-[28rem] border-collapse text-left text-sm">
             <caption className="sr-only">Months for {crop.name} in the south and the north of the UK</caption>
             <thead className="bg-secondary text-foreground">
