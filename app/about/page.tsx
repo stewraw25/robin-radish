@@ -24,7 +24,7 @@ export default function AboutPage() {
           Pages are published under the byline {BYLINE}. There is no separate author profile on this site.
         </p>
         <p>
-          This is not a shop. Some links go to seed merchants and bird-food shops. Read the affiliate disclosure before you follow them. The site does not publish scores, star ratings or prices.
+          This is not a shop. Some links go to Amazon, seed merchants and bird-food shops. As an Amazon Associate we earn from qualifying purchases. Read the affiliate disclosure before you follow the links. The site does not publish scores, star ratings or prices.
         </p>
       </div>
     </div>

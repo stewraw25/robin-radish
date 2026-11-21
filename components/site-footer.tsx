@@ -58,7 +58,7 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
         <Separator />
         <p className="py-4 text-sm text-muted-foreground">
-          Robin & Radish. Grow food and feed garden birds in the UK. Some links to seed and bird-food shops are affiliate links.{" "}
+          Robin & Radish. Grow food and feed garden birds in the UK. As an Amazon Associate we earn from qualifying purchases. Some other links to seed and bird-food shops are also affiliate links.{" "}
           <Link href="/disclosure" className="underline underline-offset-2 hover:text-foreground">
             Affiliate disclosure
           </Link>

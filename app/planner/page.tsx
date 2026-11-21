@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
 import { SowingPlanner } from "@/components/sowing-planner";
 import { londonToday } from "@/lib/dates";
@@ -42,6 +43,7 @@ export default function PlannerPage() {
       <section className="mt-12 space-y-4">
         <h2 className="font-heading text-2xl">Seed and plants</h2>
         <AffiliateNotice />
+        <AmazonSearchList ids={["vegetable-seeds", "seed-trays", "seed-compost"]} />
         <ShopList ids={["thompson-morgan", "crocus"]} />
       </section>
     </div>

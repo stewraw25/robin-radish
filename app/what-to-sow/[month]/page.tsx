@@ -3,7 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BirdSilhouette } from "@/components/bird-silhouette";
+import { AffiliateNotice } from "@/components/affiliate-notice";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { ShopList } from "@/components/shop-list";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { getBird, type BirdSlug } from "@/lib/birds";
@@ -149,6 +152,16 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
           </Link>
         </p>
         <MonthReading month={month.value} />
+      </section>
+
+      <section className="mt-12 max-w-3xl space-y-4">
+        <h2 className="font-heading text-2xl">Seed and plants</h2>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          If you are buying seed for this month, these are searches and shops, not a ranking or a particular packet.
+        </p>
+        <AffiliateNotice />
+        <AmazonSearchList ids={["vegetable-seeds", "seed-trays", "seed-compost"]} />
+        <ShopList ids={["thompson-morgan", "crocus"]} />
       </section>
 
       <nav className="mt-10 flex flex-wrap gap-4 text-sm" aria-label="Other months">

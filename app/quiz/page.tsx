@@ -2,7 +2,8 @@ import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { BirdQuiz } from "@/components/bird-quiz";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { affiliateUrl, merchants } from "@/lib/affiliates";
+import { affiliateUrl, amazonSearch, amazonSearchUrl, merchants, type AmazonSearchId } from "@/lib/affiliates";
+import type { Feeder, FoodId } from "@/lib/quiz";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
@@ -16,6 +17,42 @@ export default function QuizPage() {
   const shops = merchants
     .filter((merchant) => merchant.id === "haiths" || merchant.id === "cj-wildlife")
     .map((merchant) => ({ name: merchant.name, href: affiliateUrl(merchant.homepage) }));
+
+  const foodIds: Record<FoodId, AmazonSearchId> = {
+    "sunflower-hearts": "sunflower-hearts",
+    nyjer: "nyjer",
+    suet: "suet",
+    mealworms: "mealworms",
+    "mixed-seed": "mixed-seed",
+  };
+  const amazonFoods = Object.fromEntries(
+    (Object.keys(foodIds) as FoodId[]).map((id) => {
+      const search = amazonSearch(foodIds[id]);
+      return [id, { name: search.label, href: amazonSearchUrl(search.query) }];
+    }),
+  ) as Record<FoodId, { name: string; href: string }>;
+
+  const feederIds: Record<Exclude<Feeder, "none">, AmazonSearchId> = {
+    hanging: "hanging-feeder",
+    nyjer: "nyjer-feeder",
+    ground: "bird-table",
+    suet: "suet-feeder",
+  };
+  const amazonFeeders = {
+    ...Object.fromEntries(
+      (Object.keys(feederIds) as Exclude<Feeder, "none">[]).map((id) => {
+        const search = amazonSearch(feederIds[id]);
+        return [id, { name: search.label, href: amazonSearchUrl(search.query) }];
+      }),
+    ),
+    none: { name: amazonSearch("hanging-feeder").label, href: amazonSearchUrl(amazonSearch("hanging-feeder").query) },
+    squirrels: {
+      name: amazonSearch("squirrel-proof-feeder").label,
+      href: amazonSearchUrl(amazonSearch("squirrel-proof-feeder").query),
+    },
+  } as Record<Feeder, { name: string; href: string }> & {
+    squirrels: { name: string; href: string };
+  };
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
@@ -34,7 +71,7 @@ export default function QuizPage() {
       <div className="mb-6">
         <AffiliateNotice />
       </div>
-      <BirdQuiz shops={shops} />
+      <BirdQuiz shops={shops} amazonFoods={amazonFoods} amazonFeeders={amazonFeeders} />
       <noscript>
         <p className="mt-6 text-sm">This quiz runs in the browser. The winter bird food guide is available without it.</p>
       </noscript>

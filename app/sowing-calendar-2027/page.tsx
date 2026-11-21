@@ -2,7 +2,10 @@ import { statSync } from "node:fs";
 import path from "node:path";
 import Image from "next/image";
 import Link from "next/link";
+import { AffiliateNotice } from "@/components/affiliate-notice";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { ShopList } from "@/components/shop-list";
 import { buttonVariants } from "@/components/ui/button";
 import { pageMeta } from "@/lib/seo";
 import { publicAsset } from "@/lib/site";
@@ -131,6 +134,15 @@ export default function SowingCalendarPage() {
           </figcaption>
         </figure>
       </div>
+      <section className="mt-10 space-y-4">
+        <h2 className="font-heading text-2xl">Seed and sowing kit</h2>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          If you are buying seed or trays to use with the calendar, these are searches and shops, not a ranking or a particular product.
+        </p>
+        <AffiliateNotice />
+        <AmazonSearchList ids={["vegetable-seeds", "seed-trays", "seed-compost"]} />
+        <ShopList ids={["thompson-morgan", "crocus"]} />
+      </section>
       <section className="mt-10 rounded-xl border border-border bg-secondary/60 p-5">
         <h2 className="font-heading text-2xl">Glossy printed A3 poster coming soon</h2>
         <p className="mt-3 leading-relaxed text-muted-foreground">
