@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import calendar
 import json
+import os
 import subprocess
 import sys
 from datetime import date
@@ -26,9 +27,11 @@ from engravings import draw_plate
 ROOT = Path(__file__).resolve().parents[1]
 FONT_DIR = Path(__file__).resolve().parent / "fonts"
 PUBLIC = ROOT / "public"
-ARTIFACTS = Path("/opt/cursor/artifacts")
-SITE = "https://stewraw25.github.io/robin-radish/"
+ARTIFACTS = Path("/tmp/rr-artifacts")
+SITE = "robinandradish.co.uk"
 MM = 72 / 25.4
+# Set RR_RASTER_PLATES=1 when the print build drops the painted plates in afterwards.
+RASTER_PLATES = os.environ.get("RR_RASTER_PLATES") == "1"
 
 GROUPS = [
     ("Roots", ["carrots", "beetroot", "parsnips", "radishes", "early-potatoes", "maincrop-potatoes"]),
@@ -105,8 +108,8 @@ HOLIDAYS = {
     date(2027, 5, 3): "Early May",
     date(2027, 5, 31): "Spring bank",
     date(2027, 8, 30): "Summer bank",
-    date(2027, 12, 27): "Christmas",
-    date(2027, 12, 28): "Boxing Day",
+    date(2027, 12, 27): "Christmas Day (substitute)",
+    date(2027, 12, 28): "Boxing Day (substitute)",
 }
 ADVICE = {
     1: "The soil is cold, and often wet. In the south, garlic can still go in where the ground is workable. January is not on the north list for garlic. Leeks and onions from seed can start on a bright windowsill in the south. Leave leeks and parsnips in the bed and lift them as you cook. Break the ice on a shallow dish for the birds.",
@@ -596,17 +599,15 @@ def draw_cover(c: canvas.Canvas, ox: float, oy: float, w: float, h: float) -> No
         y -= 13
     plate_top = y - 4 * MM
     plate_bottom = oy + 16 * MM
-    draw_plate(c, ox + 6 * MM, plate_bottom, w - 12 * MM, plate_top - plate_bottom, 0)
+    if not RASTER_PLATES:
+        draw_plate(c, ox + 6 * MM, plate_bottom, w - 12 * MM, plate_top - plate_bottom, 0)
     footer(c, ox + 14 * MM, oy + 4 * MM, w - 28 * MM)
 
 
 def draw_month(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, month: int, crops: dict) -> None:
     top_h = h * 0.46
-    draw_plate(c, ox, oy + h - top_h, w, top_h, month)
-    c.setStrokeColor(SEPIA)
-    c.setLineWidth(0.7)
-    c.circle(ox + w / 2 - 20 * MM, oy + h - 5.5 * MM, 1.8 * MM, fill=0, stroke=1)
-    c.circle(ox + w / 2 + 20 * MM, oy + h - 5.5 * MM, 1.8 * MM, fill=0, stroke=1)
+    if not RASTER_PLATES:
+        draw_plate(c, ox, oy + h - top_h, w, top_h, month)
 
     left = ox + 11 * MM
     right = ox + w - 11 * MM
@@ -745,7 +746,7 @@ def draw_overview(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, cr
         rows.append(("group", label, None))
         for slug in slugs:
             rows.append(("crop", crops[slug]["name"], crops[slug]))
-    table_top = key_y - 6 * MM
+    table_top = key_y - 9 * MM
     table_bottom = oy + 18 * MM
     label_w = 38 * MM
     grid_left = left + label_w
@@ -758,9 +759,21 @@ def draw_overview(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, cr
     c.setFont("SansBold", 7)
     for index, name in enumerate(["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]):
         c.drawCentredString(grid_left + (index + 0.5) * col_w, table_top + 10, name)
+    stripe = cmyk("ede4d3")
+    crop_index = 0
     for kind, label, crop in rows:
         height = group_h if kind == "group" else crop_h
         yy -= height
+        if kind == "crop":
+            if crop_index % 2 == 1:
+                c.setFillColor(stripe)
+                c.rect(left, yy, right - left, height, fill=1, stroke=0)
+            c.setStrokeColor(RULE)
+            c.setLineWidth(0.4)
+            c.line(left, yy, right, yy)
+            crop_index += 1
+        else:
+            crop_index = 0
         if kind == "group":
             c.setFillColor(GREEN)
             c.rect(left, yy, right - left, height, fill=1, stroke=0)
@@ -769,16 +782,17 @@ def draw_overview(c: canvas.Canvas, ox: float, oy: float, w: float, h: float, cr
             c.drawString(left + 3, yy + 3, label.upper())
             continue
         c.setFillColor(INK)
-        name_size = 7
+        name_size = 8
         while name_size > 5 and stringWidth(label, "Sans", name_size) > label_w - 6:
             name_size -= 0.25
         c.setFont("Sans", name_size)
-        c.drawString(left + 2, yy + height * 0.32, label)
-        lane = height / 4
+        c.drawString(left + 2, yy + height / 2 - name_size * 0.35, label)
+        pad = 1.2
+        lane = (height - 2 * pad) / 4
         for index, (key, _name, _hex) in enumerate(JOBS):
             south = set(crop[key]["south"])
             north = set(crop[key]["north"])
-            ly = yy + (3 - index) * lane
+            ly = yy + pad + (3 - index) * lane
             for month in range(1, 13):
                 cx = grid_left + (month - 1) * col_w
                 if month in south or month in north:
