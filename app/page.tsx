@@ -59,23 +59,25 @@ export default function HomePage() {
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Robin & Radish is one notebook for both jobs: what to sow and pick, and what to put in the feeder. Written for ordinary UK plots, not show gardens.
           </p>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link href="/this-week" className={cn(buttonVariants({ size: "lg" }), "h-11 px-5 text-base")}>
               This week in the garden
             </Link>
             <Link href="/planner" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "h-11 px-5 text-base")}>
               Open the sowing planner
             </Link>
+            <Link href="/what-to-sow" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "h-11 px-5 text-base")}>
+              What to sow by month
+            </Link>
+            <Link href="/sowing-calendar-2027" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "h-11 px-5 text-base")}>
+              2027 sowing calendar
+            </Link>
           </div>
           <p className="mt-4 text-sm">
             <Link href="/start-here" className="font-medium underline decoration-soil/60 underline-offset-2">
               Start here
             </Link>
-            <span className="text-muted-foreground"> if you want the short path through the planner, the quiz and the first guides. The </span>
-            <Link href="/sowing-calendar-2027" className="font-medium underline decoration-soil/60 underline-offset-2">
-              2027 sowing calendar
-            </Link>
-            <span className="text-muted-foreground"> is the same months, laid out to print.</span>
+            <span className="text-muted-foreground"> if you want the short path through the planner, the quiz and the first guides. The calendar is the same months, laid out to print.</span>
           </p>
           <aside className="mt-6 max-w-xl rounded-xl border border-border bg-card px-4 py-3 text-sm">
             <p className="font-medium text-foreground">Gardening outside the UK?</p>

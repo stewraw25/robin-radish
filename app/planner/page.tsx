@@ -28,7 +28,11 @@ export default function PlannerPage() {
           <Link href="/ie/sowing" className="font-medium text-foreground underline decoration-soil/60 underline-offset-2">
             sowing times in Ireland
           </Link>
-          . The same months are on the{" "}
+          . The same months are listed on{" "}
+          <Link href="/what-to-sow" className="font-medium text-foreground underline decoration-soil/60 underline-offset-2">
+            what to sow by month
+          </Link>
+          {" "}and on the{" "}
           <Link href="/sowing-calendar-2027" className="font-medium text-foreground underline decoration-soil/60 underline-offset-2">
             2027 sowing calendar
           </Link>

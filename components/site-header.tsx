@@ -12,6 +12,7 @@ const LINKS = [
   { href: "/start-here", label: "Start here" },
   { href: "/this-week", label: "This week" },
   { href: "/what-to-sow", label: "What to sow" },
+  { href: "/sowing-calendar-2027", label: "Calendar" },
   { href: "/grow", label: "Crops" },
   { href: "/birds", label: "Birds" },
   { href: "/planner", label: "Planner" },

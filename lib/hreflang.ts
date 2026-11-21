@@ -8,7 +8,8 @@ export const IRELAND_SOWING = "/ie/sowing";
 /**
  * Alternate URLs for one page.
  * UK pages reference themselves as en-GB. Ireland pages reference themselves as en-IE.
- * x-default is always the home page. Pairs that describe the same choice point at each other.
+ * x-default is the primary UK URL for that same page, not the homepage.
+ * Only the home and planner pages have an Ireland pair.
  */
 export function hreflangPaths(path: string): Record<string, string> {
   const self = path === "" ? "/" : path;
@@ -19,12 +20,12 @@ export function hreflangPaths(path: string): Record<string, string> {
     return { "en-IE": IRELAND_HUB, "en-GB": "/", "x-default": "/" };
   }
   if (self === "/planner") {
-    return { "en-GB": "/planner", "en-IE": IRELAND_SOWING, "x-default": "/" };
+    return { "en-GB": "/planner", "en-IE": IRELAND_SOWING, "x-default": "/planner" };
   }
   if (self === IRELAND_SOWING) {
-    return { "en-IE": IRELAND_SOWING, "en-GB": "/planner", "x-default": "/" };
+    return { "en-IE": IRELAND_SOWING, "en-GB": "/planner", "x-default": "/planner" };
   }
-  return { "en-GB": self, "x-default": "/" };
+  return { "en-GB": self, "x-default": self };
 }
 
 export function absoluteLanguages(path: string): Record<string, string> {
