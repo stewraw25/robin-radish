@@ -26,6 +26,8 @@ const groups = [
       { href: "/guides/slugs-without-pellets", label: "Slugs without pellets" },
       { href: "/guides/herbs-small-space", label: "Herbs for a small space" },
       { href: "/guides/crop-rotation", label: "Crop rotation for a small plot" },
+      { href: "/guides/planning-a-veg-plot-2027", label: "Planning a vegetable plot for 2027" },
+      { href: "/guides/garlic-and-broad-beans-over-winter", label: "Garlic and broad beans over winter" },
     ],
   },
   {
@@ -41,6 +43,9 @@ const groups = [
       { href: "/guides/feeding-birds-spring-summer", label: "Feeding birds in spring and summer" },
       { href: "/guides/feeder-hygiene", label: "Cleaning bird feeders" },
       { href: "/guides/water-for-garden-birds", label: "Water for garden birds" },
+      { href: "/guides/bird-feeder-buying-guide", label: "Choosing a bird feeder" },
+      { href: "/birds/redwing", label: "Redwing" },
+      { href: "/birds/fieldfare", label: "Fieldfare" },
     ],
   },
 ];

@@ -147,8 +147,8 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "July is a harvesting month as well as a sowing month. Pick beans, courgettes, early potatoes and salads while they are tender. Sow short rows if you want roots and leaves into autumn. Water at the root in a dry spell. A plant that sets flowers and then dries out will drop them.",
     birds:
-      "Goldfinches and greenfinches use seed heads and nyjer. House sparrows are still in noisy groups, often with young. Wood pigeons find brassicas and spilled seed. Blackbirds take fruit. Feeding is optional while insects and seeds are available. Water in a bird bath matters in a dry spell. Clean feeders more often in warm weather if you keep them up.",
-    birdSlugs: ["goldfinch", "greenfinch", "house-sparrow", "blackbird", "wood-pigeon", "robin", "song-thrush"],
+      "Goldfinches and greenfinches use seed heads and nyjer. House sparrows are still in noisy groups, often with young. Wood pigeons and collared doves find brassicas and spilled seed. Blackbirds take fruit. Feeding is optional while insects and seeds are available. Water in a bird bath matters in a dry spell. Clean feeders more often in warm weather if you keep them up.",
+    birdSlugs: ["goldfinch", "greenfinch", "house-sparrow", "blackbird", "wood-pigeon", "collared-dove", "robin", "song-thrush"],
     faqs: [
       {
         q: "What is worth sowing in July for an autumn picking?",
@@ -235,8 +235,8 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "November sowing is a short list. In the south, broad beans and hardy peas can still go in, ideally under a cloche. Garlic can be planted while the soil is workable. In the north, outdoor sowing of those beans and peas has finished in this list. The harvest is what is standing: leeks, parsnips, sprouts, kale and the last chard and parsley. Stay off wet soil.",
     birds:
-      "This is the core feeding season. Robins, blackbirds, blue tits, great tits, goldfinches, long-tailed tits and starlings all use a garden that offers hearts, suet and a tray. Offer less at a time when the weather is wet, because damp seed goes mouldy. Wash a feeder that smells sour.",
-    birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "long-tailed-tit"],
+      "This is the core feeding season. Robins, blackbirds, blue tits, great tits and goldfinches use hearts, suet and a tray. Redwings and fieldfares take berries and windfall apples. Bramblings may join chaffinches on seed spilled under the feeder. Offer less at a time when the weather is wet, because damp seed goes mouldy. Wash a feeder that smells sour.",
+    birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "redwing", "fieldfare", "brambling"],
     faqs: [
       {
         q: "Can broad beans still be sown in November?",
@@ -257,8 +257,8 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "December is the quietest sowing month. Garlic is the planting if you missed autumn and the soil is not frozen. There is nothing useful to sow outdoors in this list. Harvest leeks, parsnips, sprouts and kale as you need them, and check stored potatoes and onions for rot. Leave the digging if the ground is wet. A windowsill pot of pea shoots is a kitchen job, not a garden row.",
     birds:
-      "Short days. Blue tits, coal tits and great spotted woodpeckers use suet and sunflower hearts. Starlings finish suet quickly. Chaffinches feed on the ground. Robins and blackbirds need a tray, mealworms and fruit, and water that is not a block of ice. Fill feeders in the morning so food is there for the long night.",
-    birdSlugs: ["robin", "blackbird", "blue-tit", "coal-tit", "starling", "great-spotted-woodpecker", "nuthatch", "siskin"],
+      "Short days. Blue tits, coal tits and great spotted woodpeckers use suet and sunflower hearts. Starlings finish suet quickly. Robins and blackbirds need a tray, mealworms and fruit. Fieldfares and redwings take apples on the lawn. A blackcap may take fruit and suet from the table. Collared doves pick up spilled seed. Break ice on a shallow dish, and fill feeders in the morning.",
+    birdSlugs: ["robin", "blackbird", "blue-tit", "coal-tit", "starling", "fieldfare", "redwing", "blackcap", "collared-dove"],
     faqs: [
       {
         q: "Is there anything to sow outdoors in December?",

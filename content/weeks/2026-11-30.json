@@ -1,0 +1,84 @@
+{
+  "weekOf": "2026-11-30",
+  "title": "Into early December",
+  "intro": "This week runs from the last of November into early December. Little goes into the ground. Pick winter crops, and keep food and a water dish usable in a frost.",
+  "sow": [
+    {
+      "name": "Garlic in the south, if the soil allows",
+      "detail": "December is a planting month in the south only, and only in workable soil. The northern list does not include December. The next northern month is February. Do not force cloves into frozen ground in either region."
+    },
+    {
+      "name": "No broad beans this week",
+      "detail": "Outdoor sowing has finished for the autumn in both regions. Pots under cover are a February and March job on this site, not an early-December one. Look after plants that are already in."
+    },
+    {
+      "name": "No peas outdoors",
+      "detail": "November was the last southern month for a hardy pea, and only where the soil was fit. December is not a pea-sowing month. Leave the packet."
+    },
+    {
+      "name": "A windowsill tray",
+      "detail": "Pea shoots or cress in a pot on a bright sill are the green picking that does not need the garden. Sow a new tray when you cut the old one."
+    }
+  ],
+  "harvest": [
+    {
+      "name": "Leeks",
+      "detail": "Lift as you cook them. They are in the harvest list for both regions through winter. Do not clear the row for the sake of tidiness."
+    },
+    {
+      "name": "Parsnips",
+      "detail": "Still in the ground. Lift after frost if you can get onto the bed without smearing it. Keep the row marked."
+    },
+    {
+      "name": "Brussels sprouts and kale",
+      "detail": "Pick sprouts from the bottom upwards, and kale a few leaves at a time. Both are December crops in the south and the north."
+    },
+    {
+      "name": "Swede",
+      "detail": "December is a harvest month in the south, and in the north through January. Leave roots you will not eat this week."
+    }
+  ],
+  "birds": [
+    {
+      "name": "Robins and blackbirds",
+      "detail": "A tray of soaked mealworms, plus fruit for blackbirds. Fill it in the morning so there is food before the long night."
+    },
+    {
+      "name": "Tits",
+      "detail": "Sunflower hearts in a feeder you can clean, and suet if the cold keeps it firm. Starlings will finish a suet block quickly. Put out what you can replace while it is fresh."
+    },
+    {
+      "name": "Fieldfares, redwings and blackcaps",
+      "detail": "Apples on the lawn for the thrushes. A blackcap may also take suet from a table. These are winter visitors or winter feeders, not a sign that you should add a nest box in December."
+    },
+    {
+      "name": "Collared doves",
+      "detail": "They pick up spilled seed. If they are clearing the ground, offer less and sweep what is left. A caged feeder keeps the seed for smaller birds."
+    }
+  ],
+  "food": [
+    {
+      "name": "Sunflower hearts",
+      "detail": "The straightforward seed for tits, finches and sparrows. Keep the bag dry and the feeder no fuller than the birds will finish."
+    },
+    {
+      "name": "Suet",
+      "detail": "Useful in a frost. Take it down in a mild spell, when it softens and can smear on feathers."
+    },
+    {
+      "name": "Water without additives",
+      "detail": "Break the ice each morning. Warm water helps you free a dish. Salt, antifreeze and glycerine do not belong in it."
+    },
+    {
+      "name": "Apples",
+      "detail": "Halved, on the ground, for thrushes and blackcaps. Not a feeder full of kitchen scraps."
+    }
+  ],
+  "also": [
+    "Do not dig soil that smears. Spread compost only where you will not be walking.",
+    "Wash feeders that have clumped seed before the next fill.",
+    "Check fruit and potatoes in store.",
+    "Net winter brassicas if pigeons are in them, and peg the net to the ground.",
+    "Use the week to plan 2027: which bed is free, which crop you actually eat, and which month the planner gives it."
+  ]
+}

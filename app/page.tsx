@@ -8,7 +8,7 @@ import { WeekPanel } from "@/components/week-panel";
 import { buttonVariants } from "@/components/ui/button";
 import { birds } from "@/lib/birds";
 import { MONTHS } from "@/lib/crops";
-import { londonToday } from "@/lib/dates";
+import { londonToday, weekRangeLabel } from "@/lib/dates";
 import { CATEGORY_LABELS, getGuides } from "@/lib/guides";
 import { monthNotes } from "@/lib/month-notes";
 import { faqJsonLd } from "@/lib/schema";
@@ -40,7 +40,9 @@ const homeFaqs = [
 ];
 
 export default function HomePage() {
-  const week = pickCurrentWeek(getWeeks());
+  const weeks = getWeeks();
+  const week = pickCurrentWeek(weeks);
+  const upcoming = weeks.filter((item) => week && item.weekOf > week.weekOf).sort((a, b) => a.weekOf.localeCompare(b.weekOf)).slice(0, 2);
   const guides = getGuides();
   const monthNumber = Number(londonToday().slice(5, 7));
   const featuredBirds = ["robin", "blue-tit", "goldfinch", "blackbird"]
@@ -101,6 +103,25 @@ export default function HomePage() {
         </section>
       )}
 
+      {upcoming.length > 0 ? (
+        <section className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
+          <h2 className="font-heading text-2xl">Late November and early December</h2>
+          <p className="mt-2 max-w-3xl text-muted-foreground">
+            The note above is this week. These are the next ones, each on its own dates, for the turn into December.
+          </p>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+            {upcoming.map((item) => (
+              <li key={item.weekOf}>
+                <Link href={`/this-week/${item.weekOf}`} className="block h-full rounded-xl border border-border bg-card p-4 hover:border-primary">
+                  <span className="font-heading text-lg">{weekRangeLabel(item.weekOf)}</span>
+                  <span className="mt-1 block text-sm text-muted-foreground">{item.title}. {item.intro}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       <section className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6">
         <h2 className="font-heading text-3xl">Two tools</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -159,7 +180,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-4">
           <h2 className="font-heading text-3xl">Garden birds</h2>
           <Link href="/birds" className="text-sm font-medium underline decoration-soil/60 underline-offset-2">
-            All 15 birds
+            All {birds.length} birds
           </Link>
         </div>
         <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

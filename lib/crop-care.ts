@@ -520,6 +520,7 @@ export function guidesForCrop(crop: Crop): string[] {
     slugs.unshift("successional-sowing");
   }
   if (["broad-beans", "chillies", "runner-beans", "french-beans"].includes(crop.slug)) slugs.unshift("aphids-without-sprays");
+  if (["garlic", "broad-beans"].includes(crop.slug)) slugs.unshift("garlic-and-broad-beans-over-winter");
   if (CONTAINER_CROPS.has(crop.slug)) slugs.push("growing-in-containers");
   if (SEED_CROPS.has(crop.slug)) slugs.push("saving-seed");
   const winter = [crop.sowOutdoors, crop.plant, crop.harvest].some((window) =>

@@ -18,6 +18,11 @@ export const birdSlugs = [
   "nuthatch",
   "bullfinch",
   "siskin",
+  "redwing",
+  "fieldfare",
+  "brambling",
+  "blackcap",
+  "collared-dove",
 ] as const;
 
 export type BirdSlug = (typeof birdSlugs)[number];
@@ -332,7 +337,7 @@ export const birds: Bird[] = [
     nesting:
       "A thin platform of sticks in a tree or a tall shrub, used from spring well into autumn. You may find the nest surprisingly flimsy. The eggs are white. In a garden the practical response to damaged brassicas is to net the crop.",
     feeder: false,
-    related: ["blackbird", "starling", "chaffinch"],
+    related: ["collared-dove", "blackbird", "chaffinch"],
     faqs: [
       {
         q: "Wood pigeons are eating the kale. What helps?",
@@ -451,6 +456,116 @@ export const birds: Bird[] = [
       {
         q: "Siskins came all winter and then vanished. Did I do something wrong?",
         a: "Often, no. Many gardens only see them from autumn to spring, when they move looking for seed. They may be feeding on alder and birch instead. Keep the nyjer fresh and dry. Damp nyjer goes stale and they ignore it.",
+      },
+    ],
+  },
+  {
+    slug: "redwing",
+    name: "Redwing",
+    summary: "A small thrush with a cream stripe over the eye and a rusty patch under the wing, mostly seen in winter.",
+    recognise:
+      "Smaller than a blackbird and a little smaller than a song thrush. Brown above, with a pale stripe above the eye and a rusty orange patch along the flank, under the wing. The breast is streaked rather than covered in the song thrush’s neat spots. They often arrive in a flock and feed on berries or on a lawn with fieldfares. The rusty patch shows when the wing is lifted.",
+    food: "Berries, including hawthorn and holly, and invertebrates from soft ground. In a garden the useful offering is halved windfall apples on the lawn, not a hanging seed feeder. They will also take soaked mealworms from a ground tray if they are already feeding nearby. Do not put out salted or cooked food. When the ground freezes they rely more on fruit that is still on the shrubs.",
+    nesting:
+      "Most redwings in a UK garden are winter visitors. They arrive in autumn and leave in spring. A few nest in the north of Scotland. A garden in England, Wales or most of Scotland is a feeding place, not a nest site, and they do not use a nest box. Leave berry shrubs uncut until the fruit has been taken.",
+    feeder: false,
+    related: ["fieldfare", "song-thrush", "blackbird"],
+    faqs: [
+      {
+        q: "Why have redwings appeared and then gone?",
+        a: "They move on when the berries in one hedge are finished, and a cold snap can push a flock into gardens for a few days. An empty lawn the next week is ordinary. Keep any apples you put out fresh, and take them away when they rot.",
+      },
+      {
+        q: "Will redwings eat from a seed feeder?",
+        a: "Usually no. They are thrushes, not finches. Fruit on the ground and berries on the shrub are the foods they come for. A tube of sunflower seed is for the tits.",
+      },
+    ],
+  },
+  {
+    slug: "fieldfare",
+    name: "Fieldfare",
+    summary: "A large, noisy winter thrush with a grey head, chestnut back and a dark tail.",
+    recognise:
+      "About the size of a blackbird, often looking bigger because of the way it sits upright. Grey head and rump, chestnut-brown back, black tail, and a spotted breast with a yellow-buff wash. The call is a harsh chak-chak, often from a flock. A redwing is smaller, with a pale eye stripe and a rusty flank. A mistle thrush is also large, but it is paler and more evenly spotted, and it lacks the fieldfare’s grey head and black tail.",
+    food: "Berries and fallen fruit, and worms and other invertebrates when the ground is soft. Halved apples on the lawn are the garden food they use. They often feed with redwings. They are not seed-feeder birds. Leave some hawthorn and holly until the fruit has gone, and do not put out cooked or salted scraps.",
+    nesting:
+      "Fieldfares are winter visitors in almost every UK garden. They very rarely nest in Britain, and a bird eating apples in December is not choosing a nest site. They do not use a nest box. The useful thing is fruit and an undisturbed lawn while the flock is there.",
+    feeder: false,
+    related: ["redwing", "blackbird", "song-thrush"],
+    faqs: [
+      {
+        q: "Fieldfares are guarding the holly. Is that normal?",
+        a: "Yes. A flock, or sometimes one bird, will try to keep other birds off a berry tree. It lasts while the fruit lasts. You do not need to intervene.",
+      },
+      {
+        q: "What should I put out for fieldfares in a frost?",
+        a: "Apples on the ground. Break ice on a shallow dish of water as well. Seed and suet are for other species. Remove fruit that has gone mouldy.",
+      },
+    ],
+  },
+  {
+    slug: "brambling",
+    name: "Brambling",
+    summary: "A winter finch, often with chaffinches, with an orange shoulder and a white rump.",
+    recognise:
+      "About the size of a chaffinch, and often in the same flock on the ground. In winter the male has a mottled dark head, an orange breast and shoulders, and a white rump that shows as he flies. The female is duller, with the same orange shoulder and white rump, and less black on the head. A chaffinch has no orange shoulder of that kind, and the male chaffinch has a pink breast and a blue-grey cap. The bill is yellowish in winter.",
+    food: "Beech mast is the main wild food. In gardens they take sunflower hearts and mixed seed from the ground under a feeder, often beside chaffinches. A hanging feeder is used less often than the spilled seed. Keep that seed fresh. A carpet of old, wet seed is a reason to sweep and put out less, not to add more.",
+    nesting:
+      "Bramblings breed in northern forests, not in a UK garden. A winter flock does not mean you should put up a box for them. Leave the nest boxes for tits and sparrows. Most birds leave in spring.",
+    feeder: true,
+    related: ["chaffinch", "goldfinch", "siskin"],
+    faqs: [
+      {
+        q: "How do I tell a brambling from a chaffinch?",
+        a: "Look for the orange shoulder and, in flight, the white rump. A chaffinch has white shoulder patches and a green rump, and the male is pink and blue-grey rather than orange and dark-headed.",
+      },
+      {
+        q: "Bramblings came one winter and not the next. Why?",
+        a: "They follow beech mast. A winter with little mast can bring more of them into gardens, and a heavy mast year can keep them in the woods. An empty garden is not a fault in the seed.",
+      },
+    ],
+  },
+  {
+    slug: "blackcap",
+    name: "Blackcap",
+    summary: "A grey warbler. The male has a black cap, the female a brown one. Some spend winter in gardens.",
+    recognise:
+      "Smaller than a sparrow, grey-brown, with a thin bill. The male’s cap is glossy black and does not extend onto the cheeks as a bib. The female and young birds have a chestnut-brown cap. It is not a tit: the bill is fine, and there is no blue or yellow plumage. In winter a blackcap on the bird table is often assertive, flicking its wings at other birds.",
+    food: "In summer, insects. In winter, garden birds take soft fruit, especially halved apples, and suet or fat from a table or a cage. They may also take soaked mealworms. They are not a reason to put out bread as the main food. If a mild spell makes suet soft enough to smear, take it down. A blackcap that visits in December is usually a winter visitor from continental Europe. The blackcaps that nest in Britain mostly leave in autumn. One winter bird does not prove that the same bird nested in the hedge.",
+    nesting:
+      "A cup low in a shrub, built by the birds that breed here in spring and summer. They do not use a hole-fronted nest box. Leave dense shrubs uncut while birds are nesting. A wintering blackcap is feeding, not building.",
+    feeder: true,
+    related: ["blackbird", "robin", "blue-tit"],
+    faqs: [
+      {
+        q: "A warbler is eating apples in December. What is it?",
+        a: "If it is grey with a neat black or brown cap, it is a blackcap. Other warblers have usually left by then. Offer fruit and suet, and fresh water with the ice broken.",
+      },
+      {
+        q: "Should I put out food for blackcaps all year?",
+        a: "Winter is when the fruit and suet are useful. In summer they hunt insects. You can leave a clean feeder up for the tits, but a blackcap does not need a special summer mix.",
+      },
+    ],
+  },
+  {
+    slug: "collared-dove",
+    name: "Collared dove",
+    summary: "A slim, pale dove with a thin black half-collar, common in gardens all year.",
+    recognise:
+      "Smaller and slimmer than a wood pigeon, with a longer-looking tail. Pale buff-grey all over, with a narrow black half-collar on the back of the neck, edged white. The tail has white corners that show when it is spread. There is no white neck patch and no broad white bar across the wing, which is how a wood pigeon looks. The song is a repeated three-note coo.",
+    food: "Seed and grain, mostly from the ground. They take spilled sunflower hearts and mixed seed under a feeder, and they will sit on a bird table. A hanging tube with short perches is a poor fit for them. If they are clearing the ground, put out less at a time so it is eaten while it is fresh. They also take buds and shoots. Net brassicas if pigeons of either kind are stripping them. Do not offer salted or dry-roasted nuts.",
+    nesting:
+      "A thin platform of twigs in a tree, a climber or on a ledge, used from spring into autumn and sometimes more than once. The nest can look unfinished. They do not use a tit box. A dove on the lawn in December is feeding, not nesting.",
+    feeder: true,
+    related: ["wood-pigeon", "chaffinch", "house-sparrow"],
+    faqs: [
+      {
+        q: "How do I tell a collared dove from a wood pigeon?",
+        a: "The collared dove is smaller, paler and slimmer, with a thin black half-collar. The wood pigeon is bulky and grey, with a white patch on the neck and a white bar on the wing.",
+      },
+      {
+        q: "Collared doves have eaten all the seed. What should I change?",
+        a: "Offer a smaller amount, more often, and use a caged feeder if you want the seed kept for tits and finches. Sweep up what is left at the end of the day. Nyjer is less useful to doves because the holes are too small for their bills.",
       },
     ],
   },

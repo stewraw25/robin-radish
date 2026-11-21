@@ -148,6 +148,7 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
             Bird food for winter
           </Link>
         </p>
+        <MonthReading month={month.value} />
       </section>
 
       <nav className="mt-10 flex flex-wrap gap-4 text-sm" aria-label="Other months">
@@ -172,6 +173,36 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
         })}
       />
     </article>
+  );
+}
+
+function MonthReading({ month }: { month: number }) {
+  const links: { href: string; label: string }[] = [];
+  if ([10, 11, 12, 1, 2].includes(month)) {
+    links.push({ href: "/guides/garlic-and-broad-beans-over-winter", label: "Garlic and broad beans over winter" });
+  }
+  if ([11, 12, 1].includes(month)) {
+    links.push({ href: "/guides/planning-a-veg-plot-2027", label: "Planning a vegetable plot for 2027" });
+  }
+  if ([11, 12, 1, 2].includes(month)) {
+    links.push(
+      { href: "/guides/bird-feeder-buying-guide", label: "Choosing a bird feeder" },
+      { href: "/guides/water-for-garden-birds", label: "Water in a freeze" },
+      { href: "/guides/feeder-hygiene", label: "Cleaning feeders" },
+    );
+  }
+  if (links.length === 0) return null;
+  return (
+    <p className="mt-4 max-w-3xl text-sm leading-relaxed">
+      {links.map((link, index) => (
+        <span key={link.href}>
+          {index > 0 ? <span className="text-muted-foreground"> · </span> : null}
+          <Link href={link.href} className="font-medium underline decoration-soil/60 underline-offset-2">
+            {link.label}
+          </Link>
+        </span>
+      ))}
+    </p>
   );
 }
 

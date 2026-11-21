@@ -220,6 +220,62 @@ function shape(slug: BirdSlug) {
           <rect x="96" y="68" width="2" height="10" rx="1" />
         </>
       );
+    case "redwing":
+      return (
+        <>
+          <polygon points="66,56 40,46 46,66 64,62" />
+          <ellipse cx="84" cy="58" rx="20" ry="14" />
+          <circle cx="102" cy="46" r="10" />
+          <polygon points="110,44 126,46 110,52" />
+          <rect x="76" y="70" width="3" height="14" rx="1" />
+          <rect x="90" y="70" width="3" height="14" rx="1" />
+        </>
+      );
+    case "fieldfare":
+      return (
+        <>
+          <polygon points="58,54 22,42 30,68 56,64" />
+          <ellipse cx="80" cy="58" rx="28" ry="17" />
+          <circle cx="106" cy="44" r="12" />
+          <polygon points="116,42 138,46 116,52" />
+          <rect x="72" y="72" width="4" height="14" rx="1" />
+          <rect x="92" y="72" width="4" height="14" rx="1" />
+        </>
+      );
+    case "brambling":
+      return (
+        <>
+          <polygon points="72,52 36,44 42,66" />
+          <ellipse cx="90" cy="58" rx="22" ry="15" />
+          <circle cx="110" cy="46" r="11" />
+          <polygon points="118,44 134,48 118,54" />
+          <rect x="84" y="71" width="3" height="14" rx="1" />
+          <rect x="100" y="71" width="3" height="14" rx="1" />
+        </>
+      );
+    case "blackcap":
+      return (
+        <>
+          <polygon points="84,56 68,50 72,62" />
+          <ellipse cx="96" cy="58" rx="16" ry="12" />
+          <circle cx="110" cy="50" r="9" />
+          <polygon points="117,48 132,50 117,54" />
+          <rect x="90" y="68" width="2" height="12" rx="1" />
+          <rect x="102" y="68" width="2" height="12" rx="1" />
+        </>
+      );
+    case "collared-dove":
+      return (
+        <>
+          <polygon points="70,54 28,40 36,66" />
+          <ellipse cx="88" cy="58" rx="26" ry="14" />
+          <circle cx="112" cy="46" r="9" />
+          <polygon points="118,44 134,46 118,50" />
+          <polygon points="64,62 18,70 22,78 66,68" />
+          <rect x="80" y="70" width="3" height="14" rx="1" />
+          <rect x="98" y="70" width="3" height="14" rx="1" />
+        </>
+      );
     default: {
       const exhaustive: never = slug;
       return exhaustive;

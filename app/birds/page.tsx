@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Garden birds",
   description:
-    "Plain notes on 15 common UK garden birds: how to recognise them, what they eat, and where they nest. No scores and no product claims.",
+    "How to recognise UK garden birds, what they eat, and where they nest. Silhouettes show shape. No scores and no product claims.",
   path: "/birds",
 });
 
@@ -19,7 +19,7 @@ export default function BirdsIndex() {
         <p className="text-sm font-semibold text-robin">Garden birds</p>
         <h1 className="mt-2 font-heading text-4xl">Birds in a UK garden</h1>
         <p className="mt-3 text-lg text-muted-foreground">
-          Fifteen species that turn up at feeders, on lawns, or in hedges. The drawings are silhouettes, to show shape. Colour is described in the text.
+          {birds.length} species that turn up at feeders, on lawns, or in hedges, including winter thrushes. The drawings are silhouettes, to show shape. Colour is described in the text.
         </p>
       </header>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
