@@ -15,13 +15,22 @@ import {
   type BirdGroup,
   type Budget,
   type Feeder,
+  type FoodId,
   type QuizResult,
   type Squirrels,
 } from "@/lib/quiz";
 
 export type ShopLinkItem = { name: string; href: string };
 
-export function BirdQuiz({ shops }: { shops: ShopLinkItem[] }) {
+export function BirdQuiz({
+  shops,
+  amazonFoods,
+  amazonFeeders,
+}: {
+  shops: ShopLinkItem[];
+  amazonFoods: Record<FoodId, ShopLinkItem>;
+  amazonFeeders: Record<Feeder, ShopLinkItem> & { squirrels: ShopLinkItem };
+}) {
   const [birds, setBirds] = useState<BirdGroup[]>([]);
   const [feeder, setFeeder] = useState<Feeder | null>(null);
   const [budget, setBudget] = useState<Budget | null>(null);
@@ -189,12 +198,51 @@ export function BirdQuiz({ shops }: { shops: ShopLinkItem[] }) {
                 <CardContent className="space-y-2 text-sm leading-relaxed">
                   <p>{food.explanation}</p>
                   <p className="text-muted-foreground">{food.because}</p>
+                  {amazonFoods[food.id] ? (
+                    <p>
+                      <ShopLink href={amazonFoods[food.id].href}>
+                        Search Amazon for {food.name.toLowerCase()}
+                      </ShopLink>
+                      <span className="text-muted-foreground">. A search, not a particular bag.</span>
+                    </p>
+                  ) : null}
                 </CardContent>
               </Card>
             ))}
           </div>
-          {result.feederNote ? <p className="text-sm leading-relaxed">{result.feederNote}</p> : null}
-          {result.squirrelNote ? <p className="text-sm leading-relaxed">{result.squirrelNote}</p> : null}
+          {result.feederNote ? (
+            <p className="text-sm leading-relaxed">
+              {result.feederNote}{" "}
+              {(() => {
+                const needed =
+                  result.foods.some((food) => food.id === "nyjer") && feeder !== "nyjer"
+                    ? amazonFeeders.nyjer
+                    : result.foods.some((food) => food.id === "mealworms") && feeder === "hanging"
+                      ? amazonFeeders.ground
+                      : feeder
+                        ? amazonFeeders[feeder]
+                        : null;
+                return needed ? (
+                  <>
+                    <ShopLink href={needed.href}>Search Amazon for {needed.name.toLowerCase()}</ShopLink>.
+                  </>
+                ) : null;
+              })()}
+            </p>
+          ) : null}
+          {result.squirrelNote ? (
+            <p className="text-sm leading-relaxed">
+              {result.squirrelNote}{" "}
+              {squirrels && squirrels !== "no" ? (
+                <>
+                  <ShopLink href={amazonFeeders.squirrels.href}>
+                    Search Amazon for {amazonFeeders.squirrels.name.toLowerCase()}
+                  </ShopLink>
+                  .
+                </>
+              ) : null}
+            </p>
+          ) : null}
           <p className="text-sm leading-relaxed">
             Read the species notes:{" "}
             {birds

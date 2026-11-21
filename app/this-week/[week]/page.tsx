@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
 import { WeekPanel } from "@/components/week-panel";
 import { isWithinWeek, londonToday, weekRangeLabel } from "@/lib/dates";
@@ -51,6 +52,7 @@ export default async function WeekPage({ params }: { params: Promise<Params> }) 
       <div className="mx-auto w-full max-w-5xl space-y-4 px-4 py-10 sm:px-6">
         <h2 className="font-heading text-2xl">If you need to buy seed or food</h2>
         <AffiliateNotice />
+        <AmazonSearchList ids={["vegetable-seeds", "sunflower-hearts"]} />
         <ShopList />
       </div>
       <JsonLd

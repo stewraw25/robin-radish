@@ -1,6 +1,7 @@
 /**
  * Shop links for Robin & Radish.
  *
+ * Amazon Associates uses the UK tag stewraw25-21, already used on Sleep Better Hub.
  * Thompson & Morgan, Crocus and CJ Wildlife run on Awin.
  * One Awin publisher ID covers those three programmes.
  * Haith's has used Webgains. Confirm the programme is open before you rely on it.
@@ -18,6 +19,7 @@
  * Set these in .env.local, then rebuild. The GitHub Pages workflow leaves them unset:
  * - AWIN_PUBLISHER_ID=YOUR_AWIN_PUBLISHER_ID
  * - WEBGAINS_CAMPAIGN_ID=YOUR_WEBGAINS_CAMPAIGN_ID
+ * - NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=stewraw25-21
  *
  * Optional per-shop Awin overrides, if you ever use more than one publisher account:
  * - AWIN_PUBLISHER_ID_THOMPSON_MORGAN
@@ -121,12 +123,25 @@ export function merchantForUrl(href: string): Merchant | undefined {
   }
 }
 
+export function isAmazonHref(href: string): boolean {
+  try {
+    const host = new URL(href).hostname.replace(/^www\./, "");
+    return host === "amazon.co.uk" || host.endsWith(".amazon.co.uk");
+  } catch {
+    return false;
+  }
+}
+
 export function isShopHref(href: string): boolean {
-  return merchantForUrl(href) !== undefined;
+  return merchantForUrl(href) !== undefined || isAmazonHref(href);
 }
 
 /** Tracking URL when an ID is configured, otherwise the shop address itself. */
 export function affiliateUrl(destination: string): string {
+  if (isAmazonHref(destination)) {
+    return withAmazonTag(destination);
+  }
+
   const merchant = merchantForUrl(destination);
   if (!merchant) return destination;
 
@@ -156,4 +171,118 @@ export function affiliateUrl(destination: string): string {
 export function trackingConfigured(merchant: Merchant): boolean {
   if (merchant.network === "Awin") return awinPublisherId(merchant) !== null;
   return webgainsCampaignId() !== null;
+}
+
+
+/** UK Associates tag already used on Sleep Better Hub. Do not invent a second tag. */
+export const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG || "stewraw25-21";
+
+export const AMAZON_DOMAIN = "www.amazon.co.uk";
+
+export type AmazonSearch = {
+  id: string;
+  label: string;
+  query: string;
+};
+
+/**
+ * Search queries, not particular ASINs. Link text should stay a search,
+ * not a review, a price or a star rating.
+ */
+export const AMAZON_SEARCHES = {
+  "vegetable-seeds": { label: "Vegetable seeds", query: "vegetable seeds" },
+  "seed-trays": { label: "Seed trays", query: "seed trays" },
+  "seed-compost": { label: "Seed compost", query: "seed compost" },
+  "plant-pots": { label: "Plant pots", query: "plant pots" },
+  "grow-bags": { label: "Grow bags", query: "grow bags" },
+  compost: { label: "Garden compost", query: "garden compost" },
+  "compost-bin": { label: "Compost bin", query: "compost bin" },
+  "raised-bed": { label: "Raised garden bed", query: "raised garden bed" },
+  propagator: { label: "Seed propagator", query: "seed propagator" },
+  "horticultural-fleece": { label: "Horticultural fleece", query: "horticultural fleece" },
+  "insect-mesh": { label: "Insect mesh", query: "insect mesh garden" },
+  "fruit-netting": { label: "Fruit netting", query: "fruit netting garden" },
+  "herb-seeds": { label: "Herb seeds", query: "herb seeds" },
+  "garlic-bulbs": { label: "Garlic bulbs for planting", query: "garlic bulbs for planting" },
+  "broad-bean-seeds": { label: "Broad bean seeds", query: "broad bean seeds" },
+  "seed-potatoes": { label: "Seed potatoes", query: "seed potatoes" },
+  "onion-sets": { label: "Onion sets", query: "onion sets" },
+  "onion-seeds": { label: "Onion seeds", query: "onion seeds" },
+  "sunflower-hearts": { label: "Sunflower hearts", query: "sunflower hearts bird food" },
+  nyjer: { label: "Nyjer seed", query: "nyjer seed bird food" },
+  suet: { label: "Suet for birds", query: "suet cakes bird food" },
+  mealworms: { label: "Dried mealworms", query: "dried mealworms bird food" },
+  "mixed-seed": { label: "Mixed bird seed", query: "mixed wild bird seed" },
+  "wild-bird-peanuts": { label: "Wild bird peanuts", query: "wild bird peanuts" },
+  "hanging-feeder": { label: "Hanging seed feeder", query: "hanging seed bird feeder" },
+  "nyjer-feeder": { label: "Nyjer feeder", query: "nyjer bird feeder" },
+  "bird-table": { label: "Bird table", query: "bird table" },
+  "suet-feeder": { label: "Suet feeder", query: "suet bird feeder" },
+  "squirrel-proof-feeder": { label: "Squirrel-proof feeder", query: "squirrel proof bird feeder" },
+  "nest-box": { label: "Bird nest box", query: "bird nest box" },
+  "bird-bath": { label: "Bird bath", query: "bird bath" },
+  "feeder-brush": { label: "Bird feeder brush", query: "bird feeder cleaning brush" },
+} as const satisfies Record<string, { label: string; query: string }>;
+
+export type AmazonSearchId = keyof typeof AMAZON_SEARCHES;
+
+export function amazonSearch(id: AmazonSearchId): AmazonSearch {
+  const item = AMAZON_SEARCHES[id];
+  return { id, label: item.label, query: item.query };
+}
+
+export function amazonSearches(ids: AmazonSearchId[]): AmazonSearch[] {
+  return ids.map(amazonSearch);
+}
+
+export function amazonSearchUrl(query: string): string {
+  const url = new URL(`https://${AMAZON_DOMAIN}/s`);
+  url.searchParams.set("k", query);
+  return withAmazonTag(url.toString());
+}
+
+export function withAmazonTag(destination: string): string {
+  const url = new URL(destination);
+  if (AMAZON_TAG && !url.searchParams.get("tag")) {
+    url.searchParams.set("tag", AMAZON_TAG);
+  }
+  return url.toString();
+}
+
+export function amazonTrackingConfigured(): boolean {
+  return Boolean(AMAZON_TAG);
+}
+
+type CropSearchInput = { slug: string; name: string };
+
+/** Planting material for a crop page. Still a search, not a named product. */
+export function amazonSearchesForCrop(crop: CropSearchInput): AmazonSearch[] {
+  if (crop.slug === "early-potatoes" || crop.slug === "maincrop-potatoes") {
+    return [amazonSearch("seed-potatoes")];
+  }
+  if (crop.slug === "onion-sets") return [amazonSearch("onion-sets")];
+  if (crop.slug === "onions") return [amazonSearch("onion-seeds")];
+  if (crop.slug === "garlic") return [amazonSearch("garlic-bulbs")];
+  if (crop.slug === "broad-beans") return [amazonSearch("broad-bean-seeds")];
+  if (["mint", "rosemary", "thyme", "chives"].includes(crop.slug)) {
+    return [{ id: crop.slug, label: `${crop.name} plants`, query: `${crop.name.toLowerCase()} plants` }];
+  }
+  return [{ id: crop.slug, label: `${crop.name} seeds`, query: `${crop.name.toLowerCase()} seeds` }];
+}
+
+/** Foods and kit named in a bird page's feeding note. */
+export function amazonSearchesForFoodText(food: string): AmazonSearch[] {
+  const text = food.toLowerCase();
+  const ids: AmazonSearchId[] = [];
+  const add = (id: AmazonSearchId) => {
+    if (!ids.includes(id)) ids.push(id);
+  };
+  if (text.includes("sunflower")) add("sunflower-hearts");
+  if (text.includes("nyjer")) add("nyjer");
+  if (text.includes("suet") || text.includes("fat ball") || text.includes("fat from")) add("suet");
+  if (text.includes("mealworm")) add("mealworms");
+  if (text.includes("mixed seed")) add("mixed-seed");
+  if (text.includes("peanut")) add("wild-bird-peanuts");
+  if (text.includes("bird table") || text.includes("ground tray") || text.includes("low tray")) add("bird-table");
+  return amazonSearches(ids);
 }

@@ -5,7 +5,9 @@ import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
+import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
+import { amazonSearchesForCrop } from "@/lib/affiliates";
 import { cropFaqs, cropSearchTitle, getCropCare, guidesForCrop, relatedCrops, whenToSowLead } from "@/lib/crop-care";
 import {
   activeMonths,
@@ -152,7 +154,8 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
         <div className="mt-3">
           <AffiliateNotice />
         </div>
-        <div className="mt-4">
+        <div className="mt-4 space-y-4">
+          <AmazonSearchList items={amazonSearchesForCrop(crop)} />
           <ShopList ids={["thompson-morgan", "crocus"]} />
         </div>
       </section>
