@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
-const basePath = "/robin-radish";
+/** Apex domain. Empty so pages and assets are served from /, not a project path. */
+const basePath = "";
 
 const nextConfig: NextConfig = {
   output: "export",

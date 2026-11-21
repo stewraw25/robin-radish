@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-The dev server uses port **43123**: [http://127.0.0.1:43123/robin-radish/](http://127.0.0.1:43123/robin-radish/).
+The dev server uses port **43123**: [http://127.0.0.1:43123/](http://127.0.0.1:43123/).
 
 Copy `.env.example` to `.env.local` if you want to set the site URL, a contact email, or affiliate IDs. The site runs without them. Shop links then go straight to the retailer, and the contact page says the email is coming soon.
 
@@ -80,27 +80,27 @@ One Awin publisher ID covers Thompson & Morgan, Crocus and CJ Wildlife. You appl
 
 Placeholders in `.env.example` (`YOUR_AWIN_PUBLISHER_ID`, `YOUR_WEBGAINS_CAMPAIGN_ID`) are not written into links. Until you replace them, links go to the shop itself and are still marked `rel="sponsored nofollow noopener"`.
 
-Set the variables in `.env.local` for a local build. **They are read when the site builds.** Leave them blank until you have real IDs. The GitHub Pages workflow does not set them, so the live shop links stay direct links to the shops.
+Set the variables in `.env.local` for a local build. **They are read when the site builds.** Leave them blank until you have real IDs. The production build does not set them, so the live shop links stay direct links to the shops.
 
 Optional per-shop Awin overrides, if you ever use more than one publisher account: `AWIN_PUBLISHER_ID_THOMPSON_MORGAN`, `AWIN_PUBLISHER_ID_CROCUS`, `AWIN_PUBLISHER_ID_CJ_WILDLIFE`.
 
 ## Site URL and contact email
 
-`SITE_URL` is the canonical site, with no trailing slash. The default, and the live site, is `https://stewraw25.github.io/robin-radish`. This project does not register a domain or change DNS.
+`SITE_URL` is the canonical site, with no trailing slash. The default, and the live site, is `https://robinandradish.co.uk`.
 
 `CONTACT_EMAIL` is the address on the contact and privacy pages. Leave it empty until you have an inbox you will actually read. There is no guessed address.
 
 ## Deploy
 
-The site is a static export (`output: 'export'`) for GitHub Pages at `/robin-radish`.
+The site is a static export (`output: 'export'`) for the apex domain. `basePath` and `assetPrefix` are empty, so pages and files are served from `/`.
 
 ```bash
 npm run build
 ```
 
-That writes `out/`. A push to `main` on GitHub runs `.github/workflows/pages.yml`, which builds with `SITE_URL=https://stewraw25.github.io/robin-radish` and deploys the `out` folder. Do not add a CNAME.
+That writes `out/`, including `CNAME` with `robinandradish.co.uk`. Publish that folder as the GitHub Pages site. There is no Pages workflow in this branch.
 
-Locally the dev server is [http://127.0.0.1:43123/robin-radish/](http://127.0.0.1:43123/robin-radish/).
+Locally the dev server is [http://127.0.0.1:43123/](http://127.0.0.1:43123/).
 
 Adding a weekly JSON file is a normal commit. The current week is chosen when the site builds.
 

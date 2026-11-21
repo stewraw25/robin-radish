@@ -3,9 +3,9 @@
  * Set SITE_URL in the environment. The default is the intended production host.
  * Do not use VERCEL_URL: preview hostnames change on every deployment.
  */
-/** GitHub Pages project site. No custom domain. */
-export const BASE_PATH = "/robin-radish";
-export const DEFAULT_SITE_URL = "https://stewraw25.github.io/robin-radish";
+/** Apex custom domain. No project-path prefix. */
+export const BASE_PATH: string = "";
+export const DEFAULT_SITE_URL = "https://robinandradish.co.uk";
 
 export const SITE_NAME = "Robin & Radish";
 
@@ -40,13 +40,14 @@ export function getMetadataBase(): URL {
  */
 export function publicAsset(file: string): string {
   const name = file.replace(/^\/+/, "");
+  if (!BASE_PATH) return `/${name}`;
   if (name.startsWith(`${BASE_PATH.replace(/^\//, "")}/`)) return `/${name}`;
   return `${BASE_PATH}/${name}`;
 }
 
 /**
  * Absolute URL for a public file or a generated image route such as opengraph-image.
- * `getSiteUrl()` already includes the project path, so this does not add it again.
+ * `getSiteUrl()` is the apex origin, so this does not add a project path.
  */
 export function absolutePublicUrl(file: string): string {
   const name = file.replace(/^\/+/, "");
