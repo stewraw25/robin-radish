@@ -1,800 +1,875 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-<loc>https://stewraw25.github.io/robin-radish/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/" />
-<xhtml:link rel="alternate" hreflang="en-IE" href="https://stewraw25.github.io/robin-radish/ie/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="en-IE" href="https://robinandradish.co.uk/ie/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/start-here/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/start-here/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/start-here/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/start-here/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/sowing-calendar-2027/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/sowing-calendar-2027/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/sowing-calendar-2027/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/sowing-calendar-2027/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>yearly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/this-week/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/this-week/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/this-week/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/planner/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/planner/" />
-<xhtml:link rel="alternate" hreflang="en-IE" href="https://stewraw25.github.io/robin-radish/ie/sowing/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/planner/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/planner/" />
+<xhtml:link rel="alternate" hreflang="en-IE" href="https://robinandradish.co.uk/ie/sowing/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/quiz/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/quiz/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/quiz/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/quiz/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/about/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/about/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/about/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/about/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>yearly</changefreq>
 <priority>0.4</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/disclosure/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/disclosure/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/disclosure/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/disclosure/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/privacy/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/privacy/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/privacy/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/contact/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/contact/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/contact/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/ie/</loc>
-<xhtml:link rel="alternate" hreflang="en-IE" href="https://stewraw25.github.io/robin-radish/ie/" />
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/ie/</loc>
+<xhtml:link rel="alternate" hreflang="en-IE" href="https://robinandradish.co.uk/ie/" />
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/ie/sowing/</loc>
-<xhtml:link rel="alternate" hreflang="en-IE" href="https://stewraw25.github.io/robin-radish/ie/sowing/" />
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/planner/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/ie/sowing/</loc>
+<xhtml:link rel="alternate" hreflang="en-IE" href="https://robinandradish.co.uk/ie/sowing/" />
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/planner/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/january/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/january/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/january/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/january/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/february/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/february/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/february/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/february/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/march/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/march/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/march/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/march/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/april/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/april/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/april/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/april/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/may/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/may/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/may/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/may/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/june/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/june/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/june/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/june/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/july/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/july/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/july/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/july/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/august/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/august/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/august/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/august/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/september/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/september/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/september/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/september/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/october/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/october/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/october/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/october/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/november/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/november/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/november/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/november/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/what-to-sow/december/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/what-to-sow/december/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/what-to-sow/december/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/what-to-sow/december/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/broad-beans/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/broad-beans/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/broad-beans/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/broad-beans/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/peas/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/peas/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/peas/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/peas/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/french-beans/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/french-beans/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/french-beans/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/french-beans/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/runner-beans/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/runner-beans/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/runner-beans/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/runner-beans/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/carrots/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/carrots/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/carrots/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/carrots/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/beetroot/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/beetroot/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/beetroot/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/beetroot/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/parsnips/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/parsnips/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/parsnips/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/parsnips/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/radishes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/radishes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/radishes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/radishes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/lettuce/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/lettuce/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/lettuce/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/lettuce/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/spinach/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/spinach/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/spinach/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/spinach/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/kale/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/kale/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/kale/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/kale/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/summer-cabbage/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/summer-cabbage/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/summer-cabbage/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/summer-cabbage/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/calabrese/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/calabrese/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/calabrese/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/calabrese/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/purple-sprouting-broccoli/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/purple-sprouting-broccoli/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/purple-sprouting-broccoli/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/purple-sprouting-broccoli/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/turnips/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/turnips/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/turnips/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/turnips/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/swede/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/swede/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/swede/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/swede/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/brussels-sprouts/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/brussels-sprouts/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/brussels-sprouts/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/brussels-sprouts/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/leeks/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/leeks/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/leeks/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/leeks/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/onions/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/onions/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/onions/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/onions/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/onion-sets/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/onion-sets/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/onion-sets/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/onion-sets/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/garlic/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/garlic/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/garlic/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/garlic/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/early-potatoes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/early-potatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/early-potatoes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/early-potatoes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/maincrop-potatoes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/maincrop-potatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/maincrop-potatoes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/maincrop-potatoes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/tomatoes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/tomatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/tomatoes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/tomatoes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/courgettes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/courgettes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/courgettes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/courgettes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/cucumbers/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/cucumbers/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/cucumbers/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/cucumbers/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/sweetcorn/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/sweetcorn/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/sweetcorn/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/sweetcorn/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/chillies/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/chillies/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/chillies/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/chillies/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/chard/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/chard/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/chard/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/chard/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/rocket/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/rocket/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/rocket/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/rocket/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/spring-onions/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/spring-onions/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/spring-onions/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/spring-onions/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/parsley/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/parsley/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/parsley/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/parsley/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/coriander/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/coriander/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/coriander/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/coriander/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/basil/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/basil/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/basil/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/basil/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/chives/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/chives/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/chives/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/chives/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/mint/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/mint/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/mint/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/mint/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/rosemary/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/rosemary/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/rosemary/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/rosemary/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/grow/thyme/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/grow/thyme/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/grow/thyme/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/thyme/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/robin/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/robin/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/robin/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/robin/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/blue-tit/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/blue-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/blue-tit/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/blue-tit/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/great-tit/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/great-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/great-tit/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/great-tit/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/coal-tit/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/coal-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/coal-tit/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/coal-tit/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/long-tailed-tit/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/long-tailed-tit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/long-tailed-tit/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/long-tailed-tit/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/blackbird/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/blackbird/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/blackbird/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/blackbird/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/house-sparrow/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/house-sparrow/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/house-sparrow/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/house-sparrow/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/goldfinch/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/goldfinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/goldfinch/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/goldfinch/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/greenfinch/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/greenfinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/greenfinch/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/greenfinch/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/chaffinch/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/chaffinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/chaffinch/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/chaffinch/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/starling/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/starling/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/starling/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/starling/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/wren/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/wren/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/wren/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/wren/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/dunnock/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/dunnock/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/dunnock/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/dunnock/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/wood-pigeon/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/wood-pigeon/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/wood-pigeon/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/wood-pigeon/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/great-spotted-woodpecker/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/great-spotted-woodpecker/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/great-spotted-woodpecker/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/great-spotted-woodpecker/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/song-thrush/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/song-thrush/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/song-thrush/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/song-thrush/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/nuthatch/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/nuthatch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/nuthatch/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/nuthatch/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/bullfinch/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/bullfinch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/bullfinch/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/bullfinch/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/birds/siskin/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/birds/siskin/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/siskin/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/siskin/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/this-week/2026-11-16/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/this-week/2026-11-16/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/birds/redwing/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/redwing/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/birds/fieldfare/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/fieldfare/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/birds/brambling/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/brambling/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/birds/blackcap/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/blackcap/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/birds/collared-dove/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/collared-dove/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/this-week/2026-11-30/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-11-30/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<lastmod>2026-11-30</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/this-week/2026-11-23/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-11-23/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<lastmod>2026-11-23</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/this-week/2026-11-16/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-11-16/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/aphids-without-sprays/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/aphids-without-sprays/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/aphids-without-sprays/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/aphids-without-sprays/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/attracting-robins/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/attracting-robins/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/attracting-robins/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/attracting-robins/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/bird-food-for-winter/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/bird-food-for-winter/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/bird-feeder-buying-guide/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/bird-feeder-buying-guide/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<lastmod>2026-11-21</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/guides/bird-food-for-winter/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/bird-food-for-winter/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/blight-potatoes-tomatoes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/blight-potatoes-tomatoes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/blight-potatoes-tomatoes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/blight-potatoes-tomatoes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/carrot-fly/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/carrot-fly/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/carrot-fly/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/carrot-fly/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/feeder-hygiene/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/feeder-hygiene/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/feeder-hygiene/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/feeder-hygiene/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/compost-small-plot/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/compost-small-plot/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/compost-small-plot/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/compost-small-plot/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/crop-rotation/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/crop-rotation/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/crop-rotation/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/crop-rotation/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/feeding-birds-spring-summer/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/feeding-birds-spring-summer/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/feeding-birds-spring-summer/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/feeding-birds-spring-summer/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/growing-in-containers/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/growing-in-containers/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/garlic-and-broad-beans-over-winter/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/garlic-and-broad-beans-over-winter/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<lastmod>2026-11-21</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/guides/growing-in-containers/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/growing-in-containers/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/hardening-off/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/hardening-off/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/hardening-off/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/hardening-off/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/herbs-small-space/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/herbs-small-space/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/herbs-small-space/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/herbs-small-space/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/nest-boxes/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/nest-boxes/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/nest-boxes/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/nest-boxes/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/netting-soft-fruit/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/netting-soft-fruit/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/netting-soft-fruit/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/netting-soft-fruit/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/no-dig-beds/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/no-dig-beds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/no-dig-beds/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/no-dig-beds/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/raised-beds/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/raised-beds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/planning-a-veg-plot-2027/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/planning-a-veg-plot-2027/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
+<lastmod>2026-11-21</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/guides/raised-beds/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/raised-beds/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/saving-seed/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/saving-seed/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/saving-seed/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/saving-seed/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/slugs-without-pellets/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/slugs-without-pellets/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/slugs-without-pellets/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/slugs-without-pellets/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/successional-sowing/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/successional-sowing/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/successional-sowing/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/successional-sowing/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/sowing-under-cover/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/sowing-under-cover/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/sowing-under-cover/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/sowing-under-cover/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/starting-a-veg-patch/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/starting-a-veg-patch/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/starting-a-veg-patch/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/starting-a-veg-patch/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/hungry-gap/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/hungry-gap/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/hungry-gap/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/hungry-gap/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/water-for-garden-birds/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/water-for-garden-birds/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/water-for-garden-birds/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/water-for-garden-birds/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-17</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
-<loc>https://stewraw25.github.io/robin-radish/guides/what-to-sow-in-winter/</loc>
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://stewraw25.github.io/robin-radish/guides/what-to-sow-in-winter/" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://stewraw25.github.io/robin-radish/" />
+<loc>https://robinandradish.co.uk/guides/what-to-sow-in-winter/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/guides/what-to-sow-in-winter/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/" />
 <lastmod>2026-11-16</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
