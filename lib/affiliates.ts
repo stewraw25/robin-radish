@@ -309,6 +309,8 @@ export function amazonSearchesForFoodText(food: string): AmazonSearch[] {
   if (text.includes("mealworm")) add("mealworms");
   if (text.includes("mixed seed")) add("mixed-seed");
   if (text.includes("peanut")) add("wild-bird-peanuts");
-  if (text.includes("bird table") || text.includes("ground tray") || text.includes("low tray")) add("bird-table");
+  if (text.includes("hanging feeder") || text.includes("hanging mealworm") || text.includes("hanging seed")) add("hanging-feeder");
+  if (text.includes("suet feeder") || text.includes("hanging suet")) add("suet-feeder");
+  // Do not auto-link bird tables: the RSPB prefers hanging feeders over flat feeders.
   return amazonSearches(ids);
 }

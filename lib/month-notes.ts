@@ -15,7 +15,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "January is a harvesting and planning month in most UK gardens. The soil is cold, and often frozen or sodden, so outdoor sowing is not the job. Under cover, leeks and onions from seed can be started on a bright windowsill. Garlic can still be planted if the ground is workable. What you pick now was sown last year.",
     birds:
-      "Days are short and insects are scarce. Robins and blackbirds take mealworms and windfall fruit from a tray or the ground. Blue tits and great tits use sunflower hearts and suet. Goldfinches take nyjer as well as hearts. Starlings clear suet quickly. Break ice on a shallow dish of water in the morning.",
+      "Days are short and insects are scarce. This is inside the RSPB's 1 November to 30 April window, so seeds and peanuts can go out as well as mealworms and suet, in hanging feeders rather than on a bird table. Robins and blackbirds take mealworms and windfall fruit. Blue tits and great tits use sunflower hearts and suet. Goldfinches take nyjer as well as hearts. Starlings clear suet quickly. Break ice on a shallow dish of water in the morning, and only put water out if you can change it every day.",
     birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "starling", "nuthatch", "siskin"],
     faqs: [
       {
@@ -27,8 +27,8 @@ export const monthNotes: Record<number, MonthNote> = {
         a: "No, if the soil is workable and not frozen or waterlogged. Autumn is the usual planting. January and February still work, including in the north after a wet autumn.",
       },
       {
-        q: "What should go on the bird table in January?",
-        a: "Sunflower hearts and suet cover tits, finches and starlings. Mealworms on a tray suit robins and blackbirds. Offer water, and clear ice in the morning. Put out what will be eaten while it is still fresh.",
+        q: "What should I put out for birds in January?",
+        a: "Sunflower hearts and suet in hanging feeders cover tits, finches and starlings. Mealworms in a hanging feeder suit robins and blackbirds. The RSPB prefers hanging feeders to a bird table. Offer water only if you can change it every day, and clear ice in the morning. Put out what will be eaten while it is still fresh.",
       },
     ],
   },
@@ -81,7 +81,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "April is a full sowing month. Hardy crops go outdoors in both halves of the country when the soil is fit. Tender plants are still raised under cover. A late frost is still normal, particularly in the north and on high ground. Early potatoes go in. Maincrop potatoes go in this month too.",
     birds:
-      "Nesting is underway for some tits, robins and blackbirds, and others are still building. Wrens are singing from the hedge. Keep feeding if you want to, in small fresh amounts, and do not cut hedges. Mealworms are useful for robins and blackbirds. Water still matters.",
+      "Nesting is underway for some tits, robins and blackbirds, and others are still building. Wrens are singing from the hedge. April is still inside the RSPB's 1 November to 30 April window, so seeds and peanuts can stay out in hanging feeders if they are eaten quickly. Mealworms are useful for robins and blackbirds. The seed and peanut pause starts on 1 May. Do not cut hedges. Water still matters if you can change it every day.",
     birdSlugs: ["robin", "blue-tit", "great-tit", "wren", "house-sparrow", "blackbird", "song-thrush", "bullfinch"],
     faqs: [
       {
@@ -94,7 +94,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "Should bird food stop in April?",
-        a: "It does not have to. Keep it fresh and keep the feeder clean, because birds are nesting or about to. A huge pile of damp seed is the thing to stop, not a modest clean offering.",
+        a: "Not yet. The RSPB's pause on seeds and peanuts starts on 1 May. Until then, keep food fresh in a hanging feeder and clean it weekly. A huge pile of damp seed is the thing to stop, not a modest clean offering. From May, switch to small amounts of mealworms or suet, or pause.",
       },
     ],
   },
@@ -103,7 +103,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "May is the changeover. Hardy crops are already in the ground or going in. In the south, tender plants can go out once the nights are reliably mild. In the north that move is often June. Keep fleece for a cold night. Short, repeated sowings of salad and roots keep the bed going later.",
     birds:
-      "Tits, robins, blackbirds, wrens and house sparrows may be feeding young or sitting on eggs. Starlings are noisy around roofs. Do not cut hedges or pull ivy off a wall that birds are using. If you feed, offer a little, often, and clean the tray. Slugs, not birds, are the usual problem on the new plantings. Net the brassicas against pigeons.",
+      "Tits, robins, blackbirds, wrens and house sparrows may be feeding young or sitting on eggs. Starlings are noisy around roofs. Do not cut hedges or pull ivy off a wall that birds are using. From 1 May the RSPB asks you to pause seeds and peanuts. Small amounts of mealworms, fat balls or suet can still go out in a hanging feeder, cleaned and moved each week. Slugs, not birds, are the usual problem on the new plantings. Net the brassicas against pigeons.",
     birdSlugs: ["blackbird", "house-sparrow", "starling", "robin", "wren", "blue-tit"],
     faqs: [
       {
@@ -116,7 +116,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "What do garden birds need in May?",
-        a: "Cover, and to be left alone while they nest. Clean water. Food in small fresh amounts if you are still feeding. Hedge cutting can wait.",
+        a: "Cover, and to be left alone while they nest. Clean water, changed every day if you put it out. From 1 May, pause seeds and peanuts. Small amounts of mealworms or suet in a hanging feeder are enough if you still want to feed. Hedge cutting can wait.",
       },
     ],
   },
@@ -125,7 +125,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "June is for planting what is still in pots, and for sowing crops that will be ready in late summer and autumn. Frost has usually finished. Water is the limit, especially while beans and courgettes are flowering. In a cold northern garden, this is the month tender plants finally go out.",
     birds:
-      "Blackbirds, robins, house sparrows and starlings are often feeding fledglings. A ground tray of soaked mealworms is used. Great spotted woodpeckers visit suet, sometimes with a noisy youngster later in the summer. Keep cats and the tray apart, and wash the tray. Goldfinches are on the last of the spring seed and on nyjer.",
+      "Blackbirds, robins, house sparrows and starlings are often feeding fledglings. The RSPB's May to October advice is to pause seeds and peanuts, including nyjer, and to offer only small amounts of mealworms, fat balls or suet in hanging feeders. Great spotted woodpeckers visit suet, sometimes with a noisy youngster later in the summer. Keep cats away from the feeder, and wash it weekly. Goldfinches can use seed heads in the garden.",
     birdSlugs: ["house-sparrow", "starling", "blackbird", "goldfinch", "robin", "great-spotted-woodpecker"],
     faqs: [
       {
@@ -138,7 +138,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "Young birds are on the lawn. Should I feed them?",
-        a: "A clean tray with soaked mealworms and a little water is enough. Do not pick fledglings up if they are feathered and moving. Parent birds are usually nearby. Keep the cat in for a few days if you can.",
+        a: "A small amount of soaked mealworms in a hanging feeder, and water if you can change it every day, is enough. Do not pick fledglings up if they are feathered and moving. Parent birds are usually nearby. Keep the cat in for a few days if you can.",
       },
     ],
   },
@@ -147,7 +147,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "July is a harvesting month as well as a sowing month. Pick beans, courgettes, early potatoes and salads while they are tender. Sow short rows if you want roots and leaves into autumn. Water at the root in a dry spell. A plant that sets flowers and then dries out will drop them.",
     birds:
-      "Goldfinches and greenfinches use seed heads and nyjer. House sparrows are still in noisy groups, often with young. Wood pigeons and collared doves find brassicas and spilled seed. Blackbirds take fruit. Feeding is optional while insects and seeds are available. Water in a bird bath matters in a dry spell. Clean feeders more often in warm weather if you keep them up.",
+      "Goldfinches and greenfinches use seed heads in the garden. House sparrows are still in noisy groups, often with young. Wood pigeons and collared doves find brassicas. Blackbirds take fruit. From 1 May to 31 October the RSPB asks you to pause seeds and peanuts, including nyjer. Small amounts of mealworms or suet in a hanging feeder are optional. Water in a bird bath matters in a dry spell if you can change it every day. Clean feeders weekly if you keep them up.",
     birdSlugs: ["goldfinch", "greenfinch", "house-sparrow", "blackbird", "wood-pigeon", "collared-dove", "robin", "song-thrush"],
     faqs: [
       {
@@ -160,7 +160,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "Should I keep feeding birds in July?",
-        a: "You can pause, or keep a clean feeder with a small amount. Warm, wet weather spoils seed faster than a frost does. Goldfinches will still use nyjer. Empty and wash a feeder that has gone sticky.",
+        a: "You can pause. If you keep a feeder up, follow the RSPB and leave seeds and peanuts off it until 1 November. Small amounts of mealworms or suet in a hanging feeder are enough. Warm, wet weather spoils food faster than a frost does. Empty and wash a feeder that has gone sticky.",
       },
     ],
   },
@@ -169,7 +169,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "August is for picking, and for a few sowings that prefer cooling weather. Spinach and coriander sown now are less inclined to bolt than a sowing made in a June heatwave. Maincrop potatoes are lifted from this month onwards, on a dry day once the tops have died back. Keep watering tomatoes, beans and courgettes.",
     birds:
-      "Goldfinches, greenfinches and chaffinches are on seed heads and on sunflower hearts. Blue tits return to feeders as the easy insects thin. Wood pigeons are still in the brassicas if the net has slipped. Blackbirds take berries and fallen fruit. Leave a few seed heads standing if you can spare them.",
+      "Goldfinches, greenfinches and chaffinches are on seed heads in the garden. Blue tits may return to a suet feeder as the easy insects thin. Wood pigeons are still in the brassicas if the net has slipped. Blackbirds take berries and fallen fruit. Leave a few seed heads standing if you can spare them. Sunflower hearts and other seeds wait until 1 November.",
     birdSlugs: ["goldfinch", "greenfinch", "chaffinch", "blue-tit", "wood-pigeon", "blackbird", "bullfinch"],
     faqs: [
       {
@@ -182,16 +182,16 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "Which birds use seed heads in August?",
-        a: "Goldfinches first, then greenfinches and chaffinches. Teasel, sunflower and thistle are the usual plants. A nyjer feeder does a similar job if the border has been deadheaded.",
+        a: "Goldfinches first, then greenfinches and chaffinches. Teasel, sunflower and thistle are the usual plants. The RSPB asks you to pause nyjer and other seeds until 1 November, so standing seed heads in the border are the useful August offer.",
       },
     ],
   },
   9: {
-    hook: "The turn toward autumn sowings, and feeders coming back into daily use.",
+    hook: "The turn toward autumn sowings, while seed feeders wait until November.",
     intro:
       "September is the turn toward winter. Outdoor sowing is a short list: spinach, coriander and, in the south, radishes. Lettuce can be sown under cover for a late picking. In milder southern gardens, overwintering onion sets can be planted. Finish picking tender crops before a frost blackens them. Garlic is next month if the bed is free.",
     birds:
-      "Robins become obvious again and sing. Blue tits and great tits spend more time on feeders. Chaffinches and goldfinches are still on seed. Blackbirds start to take fallen apples. There is no fixed day to begin winter feeding. A clean feeder of sunflower hearts is a simple start.",
+      "Robins become obvious again and sing. Blue tits and great tits may use a suet feeder. Chaffinches and goldfinches are still on seed heads in the garden. Blackbirds start to take fallen apples. The RSPB's pause on seeds and peanuts runs to 31 October, so sunflower hearts wait until 1 November. Small amounts of mealworms or suet can continue in a hanging feeder.",
     birdSlugs: ["robin", "great-tit", "blue-tit", "chaffinch", "goldfinch", "blackbird"],
     faqs: [
       {
@@ -204,7 +204,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "When should winter feeding start?",
-        a: "When you are ready to keep the food fresh. September is when many gardens put feeders back into daily use. Sunflower hearts and clean water are enough to begin. Add suet when the weather turns cold.",
+        a: "Seeds and peanuts can go back out from 1 November, which is when the RSPB's full-range window opens. Until then, small amounts of mealworms or suet in a hanging feeder are enough if you want to keep feeding. Clean water matters if you can change it every day.",
       },
     ],
   },
@@ -213,7 +213,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "October is garlic month, in the north and the south, as long as the soil is workable. In the south, broad beans, hardy peas and overwintering onion sets can go in too. Lift maincrop potatoes if they are still in the ground. Parsnips can stay put. Mark rows of roots before the tops disappear.",
     birds:
-      "Long-tailed tits return to suet in small flocks. Coal tits cache seed. Goldfinches use nyjer. Starlings take suet. Robins and blackbirds take mealworms and apples. Winter thrushes may start to appear on fruit. Do not put out salted or cooked food.",
+      "Long-tailed tits return to suet in small flocks. Starlings take suet. Robins and blackbirds take mealworms and apples. Winter thrushes may start to appear on fruit. Seeds, peanuts and nyjer wait until 1 November, when the RSPB's full-range window opens. Do not put out salted or cooked food.",
     birdSlugs: ["robin", "blackbird", "long-tailed-tit", "coal-tit", "goldfinch", "starling", "siskin", "nuthatch"],
     faqs: [
       {
@@ -226,7 +226,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "What bird food suits October?",
-        a: "Sunflower hearts, suet and, if goldfinches visit, nyjer. Mealworms on a tray for robins and blackbirds. Windfall apples for blackbirds. Keep seed dry. October rain clumps a feeder that was filled too full.",
+        a: "Until 31 October, small amounts of mealworms, fat balls or suet in hanging feeders, plus windfall apples for blackbirds. From 1 November you can add sunflower hearts, nyjer and peanuts again. October rain clumps a feeder that was filled too full, so keep amounts small and clean the feeder weekly.",
       },
     ],
   },
@@ -235,7 +235,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "November sowing is a short list. In the south, broad beans and hardy peas can still go in, ideally under a cloche. Garlic can be planted while the soil is workable. In the north, outdoor sowing of those beans and peas has finished in this list. The harvest is what is standing: leeks, parsnips, sprouts, kale and the last chard and parsley. Stay off wet soil.",
     birds:
-      "This is the core feeding season. Robins, blackbirds, blue tits, great tits and goldfinches use hearts, suet and a tray. Redwings and fieldfares take berries and windfall apples. Bramblings may join chaffinches on seed spilled under the feeder. Offer less at a time when the weather is wet, because damp seed goes mouldy. Wash a feeder that smells sour.",
+      "This is the core feeding season, inside the RSPB's 1 November to 30 April window. Robins, blackbirds, blue tits, great tits and goldfinches use hearts and suet in hanging feeders. Redwings and fieldfares take berries and windfall apples. Bramblings may join chaffinches on seed spilled under the feeder. Offer less at a time when the weather is wet, because damp seed goes mouldy. Wash a feeder that smells sour, and prefer hanging feeders to a bird table.",
     birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "redwing", "fieldfare", "brambling"],
     faqs: [
       {
@@ -248,7 +248,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "How should birds be fed in a wet November?",
-        a: "Little and often. Suet and sunflower hearts in a feeder that sheds rain stay usable longer than a tray of mixed seed in the open. Clean anything that has clumped, and break ice on the water.",
+        a: "Little and often. Suet and sunflower hearts in a hanging feeder that sheds rain stay usable longer than mixed seed on a table in the open. Clean anything that has clumped, and break ice on the water if you can change it every day.",
       },
     ],
   },
@@ -257,7 +257,7 @@ export const monthNotes: Record<number, MonthNote> = {
     intro:
       "December is the quietest sowing month. Garlic is the planting if you missed autumn and the soil is not frozen. There is nothing useful to sow outdoors in this list. Harvest leeks, parsnips, sprouts and kale as you need them, and check stored potatoes and onions for rot. Leave the digging if the ground is wet. A windowsill pot of pea shoots is a kitchen job, not a garden row.",
     birds:
-      "Short days. Blue tits, coal tits and great spotted woodpeckers use suet and sunflower hearts. Starlings finish suet quickly. Robins and blackbirds need a tray, mealworms and fruit. Fieldfares and redwings take apples on the lawn. A blackcap may take fruit and suet from the table. Collared doves pick up spilled seed. Break ice on a shallow dish, and fill feeders in the morning.",
+      "Short days. Blue tits, coal tits and great spotted woodpeckers use suet and sunflower hearts in hanging feeders. Starlings finish suet quickly. Robins and blackbirds take mealworms and fruit. Fieldfares and redwings take apples on the lawn. A blackcap may take fruit and suet. Collared doves pick up spilled seed. Break ice on a shallow dish if you can change the water every day, and fill feeders in the morning.",
     birdSlugs: ["robin", "blackbird", "blue-tit", "coal-tit", "starling", "fieldfare", "redwing", "blackcap", "collared-dove"],
     faqs: [
       {
@@ -270,7 +270,7 @@ export const monthNotes: Record<number, MonthNote> = {
       },
       {
         q: "What should a December feeder hold?",
-        a: "Sunflower hearts and suet as the base. Nyjer if goldfinches are about. Mealworms on a tray for robins. Fresh water, with the ice broken. Take suet down if a mild spell makes it soft enough to smear on feathers.",
+        a: "Sunflower hearts and suet in hanging feeders as the base. Nyjer if goldfinches are about. Mealworms in a hanging feeder for robins. Fresh water, with the ice broken, if you can change it every day. Take suet down if a mild spell makes it soft enough to smear on feathers.",
       },
     ],
   },

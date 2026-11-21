@@ -53,7 +53,7 @@ export const BIRD_OPTIONS: { id: BirdGroup; label: string }[] = [
 export const FEEDER_OPTIONS: { id: Feeder; label: string; hint: string }[] = [
   { id: "hanging", label: "A hanging seed feeder", hint: "The tube or cage most people start with." },
   { id: "nyjer", label: "A nyjer feeder", hint: "Fine mesh and very small holes." },
-  { id: "ground", label: "A ground tray or bird table", hint: "Food sitting low, where robins can land." },
+  { id: "ground", label: "A ground tray or bird table", hint: "The RSPB prefers hanging feeders; use a tray only if you keep it small, dry and cleaned weekly." },
   { id: "suet", label: "A suet cage or fat-ball feeder", hint: "For blocks, pellets or balls." },
   { id: "none", label: "No feeder yet", hint: "You can still put food out while you decide." },
 ];
@@ -89,7 +89,7 @@ export const FOODS: Record<FoodId, { name: string; explanation: string }> = {
   mealworms: {
     name: "Mealworms",
     explanation:
-      "Dried or live larvae. Robins and blackbirds often take them from a ground tray or a bird table, rather than a hanging tube. Soak dried mealworms in water first so they are easier to eat and carry some moisture.",
+      "Dried or live larvae. Robins and blackbirds often take them readily. Soak dried mealworms in water first so they are easier to eat and carry some moisture. The RSPB prefers a hanging feeder to a bird table.",
   },
   "mixed-seed": {
     name: "Mixed seed",
@@ -176,8 +176,8 @@ export function recommend(answers: QuizAnswers): QuizResult | { error: string } 
   } else if (answers.feeder === "nyjer") {
     note("nyjer", "You already have the fine-mesh feeder nyjer needs.", 3);
   } else if (answers.feeder === "ground") {
-    note("mealworms", "A ground tray or table is the right place for mealworms.", 2);
-    note("sunflower-hearts", "Hearts can go on the same tray.", 1);
+    note("mealworms", "Offer mealworms in a hanging feeder. If you already have a tray, keep it small, dry, and cleaned and moved each week.", 2);
+    note("sunflower-hearts", "Hearts can go in a hanging feeder from 1 November to 30 April.", 1);
   } else if (answers.feeder === "suet") {
     note("suet", "You already have somewhere to hang suet.", 2);
   } else {
@@ -193,14 +193,14 @@ export function recommend(answers: QuizAnswers): QuizResult | { error: string } 
   let feederNote: string | null = null;
   if (answers.feeder === "none") {
     feederNote =
-      "You do not need several feeders to start. A hanging feeder for sunflower hearts, or a simple tray on a stand, is enough while you see who arrives.";
+      "You do not need several feeders to start. A hanging feeder for sunflower hearts (from 1 November to 30 April), or a hanging suet feeder, is enough while you see who arrives.";
   } else if (answers.feeder === "nyjer" && !chosen.includes("nyjer")) {
     feederNote =
       "Keep the nyjer feeder up if goldfinches visit. This list follows the birds you ticked, and nyjer is aimed at finches.";
   } else if (chosen.includes("nyjer") && answers.feeder !== "nyjer") {
     feederNote = "Nyjer needs its own feeder with tiny holes. It spills straight through a normal seed feeder.";
   } else if (chosen.includes("mealworms") && answers.feeder === "hanging") {
-    feederNote = "Mealworms are easier on a ground tray or bird table than in a hanging tube.";
+    feederNote = "Mealworms can go in a hanging feeder. The RSPB prefers that to a bird table or a flat tray.";
   }
 
   let squirrelNote: string | null = null;

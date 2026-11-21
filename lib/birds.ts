@@ -47,7 +47,7 @@ export const birds: Bird[] = [
     summary: "A small, upright bird with an orange-red breast that feeds on the ground.",
     recognise:
       "Smaller than a blackbird, with an orange-red face and breast, brown upper parts and a pale belly. The beak is thin. It hops, stops, and often flicks its wings. Males and females look alike. A robin defends a patch of garden and will chase another robin off.",
-    food: "Mealworms on a ground tray or bird table are the food robins take most readily. Soak dried mealworms first. Sunflower hearts and suet crumbs on the same tray are useful in winter, when insects are scarce. They also turn leaf litter for beetles and worms. A hanging tube is a poor first choice. They will sometimes learn one, but the tray is the reliable offer.",
+    food: "Mealworms are the food robins take most readily. Soak dried mealworms first. The RSPB's current advice is to choose hanging feeders over flat feeders such as bird tables, because disease spreads more easily on a flat surface, so a hanging mealworm or suet feeder is the better offer. Sunflower hearts and suet can be added from 1 November to 30 April. From 1 May to 31 October, pause seeds and peanuts and keep to small amounts of mealworms, fat balls or suet. Robins also turn leaf litter for beetles and worms.",
     nesting:
       "Robins nest low, in a hollow, thick ivy, a shed, or an open-fronted nest box hidden in a shrub. The nest is a cup of leaves and moss. They can raise more than one brood from spring into summer. Put a box up in autumn or winter, face it out of the wettest wind, and then leave it alone.",
     feeder: true,
@@ -55,7 +55,7 @@ export const birds: Bird[] = [
     faqs: [
       {
         q: "Why has the robin in my garden disappeared?",
-        a: "Robins hide while they moult, and they move around a territory. A second robin may have driven the first one off. Check that the tray is clean, that the food is fresh, and that a cat is not sitting under it.",
+        a: "Robins hide while they moult, and they move around a territory. A second robin may have driven the first one off. Check that the feeder is clean, that the food is fresh, and that a cat is not sitting under it.",
       },
       {
         q: "Will a robin use a nest box with a small hole?",
@@ -81,7 +81,7 @@ export const birds: Bird[] = [
       },
       {
         q: "Do blue tits need food in summer?",
-        a: "They find a lot of insects once the leaves are out. You can keep a clean feeder up, with small amounts, or pause. If you offer peanuts in the breeding season, keep them in a mesh feeder.",
+        a: "They find a lot of insects once the leaves are out. From 1 May to 31 October the RSPB asks you to pause seeds and peanuts. You can still offer small amounts of mealworms, fat balls or suet in a hanging feeder, or you can pause. Peanuts belong in a mesh feeder from 1 November to 30 April only.",
       },
     ],
   },
