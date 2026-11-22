@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateNotice } from "@/components/affiliate-notice";
-import { BirdSilhouette } from "@/components/bird-silhouette";
+import { BirdPhoto, BirdPhotoCredit } from "@/components/bird-photo";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { AmazonSearchList } from "@/components/amazon-search-list";
@@ -55,15 +56,19 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
           { name: bird.name, path },
         ]}
       />
-      <header className="flex flex-col gap-4 sm:flex-row sm:items-center">
-        <BirdSilhouette slug={bird.slug} className="h-28 w-40 shrink-0 text-leaf" />
-        <div>
-          <p className="text-sm font-semibold text-robin">UK garden bird</p>
-          <h1 className="mt-1 font-heading text-4xl sm:text-5xl">{bird.name}</h1>
+      <header className="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <BirdPhoto slug={bird.slug} variant="hero" priority />
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="text-sm font-semibold text-robin">UK garden bird</p>
+              <h1 className="mt-1 font-heading text-4xl sm:text-5xl">{bird.name}</h1>
+            </div>
+            <PrintGuideButton className="mt-0.5 shrink-0" />
+          </div>
           <p className="mt-3 text-lg text-muted-foreground">{bird.summary}</p>
         </div>
       </header>
-      <p className="mt-4 text-sm text-muted-foreground">The drawing is a silhouette for shape only. Colours are in the text.</p>
 
       <section className="mt-8 space-y-3">
         <h2 className="font-heading text-2xl">How to recognise one</h2>
@@ -97,7 +102,7 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
       </section>
 
       {bird.feeder ? (
-        <section className="mt-10">
+        <section className="mt-10 print:hidden">
           <h2 className="font-heading text-2xl">Buying food</h2>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             Straight foods such as sunflower hearts, suet and mealworms. This is not a ranking of shops or of any bag.
@@ -132,10 +137,13 @@ export default async function BirdPage({ params }: { params: Promise<Params> }) 
         <ul className="mt-3 grid gap-3 sm:grid-cols-3">
           {related.map((item) => (
             <li key={item.slug}>
-              <Link href={`/birds/${item.slug}`} className="block rounded-xl border border-border bg-card p-3 hover:border-primary">
-                <BirdSilhouette slug={item.slug} className="h-12 w-20 text-leaf" />
-                <span className="mt-1 block font-heading text-lg">{item.name}</span>
-              </Link>
+              <div className="rounded-xl border border-border bg-card p-3 hover:border-primary">
+                <Link href={`/birds/${item.slug}`} className="block">
+                  <BirdPhoto slug={item.slug} imageOnly className="aspect-[4/3] w-full" />
+                  <span className="mt-2 block font-heading text-lg">{item.name}</span>
+                </Link>
+                <BirdPhotoCredit slug={item.slug} className="mt-1" />
+              </div>
             </li>
           ))}
         </ul>

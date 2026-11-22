@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BirdSilhouette } from "@/components/bird-silhouette";
 import { AffiliateNotice } from "@/components/affiliate-notice";
+import { BirdPhoto, BirdPhotoCredit } from "@/components/bird-photo";
 import { AmazonSearchList } from "@/components/amazon-search-list";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { ShopList } from "@/components/shop-list";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
-import { getBird, type BirdSlug } from "@/lib/birds";
+import { getBird } from "@/lib/birds";
 import {
   cropsInJob,
   JOB_LABELS,
@@ -76,8 +77,13 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
         ]}
       />
       <header className="max-w-3xl">
-        <p className="text-sm font-semibold text-robin">UK sowing calendar</p>
-        <h1 className="mt-2 font-heading text-4xl sm:text-5xl">What to sow in {month.label}</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-robin">UK sowing calendar</p>
+            <h1 className="mt-2 font-heading text-4xl sm:text-5xl">What to sow in {month.label}</h1>
+          </div>
+          <PrintGuideButton className="mt-0.5 shrink-0" />
+        </div>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{note.intro}</p>
       </header>
 
@@ -128,13 +134,16 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
           {birdLinks.map((bird) => (
             <li key={bird.slug}>
-              <Link href={`/birds/${bird.slug}`} className="flex items-center gap-3 rounded-xl border border-border bg-card p-3 hover:border-primary">
-                <BirdSilhouette slug={bird.slug as BirdSlug} className="h-14 w-20 shrink-0 text-leaf" />
-                <span>
-                  <span className="block font-heading text-lg">{bird.name}</span>
-                  <span className="block text-sm text-muted-foreground">{bird.summary}</span>
-                </span>
-              </Link>
+              <div className="rounded-xl border border-border bg-card p-3 hover:border-primary">
+                <Link href={`/birds/${bird.slug}`} className="flex items-start gap-3">
+                  <BirdPhoto slug={bird.slug} imageOnly className="aspect-[4/3] w-24 shrink-0" />
+                  <span className="min-w-0">
+                    <span className="block font-heading text-lg">{bird.name}</span>
+                    <span className="block text-sm text-muted-foreground">{bird.summary}</span>
+                  </span>
+                </Link>
+                <BirdPhotoCredit slug={bird.slug} className="mt-2" />
+              </div>
             </li>
           ))}
         </ul>
@@ -154,7 +163,7 @@ export default async function MonthPage({ params }: { params: Promise<Params> })
         <MonthReading month={month.value} />
       </section>
 
-      <section className="mt-12 max-w-3xl space-y-4">
+      <section className="mt-12 max-w-3xl space-y-4 print:hidden">
         <h2 className="font-heading text-2xl">Seed and plants</h2>
         <p className="text-sm leading-relaxed text-muted-foreground">
           If you are buying seed for this month, these are searches and shops, not a ranking or a particular packet.

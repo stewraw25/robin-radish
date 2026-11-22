@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BirdSilhouette } from "@/components/bird-silhouette";
+import { BirdPhoto, BirdPhotoCredit } from "@/components/bird-photo";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { birds } from "@/lib/birds";
 import { pageMeta } from "@/lib/seo";
@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Garden birds",
   description:
-    "How to recognise UK garden birds, what they eat, and where they nest. Silhouettes show shape. No scores and no product claims.",
+    "How to recognise UK garden birds, what they eat, and where they nest. A photograph of each species, with no scores and no product claims.",
   path: "/birds",
 });
 
@@ -19,19 +19,22 @@ export default function BirdsIndex() {
         <p className="text-sm font-semibold text-robin">Garden birds</p>
         <h1 className="mt-2 font-heading text-4xl">Birds in a UK garden</h1>
         <p className="mt-3 text-lg text-muted-foreground">
-          {birds.length} species that turn up at feeders, on lawns, or in hedges, including winter thrushes. The drawings are silhouettes, to show shape. Colour is described in the text.
+          {birds.length} species that turn up at feeders, on lawns, or in hedges, including winter thrushes.
         </p>
       </header>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         {birds.map((bird) => (
           <li key={bird.slug}>
-            <Link href={`/birds/${bird.slug}`} className="flex h-full items-center gap-3 rounded-xl border border-border bg-card p-3 hover:border-primary">
-              <BirdSilhouette slug={bird.slug} className="h-16 w-24 shrink-0 text-leaf" />
-              <span>
-                <span className="block font-heading text-xl">{bird.name}</span>
-                <span className="mt-1 block text-sm text-muted-foreground">{bird.summary}</span>
-              </span>
-            </Link>
+            <div className="h-full rounded-xl border border-border bg-card p-3 hover:border-primary">
+              <Link href={`/birds/${bird.slug}`} className="flex items-start gap-3">
+                <BirdPhoto slug={bird.slug} imageOnly className="aspect-[4/3] w-28 shrink-0" />
+                <span className="min-w-0">
+                  <span className="block font-heading text-xl">{bird.name}</span>
+                  <span className="mt-1 block text-sm text-muted-foreground">{bird.summary}</span>
+                </span>
+              </Link>
+              <BirdPhotoCredit slug={bird.slug} className="mt-2" />
+            </div>
           </li>
         ))}
       </ul>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { AmazonSearchList } from "@/components/amazon-search-list";
@@ -79,8 +80,13 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
         ]}
       />
       <header>
-        <p className="text-sm font-semibold text-robin">{crop.kind === "herb" ? "Herb" : "Vegetable"}</p>
-        <h1 className="mt-2 font-heading text-4xl sm:text-5xl">{crop.name}</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-robin">{crop.kind === "herb" ? "Herb" : "Vegetable"}</p>
+            <h1 className="mt-2 font-heading text-4xl sm:text-5xl">{crop.name}</h1>
+          </div>
+          <PrintGuideButton className="mt-0.5 shrink-0" />
+        </div>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{crop.note}</p>
       </header>
 
@@ -146,7 +152,7 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
         </ul>
       </section>
 
-      <section className="mt-10">
+      <section className="mt-10 print:hidden">
         <h2 className="font-heading text-2xl">Seeds and plants</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Seed and young plants for the vegetable garden. This is not a ranking, and it does not cover every shop.

@@ -142,3 +142,73 @@
     outline-offset: 2px;
   }
 }
+
+@media print {
+  nav[aria-label="Breadcrumb"],
+  .print-hide,
+  #cookie-banner,
+  [data-cookie-banner],
+  .cookie-banner,
+  .cookie-consent,
+  #onetrust-banner-sdk {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  * {
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  /* Print URLs only for off-site links that are not already credited. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    font-weight: 400;
+    word-break: break-all;
+  }
+
+  a[href^="https://robinandradish.co.uk"]::after,
+  a[href^="http://robinandradish.co.uk"]::after,
+  a[href^="https://commons.wikimedia.org"]::after,
+  a[href^="https://creativecommons.org"]::after,
+  a[href^="https://upload.wikimedia.org"]::after {
+    content: none;
+  }
+
+  table,
+  figure,
+  tr,
+  img,
+  .rounded-xl,
+  .rounded-lg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}

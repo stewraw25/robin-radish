@@ -38,7 +38,7 @@ const columns = [
 
 export function SiteFooter() {
   return (
-    <footer className="mt-16 border-t border-border bg-secondary/50">
+    <footer className="mt-16 border-t border-border bg-secondary/50 print:hidden">
       <div className="mx-auto grid w-full max-w-5xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
         {columns.map((column) => (
           <div key={column.title}>

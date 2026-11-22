@@ -17,7 +17,7 @@ export function AmazonSearchList({
   if (list.length === 0) return null;
 
   return (
-    <ul className="grid gap-3 sm:grid-cols-2">
+    <ul className="grid gap-3 sm:grid-cols-2 print:hidden">
       {list.map((item) => (
         <li key={item.id} className="rounded-xl border border-border bg-card p-4">
           <ShopLink href={amazonSearchUrl(item.query)} className="text-base">

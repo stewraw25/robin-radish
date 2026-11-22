@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { GuideBody } from "@/components/guide-body";
 import { JsonLd } from "@/components/json-ld";
 import { formatLongDate } from "@/lib/dates";
@@ -46,7 +47,10 @@ export default async function GuidePage({ params }: { params: Promise<Params> })
         ]}
       />
       <header className="mb-6">
-        <h1 className="font-heading text-4xl">{guide.title}</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <h1 className="font-heading text-4xl">{guide.title}</h1>
+          <PrintGuideButton className="mt-1 shrink-0" />
+        </div>
         <p className="mt-3 text-sm text-muted-foreground">
           By {BYLINE} · {formatLongDate(guide.date)}
         </p>

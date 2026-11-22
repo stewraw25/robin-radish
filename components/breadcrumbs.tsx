@@ -5,7 +5,7 @@ import { breadcrumbJsonLd } from "@/lib/schema";
 export function Breadcrumbs({ items }: { items: { name: string; path: string }[] }) {
   return (
     <>
-      <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted-foreground">
+      <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted-foreground print:hidden">
         <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
           {items.map((item, index) => {
             const last = index === items.length - 1;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { REGION_NOTE } from "@/lib/crops";
@@ -40,8 +41,13 @@ export default function IrelandPage() {
         ]}
       />
       <header>
-        <p className="text-sm font-semibold text-robin">Ireland</p>
-        <h1 className="mt-2 font-heading text-4xl sm:text-5xl">Gardening in Ireland</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-robin">Ireland</p>
+            <h1 className="mt-2 font-heading text-4xl sm:text-5xl">Gardening in Ireland</h1>
+          </div>
+          <PrintGuideButton className="mt-0.5 shrink-0" />
+        </div>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           This is the first country note outside Britain. The crop months on the rest of the site are UK ranges. Ireland does not have its own month for each crop here.
         </p>
