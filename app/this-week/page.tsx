@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
 import { WeekPanel } from "@/components/week-panel";
@@ -21,7 +22,10 @@ export default function ThisWeekPage() {
   return (
     <>
       <div className="mx-auto w-full max-w-5xl px-4 pt-8 sm:px-6">
-        <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "This week", path: "/this-week" }]} />
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "This week", path: "/this-week" }]} />
+          <PrintGuideButton className="shrink-0" />
+        </div>
       </div>
       {current ? (
         <WeekPanel week={current} live={weekIsLive(current)} heading="h1" />
@@ -51,7 +55,7 @@ export default function ThisWeekPage() {
         ) : (
           <p className="text-sm text-muted-foreground">Older weekly notes will be listed here once more than one week is on the site.</p>
         )}
-        <section className="space-y-4">
+        <section className="space-y-4 print:hidden">
           <h2 className="font-heading text-2xl">If you need to buy seed or food</h2>
           <AffiliateNotice />
           <AmazonSearchList ids={["vegetable-seeds", "sunflower-hearts"]} />

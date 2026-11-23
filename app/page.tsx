@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
-import { BirdSilhouette } from "@/components/bird-silhouette";
+import { BirdPhoto, BirdPhotoCredit } from "@/components/bird-photo";
 import { JsonLd } from "@/components/json-ld";
 import { FeederMark, RadishMark, RobinMark, TrayMark } from "@/components/marks";
 import { AmazonSearchList } from "@/components/amazon-search-list";
@@ -189,10 +189,13 @@ export default function HomePage() {
         <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {featuredBirds.map((bird) => (
             <li key={bird.slug}>
-              <Link href={`/birds/${bird.slug}`} className="block h-full rounded-xl border border-border bg-card p-3 hover:border-primary">
-                <BirdSilhouette slug={bird.slug} className="h-14 w-24 text-leaf" />
-                <span className="mt-1 block font-heading text-lg">{bird.name}</span>
-              </Link>
+              <div className="h-full rounded-xl border border-border bg-card p-3 hover:border-primary">
+                <Link href={`/birds/${bird.slug}`} className="block">
+                  <BirdPhoto slug={bird.slug} imageOnly className="aspect-[4/3] w-full" />
+                  <span className="mt-2 block font-heading text-lg">{bird.name}</span>
+                </Link>
+                <BirdPhotoCredit slug={bird.slug} className="mt-1" />
+              </div>
             </li>
           ))}
         </ul>

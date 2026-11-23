@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { JsonLd } from "@/components/json-ld";
 import { AmazonSearchList } from "@/components/amazon-search-list";
 import { ShopList } from "@/components/shop-list";
@@ -40,16 +41,19 @@ export default async function WeekPage({ params }: { params: Promise<Params> }) 
   return (
     <>
       <div className="mx-auto w-full max-w-5xl px-4 pt-8 sm:px-6">
-        <Breadcrumbs
-          items={[
-            { name: "Home", path: "/" },
-            { name: "This week", path: "/this-week" },
-            { name: range, path },
-          ]}
-        />
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <Breadcrumbs
+            items={[
+              { name: "Home", path: "/" },
+              { name: "This week", path: "/this-week" },
+              { name: range, path },
+            ]}
+          />
+          <PrintGuideButton className="shrink-0" />
+        </div>
       </div>
       <WeekPanel week={week} live={isWithinWeek(week.weekOf, londonToday())} heading="h1" />
-      <div className="mx-auto w-full max-w-5xl space-y-4 px-4 py-10 sm:px-6">
+      <div className="mx-auto w-full max-w-5xl space-y-4 px-4 py-10 sm:px-6 print:hidden">
         <h2 className="font-heading text-2xl">If you need to buy seed or food</h2>
         <AffiliateNotice />
         <AmazonSearchList ids={["vegetable-seeds", "sunflower-hearts"]} />

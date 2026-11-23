@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AffiliateNotice } from "@/components/affiliate-notice";
 import { AmazonSearchList } from "@/components/amazon-search-list";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { ShopList } from "@/components/shop-list";
 import { buttonVariants } from "@/components/ui/button";
 import { pageMeta } from "@/lib/seo";
@@ -52,8 +53,13 @@ export default function SowingCalendarPage() {
         ]}
       />
       <header>
-        <p className="text-sm font-semibold text-robin">Free downloads</p>
-        <h1 className="mt-2 font-heading text-4xl sm:text-5xl">UK sowing calendar 2027</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-robin">Free downloads</p>
+            <h1 className="mt-2 font-heading text-4xl sm:text-5xl">UK sowing calendar 2027</h1>
+          </div>
+          <PrintGuideButton className="mt-0.5 shrink-0" />
+        </div>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           Three free PDFs. The full calendar is A3 and 14 pages. The plotting wallchart is one A3 sheet. March is also an A4 page for a home printer. Crop months are the same list as the{" "}
           <Link href="/planner" className="underline decoration-soil/60 underline-offset-2">
@@ -134,7 +140,7 @@ export default function SowingCalendarPage() {
           </figcaption>
         </figure>
       </div>
-      <section className="mt-10 space-y-4">
+      <section className="mt-10 space-y-4 print:hidden">
         <h2 className="font-heading text-2xl">Seed and sowing kit</h2>
         <p className="text-sm leading-relaxed text-muted-foreground">
           If you are buying seed or trays to use with the calendar, these are searches and shops, not a ranking or a particular product.

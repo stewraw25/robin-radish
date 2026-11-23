@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { MONTHS, REGION_NOTE } from "@/lib/crops";
 import { monthNotes } from "@/lib/month-notes";
 import { pageMeta } from "@/lib/seo";
@@ -17,8 +18,13 @@ export default function WhatToSowIndex() {
     <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "What to sow", path: "/what-to-sow" }]} />
       <header className="max-w-3xl">
-        <p className="text-sm font-semibold text-robin">UK sowing calendar</p>
-        <h1 className="mt-2 font-heading text-4xl">What to sow by month</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-robin">UK sowing calendar</p>
+            <h1 className="mt-2 font-heading text-4xl">What to sow by month</h1>
+          </div>
+          <PrintGuideButton className="mt-0.5 shrink-0" />
+        </div>
         <p className="mt-3 text-lg text-muted-foreground">
           Twelve pages from the same crop list as the sowing planner. Each one shows what to sow indoors, sow outdoors, plant and harvest, then a note on garden birds.
         </p>

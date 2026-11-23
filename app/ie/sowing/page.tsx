@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { PrintGuideButton } from "@/components/print-guide-button";
 import { FaqList } from "@/components/faq-list";
 import { JsonLd } from "@/components/json-ld";
 import { REGION_NOTE } from "@/lib/crops";
@@ -41,8 +42,13 @@ export default function IrelandSowingPage() {
         ]}
       />
       <header>
-        <p className="text-sm font-semibold text-robin">Ireland</p>
-        <h1 className="mt-2 font-heading text-4xl sm:text-5xl">Sowing times in Ireland</h1>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-sm font-semibold text-robin">Ireland</p>
+            <h1 className="mt-2 font-heading text-4xl sm:text-5xl">Sowing times in Ireland</h1>
+          </div>
+          <PrintGuideButton className="mt-0.5 shrink-0" />
+        </div>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           How the UK south and north ranges on this site compare with a garden in Ireland. Ranges, not a forecast, and not a new month for each crop.
         </p>
