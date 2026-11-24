@@ -90,6 +90,13 @@ export default function IrelandSowingPage() {
           </Link>{" "}
           stay in the UK voice. Read the north column, then the note on the crop for spacing and what usually goes wrong. Nothing on those pages has been rewritten as an Irish date.
         </p>
+        <p>
+          For first and last frost, and for fleece or bringing pots under cover, see{" "}
+          <Link href="/guides/first-frost-dates" className="underline decoration-soil/60 underline-offset-2">
+            first frost dates and protecting plants
+          </Link>
+          . That guide is written for UK gardens and does not publish a date for Irish towns. Use Met Éireann and your own garden notes, as this page already says, rather than copying a UK table.
+        </p>
       </div>
 
       <FaqList faqs={faqs} />

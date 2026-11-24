@@ -28,6 +28,10 @@ const groups = [
       { href: "/guides/crop-rotation", label: "Crop rotation for a small plot" },
       { href: "/guides/planning-a-veg-plot-2027", label: "Planning a vegetable plot for 2027" },
       { href: "/guides/garlic-and-broad-beans-over-winter", label: "Garlic and broad beans over winter" },
+      { href: "/guides/first-frost-dates", label: "First frost dates in a UK garden" },
+      { href: "/guides/chitting-potatoes", label: "How to chit seed potatoes" },
+      { href: "/guides/winter-pruning-fruit-bushes", label: "Winter pruning of fruit bushes" },
+      { href: "/guides/christmas-gifts-for-gardeners", label: "Christmas gifts for UK gardeners" },
     ],
   },
   {

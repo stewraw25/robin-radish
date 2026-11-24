@@ -10,6 +10,8 @@ export type CropCare = {
   position: string;
   spacing: string;
   care: string;
+  /** Optional extra section, used when a crop needs a direct "how often to water" answer. */
+  watering?: string[];
   problems: string[];
 };
 
@@ -97,7 +99,14 @@ const care: Record<string, CropCare> = {
   lettuce: {
     position: "Sun, with some shade in high summer so the plants are less inclined to bolt.",
     spacing: "About 20 to 30 cm for hearting types. Loose-leaf plants can sit closer if you pick leaves rather than a whole head.",
-    care: "Sow little and often, and barely cover the seed. Keep them watered. In hot weather they run to seed.",
+    care: "Sow little and often, and barely cover the seed. In hot weather they run to seed.",
+    watering: [
+      "There is no single interval that suits every lettuce plant in the UK. How often you water depends on the weather, the soil, and whether the plant is in a bed or a pot.",
+      "Feel the soil a finger's depth down, not just the surface. If it is damp, leave it. If it is dry, water thoroughly so the root zone is wet, then let the extra drain. A light daily sprinkle that wets only the surface is less use, and wet leaves in the evening can sit damp overnight.",
+      "In a cool, dull week, lettuce in a mulched bed that was soaked by rain may need no extra water. In a hot, dry spell, or in a pot, grow-bag or window box, check every day. A pot on a sunny patio in July often needs water once a day, and sometimes more. The same variety in open ground after rain may need none for several days.",
+      "Newly sown seed should stay just moist until it germinates. Do not let the surface crust and crack, and do not leave the tray standing in a puddle.",
+      "Uneven watering, bone dry then a sudden flood, is a common cause of tip burn on the leaf edges. Try to keep the moisture steady rather than making up for a missed week with a soaking.",
+    ],
     problems: [
       "Slugs and snails shred seedlings.",
       "Bolting is the usual summer failure.",
@@ -515,7 +524,11 @@ export function guidesForCrop(crop: Crop): string[] {
     slugs.push("hardening-off");
   }
   if (["carrots", "parsnips"].includes(crop.slug)) slugs.unshift("carrot-fly");
+  if (["early-potatoes", "maincrop-potatoes"].includes(crop.slug)) slugs.unshift("chitting-potatoes");
   if (["tomatoes", "early-potatoes", "maincrop-potatoes"].includes(crop.slug)) slugs.unshift("blight-potatoes-tomatoes");
+  if (["tomatoes", "courgettes", "cucumbers", "sweetcorn", "chillies", "basil", "french-beans", "runner-beans"].includes(crop.slug)) {
+    slugs.unshift("first-frost-dates");
+  }
   if (["lettuce", "rocket", "radishes", "spinach", "coriander", "spring-onions", "turnips", "calabrese"].includes(crop.slug)) {
     slugs.unshift("successional-sowing");
   }
@@ -569,7 +582,7 @@ export function cropFaqs(crop: Crop): { q: string; a: string }[] {
       ? `In this list the south and north months for ${name} are the same. A cold spring can still hold a northern garden back. Treat the months as a range.`
       : `${diffs.join(" ")} A cold, wet spring can move either region later.`;
 
-  return [
+  const faqs = [
     {
       q: `When do I ${sows > 0 ? "sow" : "plant"} ${name} in the UK?`,
       a: whenToSowLead(crop),
@@ -583,4 +596,11 @@ export function cropFaqs(crop: Crop): { q: string; a: string }[] {
       a: `${notes.spacing} ${notes.problems.join(" ")}`,
     },
   ];
+  if (crop.slug === "lettuce" && notes.watering) {
+    faqs.unshift({
+      q: "How often should I water lettuce in the UK?",
+      a: "There is no single interval. Feel the soil a finger's depth down. If it is damp, leave it. If it is dry, water the root zone thoroughly. A pot or grow-bag in a hot, dry spell often needs checking every day. A mulched bed after rain may need no extra water for several days. Keep the moisture steady: swings from bone dry to sodden are a common cause of tip burn.",
+    });
+  }
+  return faqs;
 }

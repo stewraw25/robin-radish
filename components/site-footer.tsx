@@ -12,6 +12,8 @@ const columns = [
       { href: "/grow", label: "Vegetables and herbs" },
       { href: "/planner", label: "Sowing planner" },
       { href: "/guides/planning-a-veg-plot-2027", label: "Plan a plot for 2027" },
+      { href: "/guides/christmas-gifts-for-gardeners", label: "Christmas gifts for gardeners" },
+      { href: "/guides/first-frost-dates", label: "First frost dates" },
       { href: "/ie", label: "Gardening in Ireland" },
     ],
   },

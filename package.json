@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 43123",
-    "build": "next build && touch out/.nojekyll",
+    "build": "next build --webpack && touch out/.nojekyll",
     "start": "next start",
     "lint": "eslint",
     "check:structured-data": "node scripts/check-structured-data.mjs",

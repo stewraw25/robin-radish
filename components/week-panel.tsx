@@ -19,20 +19,33 @@ export function WeekPanel({
   week,
   live,
   heading = "h2",
+  dateAsSubheading = false,
 }: {
   week: GardenWeek;
   live: boolean;
   heading?: "h1" | "h2";
+  dateAsSubheading?: boolean;
 }) {
   const Title = heading;
   const range = weekRangeLabel(week.weekOf);
   return (
     <section aria-labelledby="week-heading" className="bg-primary text-primary-foreground">
       <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
-        <p className="text-sm font-semibold tracking-wide text-primary-foreground/80">This week in the garden</p>
-        <Title id="week-heading" className="mt-2 font-heading text-3xl sm:text-4xl">
-          {range}
-        </Title>
+        {dateAsSubheading ? (
+          <>
+            <Title id="week-heading" className="font-heading text-3xl sm:text-4xl">
+              This week in the garden
+            </Title>
+            <p className="mt-2 font-heading text-xl text-primary-foreground/90 sm:text-2xl">{range}</p>
+          </>
+        ) : (
+          <>
+            <p className="text-sm font-semibold tracking-wide text-primary-foreground/80">This week in the garden</p>
+            <Title id="week-heading" className="mt-2 font-heading text-3xl sm:text-4xl">
+              {range}
+            </Title>
+          </>
+        )}
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-primary-foreground/90">{week.intro}</p>
         {live ? null : (
           <p className="mt-4 max-w-3xl rounded-lg bg-background/15 px-3 py-2 text-sm">
