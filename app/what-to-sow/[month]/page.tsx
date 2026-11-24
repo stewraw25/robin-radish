@@ -202,6 +202,16 @@ function MonthReading({ month }: { month: number }) {
   const links: { href: string; label: string }[] = [];
   if ([10, 11, 12, 1, 2].includes(month)) {
     links.push({ href: "/guides/garlic-and-broad-beans-over-winter", label: "Garlic and broad beans over winter" });
+    links.push({ href: "/guides/first-frost-dates", label: "First frost dates and protecting plants" });
+  }
+  if ([11, 12].includes(month)) {
+    links.push({ href: "/guides/christmas-gifts-for-gardeners", label: "Christmas gifts for gardeners" });
+  }
+  if ([11, 12, 1, 2, 3].includes(month)) {
+    links.push({ href: "/guides/winter-pruning-fruit-bushes", label: "Winter pruning of fruit bushes" });
+  }
+  if ([1, 2, 3].includes(month)) {
+    links.push({ href: "/guides/chitting-potatoes", label: "How to chit seed potatoes" });
   }
   if ([11, 12, 1].includes(month)) {
     links.push({ href: "/guides/planning-a-veg-plot-2027", label: "Planning a vegetable plot for 2027" });

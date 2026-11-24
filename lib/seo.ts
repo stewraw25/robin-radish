@@ -43,7 +43,7 @@ export function pageMeta({
   const url = absoluteUrl(path);
   const visibleTitle = absoluteTitle ? title : fitTitle(title);
   const visibleDescription = fitDescription(description);
-  const image = absolutePublicUrl("opengraph-image");
+  const image = absolutePublicUrl("opengraph-image.png");
 
   return {
     title: absoluteTitle ? { absolute: visibleTitle } : visibleTitle,

@@ -143,6 +143,17 @@ export default async function CropPage({ params }: { params: Promise<Params> }) 
         <p className="leading-relaxed">{care.care}</p>
       </section>
 
+      {care.watering && care.watering.length > 0 ? (
+        <section className="mt-10 space-y-3">
+          <h2 className="font-heading text-2xl">How often to water {crop.name.toLowerCase()}</h2>
+          {care.watering.map((paragraph) => (
+            <p key={paragraph} className="leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
+        </section>
+      ) : null}
+
       <section className="mt-10">
         <h2 className="font-heading text-2xl">Common problems</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 leading-relaxed">
