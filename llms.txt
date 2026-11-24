@@ -32,14 +32,17 @@
 - [Bird food for winter](https://robinandradish.co.uk/guides/bird-food-for-winter/): From 1 November to 30 April the RSPB says you can offer seeds and peanuts as well as mealworms and suet, in hanging feeders that stay clean and dry. Bread is not on that list.
 - [Blight on potatoes and tomatoes](https://robinandradish.co.uk/guides/blight-potatoes-tomatoes/): How to spot potato and tomato blight in a UK summer, what to do with the foliage, and how rotation helps next year.
 - [Carrot fly on the vegetable row](https://robinandradish.co.uk/guides/carrot-fly/): How carrot fly shows up in a UK garden, and the covers, timing and thinning that limit the damage.
+- [Christmas gifts for UK gardeners](https://robinandradish.co.uk/guides/christmas-gifts-for-gardeners/): Plain gift ideas for a UK gardener or someone who feeds garden birds, with example Amazon listings. Not a ranking, and no prices or reviews.
 - [Cleaning bird feeders](https://robinandradish.co.uk/guides/feeder-hygiene/): Clean and move bird feeders every week, change the water every day, and avoid flat feeders such as bird tables, following the RSPB's current hygiene advice.
 - [Compost for a small plot](https://robinandradish.co.uk/guides/compost-small-plot/): How to make compost in a small UK garden, what to leave out of the heap, and how to use it on a vegetable bed.
 - [Crop rotation for a small plot](https://robinandradish.co.uk/guides/crop-rotation/): A practical crop rotation for a UK bed that is too small for a textbook four-year plan, using the plant families on this site.
 - [Feeding birds in spring and summer](https://robinandradish.co.uk/guides/feeding-birds-spring-summer/): The RSPB's current advice is to pause seeds and peanuts from 1 May to 31 October. Small amounts of mealworms, fat balls or suet can still go out, in hanging feeders that you clean weekly.
+- [First frost dates in a UK garden](https://robinandradish.co.uk/guides/first-frost-dates/): How to judge first and last frost in a UK garden, and how to protect plants, without treating a published date as a promise.
 - [Garlic and broad beans over winter](https://robinandradish.co.uk/guides/garlic-and-broad-beans-over-winter/): How to plant garlic and hardy broad beans for a UK winter, by region, and when to leave the bed alone.
 - [Growing vegetables in containers](https://robinandradish.co.uk/guides/growing-in-containers/): Which vegetables and herbs are worth growing in pots in the UK, how deep the pot needs to be, and why watering matters more than the compost brand.
 - [Hardening off seedlings](https://robinandradish.co.uk/guides/hardening-off/): How to move UK seedlings from a windowsill or greenhouse outside without losing them to wind or a cold night.
 - [Herbs for a small space](https://robinandradish.co.uk/guides/herbs-small-space/): A short list of herbs that earn a UK windowsill or a metre of bed, and which ones need a pot of their own.
+- [How to chit seed potatoes](https://robinandradish.co.uk/guides/chitting-potatoes/): When to buy seed potatoes in the UK, how to chit them in a frost-free place, and when to plant early and maincrop types.
 - [Nest boxes for garden birds](https://robinandradish.co.uk/guides/nest-boxes/): Which UK garden birds use a hole box, which need an open front, and where to put a box so it has a chance of being used.
 - [Netting fruit without trapping birds](https://robinandradish.co.uk/guides/netting-soft-fruit/): How to net fruit and brassicas in a UK garden so pigeons and bullfinches stay off the crop and birds are not caught in the mesh.
 - [No-dig beds for vegetables](https://robinandradish.co.uk/guides/no-dig-beds/): How a no-dig vegetable bed works in a UK garden: compost on the surface, cardboard on a new plot, and what still has to be done by hand.
@@ -53,6 +56,7 @@
 - [The hungry gap](https://robinandradish.co.uk/guides/hungry-gap/): What is still edible in a UK garden from April into early June, and what to sow so the gap is shorter next year.
 - [Water for garden birds](https://robinandradish.co.uk/guides/water-for-garden-birds/): How to offer drinking and bathing water to UK garden birds in a freeze and in a dry spell, and what not to add to it.
 - [What to sow in winter](https://robinandradish.co.uk/guides/what-to-sow-in-winter/): What you can still sow or plant in a UK garden in winter, what to grow on a windowsill, and what to leave until spring.
+- [Winter pruning of fruit bushes](https://robinandradish.co.uk/guides/winter-pruning-fruit-bushes/): How to prune currants, gooseberries, raspberries, apples and pears in a UK winter, and which fruit to leave until summer.
 
 ## Crops
 - [How to grow broad beans](https://robinandradish.co.uk/grow/broad-beans/)
