@@ -208,6 +208,7 @@ export const AMAZON_SEARCHES = {
   "seed-potatoes": { label: "Seed potatoes", query: "seed potatoes" },
   "onion-sets": { label: "Onion sets", query: "onion sets" },
   "onion-seeds": { label: "Onion seeds", query: "onion seeds" },
+  "shallot-sets": { label: "Shallot sets", query: "shallot sets" },
   "sunflower-hearts": { label: "Sunflower hearts", query: "sunflower hearts bird food" },
   nyjer: { label: "Nyjer seed", query: "nyjer seed bird food" },
   suet: { label: "Suet for birds", query: "suet cakes bird food" },
@@ -289,6 +290,7 @@ export function amazonSearchesForCrop(crop: CropSearchInput): AmazonSearch[] {
   if (crop.slug === "onion-sets") return [amazonSearch("onion-sets")];
   if (crop.slug === "onions") return [amazonSearch("onion-seeds")];
   if (crop.slug === "garlic") return [amazonSearch("garlic-bulbs")];
+  if (crop.slug === "shallots") return [amazonSearch("shallot-sets")];
   if (crop.slug === "broad-beans") return [amazonSearch("broad-bean-seeds")];
   if (["mint", "rosemary", "thyme", "chives"].includes(crop.slug)) {
     return [{ id: crop.slug, label: `${crop.name} plants`, query: `${crop.name.toLowerCase()} plants` }];

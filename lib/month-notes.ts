@@ -11,9 +11,9 @@ export type MonthNote = {
 
 export const monthNotes: Record<number, MonthNote> = {
   1: {
-    hook: "Garlic can still go in, and the feeder matters more than the seed bed.",
+    hook: "Garlic and shallot sets can still go in, and the feeder matters more than the seed bed.",
     intro:
-      "January is a harvesting and planning month in most UK gardens. The soil is cold, and often frozen or sodden, so outdoor sowing is not the job. Under cover, leeks and onions from seed can be started on a bright windowsill. Garlic can still be planted if the ground is workable. What you pick now was sown last year.",
+      "January is a harvesting and planning month in most UK gardens. The soil is cold, and often frozen or sodden, so outdoor sowing is not the job. Under cover, leeks and onions from seed can be started on a bright windowsill. Garlic and shallot sets can still be planted if the ground is workable. What you pick now was sown last year.",
     birds:
       "Days are short and insects are scarce. This is inside the RSPB's 1 November to 30 April window, so seeds and peanuts can go out as well as mealworms and suet, in hanging feeders rather than on a bird table. Robins and blackbirds take mealworms and windfall fruit. Blue tits and great tits use sunflower hearts and suet. Goldfinches take nyjer as well as hearts. Starlings clear suet quickly. Break ice on a shallow dish of water in the morning, and only put water out if you can change it every day.",
     birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "starling", "nuthatch", "siskin"],
@@ -35,7 +35,7 @@ export const monthNotes: Record<number, MonthNote> = {
   2: {
     hook: "Broad beans and peas can start under cover in the south.",
     intro:
-      "February is still winter, with longer days. In the south, broad beans and peas can be started in pots under cover, and onion seed wants a bright windowsill. Outdoor sowing waits until the soil is workable. In the north, keep most of this under cover, or wait for March. Chit early potatoes somewhere light and frost-free.",
+      "February is still winter, with longer days. In the south, broad beans and peas can be started in pots under cover, and onion seed wants a bright windowsill. Outdoor sowing waits until the soil is workable. Shallot sets can go in if the ground crumbles, in the south and the north. In the north, keep most other sowings under cover, or wait for March. Chit early potatoes somewhere light and frost-free.",
     birds:
       "Feeders are still busy. Coal tits snatch a seed and hide it. Long-tailed tits arrive as a party on the suet. Chaffinches work the ground underneath. Dunnocks shuffle there too. Wrens stay in the hedge and rarely use the feeder. This is a sound month to put nest boxes up, before most birds are choosing sites.",
     birdSlugs: ["coal-tit", "long-tailed-tit", "chaffinch", "dunnock", "wren", "robin", "bullfinch"],
@@ -57,7 +57,7 @@ export const monthNotes: Record<number, MonthNote> = {
   3: {
     hook: "Hardy outdoor sowing starts in the south if the soil is fit.",
     intro:
-      "March is when a lot of UK sowing begins, especially in the south. Hardy vegetables can go outdoors if the soil has dried enough to rake. Tender crops such as tomatoes stay indoors. Frost is still ordinary, and more so in the north, so nothing soft is planted out. If the soil sticks to your boots, wait.",
+      "March is when a lot of UK sowing begins, especially in the south. Hardy vegetables can go outdoors if the soil has dried enough to rake. Shallot sets can still be planted in both regions if the soil is fit. Tender crops such as tomatoes stay indoors. Frost is still ordinary, and more so in the north, so nothing soft is planted out. If the soil sticks to your boots, wait.",
     birds:
       "Tits, robins, blackbirds, house sparrows and dunnocks are still using food you put out, and they are also singing and looking at nest sites. Natural food is increasing. Keep portions small and fresh. A cold snap sends them back to the feeder in numbers.",
     birdSlugs: ["robin", "great-tit", "blue-tit", "house-sparrow", "blackbird", "dunnock", "song-thrush"],
@@ -233,7 +233,7 @@ export const monthNotes: Record<number, MonthNote> = {
   11: {
     hook: "A short sowing list, and the winter vegetables to cut as you need them.",
     intro:
-      "November sowing is a short list. In the south, broad beans and hardy peas can still go in, ideally under a cloche. Garlic can be planted while the soil is workable. In the north, outdoor sowing of those beans and peas has finished in this list. The harvest is what is standing: leeks, parsnips, sprouts, kale and the last chard and parsley. Stay off wet soil.",
+      "November sowing is a short list. In the south, broad beans and hardy peas can still go in, ideally under a cloche. Garlic and shallot sets can be planted while the soil is workable. In the north, outdoor sowing of those beans and peas has finished in this list. The harvest is what is standing: leeks, parsnips, sprouts, kale and the last chard and parsley. Stay off wet soil.",
     birds:
       "This is the core feeding season, inside the RSPB's 1 November to 30 April window. Robins, blackbirds, blue tits, great tits and goldfinches use hearts and suet in hanging feeders. Redwings and fieldfares take berries and windfall apples. Bramblings may join chaffinches on seed spilled under the feeder. Offer less at a time when the weather is wet, because damp seed goes mouldy. Wash a feeder that smells sour, and prefer hanging feeders to a bird table.",
     birdSlugs: ["robin", "blackbird", "blue-tit", "great-tit", "goldfinch", "redwing", "fieldfare", "brambling"],
@@ -255,14 +255,14 @@ export const monthNotes: Record<number, MonthNote> = {
   12: {
     hook: "Little to sow. Feed the birds and pick what is still standing.",
     intro:
-      "December is the quietest sowing month. Garlic is the planting if you missed autumn and the soil is not frozen. There is nothing useful to sow outdoors in this list. Harvest leeks, parsnips, sprouts and kale as you need them, and check stored potatoes and onions for rot. Leave the digging if the ground is wet. A windowsill pot of pea shoots is a kitchen job, not a garden row.",
+      "December is the quietest sowing month. Garlic and shallot sets are the planting if you missed autumn and the soil is not frozen. There is nothing useful to sow outdoors in this list. Harvest leeks, parsnips, sprouts and kale as you need them, and check stored potatoes and onions for rot. Leave the digging if the ground is wet. A windowsill pot of pea shoots is a kitchen job, not a garden row.",
     birds:
       "Short days. Blue tits, coal tits and great spotted woodpeckers use suet and sunflower hearts in hanging feeders. Starlings finish suet quickly. Robins and blackbirds take mealworms and fruit. Fieldfares and redwings take apples on the lawn. A blackcap may take fruit and suet. Collared doves pick up spilled seed. Break ice on a shallow dish if you can change the water every day, and fill feeders in the morning.",
     birdSlugs: ["robin", "blackbird", "blue-tit", "coal-tit", "starling", "fieldfare", "redwing", "blackcap", "collared-dove"],
     faqs: [
       {
         q: "Is there anything to sow outdoors in December?",
-        a: "Not in this list. Garlic can still be planted if the soil is workable. Everything else waits. Forcing a row of peas into frozen ground wastes the seed.",
+        a: "Not in this list. Garlic and shallot sets can still be planted if the soil is workable, in the south. Everything else waits. Forcing a row of peas into frozen ground wastes the seed.",
       },
       {
         q: "Which vegetables stand through December?",
