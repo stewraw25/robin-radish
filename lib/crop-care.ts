@@ -193,6 +193,16 @@ const care: Record<string, CropCare> = {
       "Small bulbs if they went in late or spent the winter in deep shade.",
     ],
   },
+  shallots: {
+    position: "Sun and well-drained soil. Wet winter ground rots the sets.",
+    spacing: "About 15 to 20 cm apart, in rows about 30 cm apart, with the tip just showing. They need more room than onion sets, because each one splits into a cluster.",
+    care: "Plant sets sold for planting, not shallots from a food shop. Firm the soil around each set, and net the bed until they have rooted, or birds tug them out. Keep the bed weeded. Lift when the leaves yellow, and dry the clusters as you would onions.",
+    problems: [
+      "Birds pull newly planted sets.",
+      "White rot, and rotting in wet or poorly drained soil.",
+      "Bolting after a check to growth, and small clusters if the plants were crowded or planted very late.",
+    ],
+  },
   "early-potatoes": {
     position: "Sun, in soil you can draw up around the stems.",
     spacing: "About 30 cm apart, in rows about 60 cm apart, in a trench about 15 cm deep.",
@@ -424,7 +434,7 @@ const GROUPS: string[][] = [
   ["carrots", "beetroot", "parsnips", "radishes"],
   ["lettuce", "spinach", "chard", "rocket", "kale"],
   ["kale", "summer-cabbage", "brussels-sprouts", "calabrese", "purple-sprouting-broccoli", "turnips", "swede"],
-  ["leeks", "onions", "onion-sets", "garlic", "spring-onions"],
+  ["leeks", "onions", "onion-sets", "garlic", "shallots", "spring-onions"],
   ["early-potatoes", "maincrop-potatoes"],
   ["tomatoes", "courgettes", "cucumbers", "sweetcorn", "chillies"],
   ["parsley", "coriander", "basil", "chives", "mint", "rosemary", "thyme"],
@@ -533,7 +543,7 @@ export function guidesForCrop(crop: Crop): string[] {
     slugs.unshift("successional-sowing");
   }
   if (["broad-beans", "chillies", "runner-beans", "french-beans"].includes(crop.slug)) slugs.unshift("aphids-without-sprays");
-  if (["garlic", "broad-beans"].includes(crop.slug)) slugs.unshift("garlic-and-broad-beans-over-winter");
+  if (["garlic", "shallots", "broad-beans"].includes(crop.slug)) slugs.unshift("garlic-and-broad-beans-over-winter");
   if (CONTAINER_CROPS.has(crop.slug)) slugs.push("growing-in-containers");
   if (SEED_CROPS.has(crop.slug)) slugs.push("saving-seed");
   const winter = [crop.sowOutdoors, crop.plant, crop.harvest].some((window) =>

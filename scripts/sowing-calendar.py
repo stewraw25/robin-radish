@@ -38,7 +38,7 @@ GROUPS = [
     ("Brassicas", ["kale", "summer-cabbage", "brussels-sprouts", "calabrese", "purple-sprouting-broccoli", "turnips", "swede"]),
     ("Legumes", ["broad-beans", "peas", "french-beans", "runner-beans"]),
     ("Salads and leaves", ["lettuce", "spinach", "chard", "rocket"]),
-    ("Alliums", ["leeks", "onions", "onion-sets", "garlic", "spring-onions"]),
+    ("Alliums", ["leeks", "onions", "onion-sets", "garlic", "shallots", "spring-onions"]),
     ("Fruiting", ["tomatoes", "courgettes", "cucumbers", "sweetcorn", "chillies"]),
     ("Herbs", ["parsley", "coriander", "basil", "chives", "mint", "rosemary", "thyme"]),
 ]
@@ -73,6 +73,7 @@ LATIN = {
     "onions": "Allium cepa",
     "onion-sets": "Allium cepa",
     "garlic": "Allium sativum",
+    "shallots": "Allium cepa Aggregatum Group",
     "early-potatoes": "Solanum tuberosum",
     "maincrop-potatoes": "Solanum tuberosum",
     "tomatoes": "Solanum lycopersicum",

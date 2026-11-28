@@ -275,6 +275,16 @@ export const crops: Crop[] = [
     note: "Plant individual cloves, point up, in workable soil. Use cloves sold for planting. Autumn planting is the usual start.",
   },
   {
+    slug: "shallots",
+    name: "Shallots",
+    kind: "vegetable",
+    sowIndoors: none,
+    sowOutdoors: none,
+    plant: win([11, 12, 1, 2, 3], [2, 3]),
+    harvest: same(7, 8),
+    note: "Plant sets, not seed, with the tip just showing, only where the soil crumbles. December and January are for milder, well-drained ground. In the north, wait until February or March.",
+  },
+  {
     slug: "early-potatoes",
     name: "Early potatoes",
     kind: "vegetable",
