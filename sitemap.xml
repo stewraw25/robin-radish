@@ -348,6 +348,13 @@
 <priority>0.6</priority>
 </url>
 <url>
+<loc>https://robinandradish.co.uk/grow/shallots/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/shallots/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/shallots/" />
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
 <loc>https://robinandradish.co.uk/grow/early-potatoes/</loc>
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/grow/early-potatoes/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/grow/early-potatoes/" />
@@ -632,6 +639,14 @@
 <xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/birds/collared-dove/" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/birds/collared-dove/" />
 <changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://robinandradish.co.uk/this-week/2026-12-07/</loc>
+<xhtml:link rel="alternate" hreflang="en-GB" href="https://robinandradish.co.uk/this-week/2026-12-07/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://robinandradish.co.uk/this-week/2026-12-07/" />
+<lastmod>2026-12-07</lastmod>
+<changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
